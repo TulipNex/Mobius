@@ -3,22 +3,55 @@ let similarity = require('similarity')
 
 let handler = m => m
 
-handler.before = function (m, { conn, match, usedPrefix }) {
-    if ((usedPrefix = (match[0] || '')[0])) {
+handler.before = function (m, { conn, match }) {
+    let usedPrefix;
+    let txt = (m.text || '').toLowerCase().trim();
+
+    // Buat objek penyimpanan memori sementara jika belum ada
+    conn.didyoumean = conn.didyoumean || {};
+
+    // ==========================================
+    // 1. FITUR AUTO-EXECUTE TANPA REPLY (SESSION)
+    // ==========================================
+    // Mengecek apakah user mengirim 'y' atau 'ya' dan memiliki sesi aktif
+    if (txt === 'y' || txt === 'ya') {
+        let session = conn.didyoumean[m.sender];
+        if (session) {
+            // Cek apakah umur sesi di bawah 30 detik (30000 ms)
+            if (Date.now() - session.time < 30000) {
+                // Cek otorisasi (Owner / Premium)
+                let isROwner = [conn.user.jid, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender);
+                let isPrems = isROwner || (global.db.data.users[m.sender]?.premiumTime > 0 || global.db.data.users[m.sender]?.premium);
+
+                if (isPrems) {
+                    // Memanipulasi m.text menjadi command yang direkomendasikan di memori
+                    m.text = session.mean; 
+                    
+                    // Kirim reaksi agar terlihat bot sedang memproses
+                    conn.sendMessage(m.chat, { react: { text: '🔄', key: m.key } });
+                }
+            }
+            // Hapus sesi setelah ditangkap agar tidak tersangkut
+            delete conn.didyoumean[m.sender];
+        }
+    }
+
+    // ==========================================
+    // 2. LOGIKA UTAMA: PENDETEKSI TYPO
+    // ==========================================
+    // Menggunakan (match && match[0]) untuk mencegah error jika teks tanpa prefix masuk
+    if ((usedPrefix = (match && match[0] || '')[0])) {
         let commandOnly = m.text.replace(usedPrefix, '').trim().split(' ')[0].toLowerCase()
         if (!commandOnly) return
 
         let validAliases = []
         let helpList = [] 
 
-        // ==========================================
-        // 1. KUMPULKAN SEMUA VARIASI PERINTAH (KAMUS)
-        // ==========================================
+        // Mengumpulkan semua variasi perintah dari plugin
         for (let name in global.plugins) {
             let plugin = global.plugins[name]
             if (!plugin || plugin.disabled) continue
 
-            // Ambil dari handler.help
             if (plugin.help) {
                 let helps = Array.isArray(plugin.help) ? plugin.help : [plugin.help]
                 helps.forEach(h => {
@@ -28,7 +61,6 @@ handler.before = function (m, { conn, match, usedPrefix }) {
                 })
             }
 
-            // Ambil dari handler.command
             if (plugin.command) {
                 let cmds = Array.isArray(plugin.command) ? plugin.command : [plugin.command]
                 cmds.forEach(c => {
@@ -51,34 +83,36 @@ handler.before = function (m, { conn, match, usedPrefix }) {
             }
         }
 
-        // ==========================================
-        // 2. CEK APAKAH PERINTAH VALID
-        // ==========================================
+        // Jika command yang diketik valid, hentikan pencarian typo
         if (validAliases.includes(commandOnly)) return
 
-        // ==========================================
-        // 3. LOGIKA "PERINTAH TIDAK DITEMUKAN" & TYPO
-        // ==========================================
-        
         helpList = [...new Set(helpList)]
 
         let mean = didyoumean(commandOnly, helpList)
         let sim = mean ? similarity(commandOnly, mean) : 0
         let som = sim * 100
 
-        // ==========================================
-        // PERBAIKAN: FORMAT MENTION SESUAI TAGME.JS
-        // ==========================================
-        let tag = `@${m.sender.replace(/@.+/, '')}` // Membuat teks @628xxx
-        let mentionedJid = [m.sender] // Memasukkan ID kontak untuk didaftarkan
+        let tag = `@${m.sender.replace(/@.+/, '')}` 
+        let mentionedJid = [m.sender] 
 
         let teks = `❌ *Perintah Tidak Ditemukan!*\n\nMaaf Kak ${tag}, menu *${usedPrefix + commandOnly}* tidak tersedia di dalam sistem.`
 
         if (mean && som >= 60) {
             teks += `\n\n*Apakah yang Anda maksud:*\n> ◦ \`${usedPrefix + mean}\`\n> ◦ Kemiripan: ${parseInt(som)}%`
+
+            // Tampilkan panduan eksekusi cepat HANYA kepada Owner & Premium
+            let isROwner = [conn.user.jid, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender);
+            let isPrems = isROwner || (global.db.data.users[m.sender]?.premiumTime > 0 || global.db.data.users[m.sender]?.premium);
+            
+            if (isPrems) {
+                // Simpan perintah ke memori sementara (berlaku 30 detik)
+                conn.didyoumean[m.sender] = {
+                    mean: usedPrefix + mean,
+                    time: Date.now()
+                };
+            }
         }
 
-        // Eksekusi kirim menggunakan conn.reply dan contextInfo
         conn.reply(m.chat, teks, m, { contextInfo: { mentionedJid } })
     }
 }
