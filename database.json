@@ -416,7 +416,7 @@
       "waifu": "Belum Di Set",
       "husbu": "Belum Di Set",
       "pc": 0,
-      "exp": 1090563,
+      "exp": 1090761,
       "coin": 0,
       "atm": 0,
       "limit": 87,
@@ -731,9 +731,9 @@
       "lastdate": 0,
       "lasttambang": 0,
       "lastngepet": 0,
-      "command": 3339,
-      "commandTotal": 3339,
-      "lastCmd": 1774360559821,
+      "command": 3347,
+      "commandTotal": 3347,
+      "lastCmd": 1774386635449,
       "glimit": 10,
       "pertambangan": 0,
       "lastbossbattle": 0,
@@ -1222,10 +1222,10 @@
       "waifu": "Belum Di Set",
       "husbu": "Belum Di Set",
       "pc": 0,
-      "exp": 532118,
+      "exp": 532662,
       "coin": 0,
       "atm": 0,
-      "limit": 90,
+      "limit": 87,
       "skata": 0,
       "tigame": 999,
       "lastclaim": 0,
@@ -1537,9 +1537,9 @@
       "lastdate": 0,
       "lasttambang": 0,
       "lastngepet": 0,
-      "command": 311,
-      "commandTotal": 311,
-      "lastCmd": 1774376474146,
+      "command": 333,
+      "commandTotal": 333,
+      "lastCmd": 1774384867187,
       "glimit": 10,
       "pertambangan": 0,
       "lastbossbattle": 0,
@@ -4253,7 +4253,7 @@
       "waifu": "Belum Di Set",
       "husbu": "Belum Di Set",
       "pc": 0,
-      "exp": 28,
+      "exp": 46,
       "coin": 0,
       "atm": 0,
       "limit": 100,
@@ -4602,9 +4602,9 @@
       "bibitapel": 0,
       "bibitmangga": 0,
       "bibitjeruk": 0,
-      "command": null,
-      "commandTotal": null,
-      "lastCmd": 1774240941652
+      "command": 1,
+      "commandTotal": 1,
+      "lastCmd": 1774383579467
     },
     "6282293133572@s.whatsapp.net": {
       "exp": 0,
@@ -4732,10 +4732,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 195,
-          "commandTotal": 195,
+          "command": 201,
+          "commandTotal": 201,
           "lastseen": 0,
-          "lastCmd": 1774371533807
+          "lastCmd": 1774379937958
         },
         "628989240628@s.whatsapp.net": {
           "blacklist": false,
@@ -4753,10 +4753,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 2391,
-          "commandTotal": 2391,
+          "command": 2393,
+          "commandTotal": 2393,
           "lastseen": 0,
-          "lastCmd": 1774357217727
+          "lastCmd": 1774386635449
         },
         "120363284305573016@g.us": {
           "blacklist": false,
@@ -4802,12 +4802,12 @@
       "isMuted": false,
       "memberStats": {
         "6282215415550@s.whatsapp.net": {
-          "chatCount": 513,
-          "lastSeen": 1774357186935
+          "chatCount": 516,
+          "lastSeen": 1774386635449
         },
         "6285324023198@s.whatsapp.net": {
-          "chatCount": 66,
-          "lastSeen": 1774371533804
+          "chatCount": 74,
+          "lastSeen": 1774381166908
         },
         "120363284305573016@g.us": {
           "chatCount": 1,
@@ -5212,10 +5212,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 1869,
-          "commandTotal": 1869,
+          "command": 1875,
+          "commandTotal": 1875,
           "lastseen": 0,
-          "lastCmd": 1774356902236
+          "lastCmd": 1774385384824
         },
         "628989240628@s.whatsapp.net": {
           "blacklist": false,
@@ -5234,10 +5234,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 208,
-          "commandTotal": 208,
+          "command": 223,
+          "commandTotal": 223,
           "lastseen": 0,
-          "lastCmd": 1774376474146
+          "lastCmd": 1774384867187
         },
         "6285795438344@s.whatsapp.net": {
           "blacklist": false,
@@ -5289,16 +5289,16 @@
       "mutedUsers": [],
       "memberStats": {
         "6282215415550@s.whatsapp.net": {
-          "chatCount": 1682,
-          "lastSeen": 1774356902230
+          "chatCount": 1689,
+          "lastSeen": 1774385384817
         },
         "249348621369556@lid": {
           "chatCount": 8,
           "lastSeen": 1773973410812
         },
         "6285324023198@s.whatsapp.net": {
-          "chatCount": 242,
-          "lastSeen": 1774376474143
+          "chatCount": 258,
+          "lastSeen": 1774384867183
         },
         "221203734204662@lid": {
           "chatCount": 1,
@@ -6052,7 +6052,9 @@
           "commandTotal": 0,
           "lastseen": 0
         }
-      }
+      },
+      "expired": 0,
+      "nsfw": false
     }
   },
   "stats": {
@@ -6333,10 +6335,10 @@
       "lastSuccess": 0
     },
     "info-dashboard.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1773594268979,
-      "lastSuccess": 1773594268979
+      "total": 5,
+      "success": 5,
+      "last": 1774386635454,
+      "lastSuccess": 1774386635454
     },
     "info-database.js": {
       "total": 15,
@@ -6345,16 +6347,16 @@
       "lastSuccess": 1773744576024
     },
     "info-status.js": {
-      "total": 29,
-      "success": 29,
-      "last": 1774263055693,
-      "lastSuccess": 1774263055693
+      "total": 31,
+      "success": 31,
+      "last": 1774379228320,
+      "lastSuccess": 1774379228320
     },
     "info-server.js": {
-      "total": 21,
-      "success": 21,
-      "last": 1774199767832,
-      "lastSuccess": 1774199767832
+      "total": 22,
+      "success": 22,
+      "last": 1774379236625,
+      "lastSuccess": 1774379236625
     },
     "downloader-aio.js": {
       "total": 3,
@@ -6531,10 +6533,10 @@
       "lastSuccess": 1770997182740
     },
     "owner-exec2.js": {
-      "total": 63,
-      "success": 63,
-      "last": 1774204804549,
-      "lastSuccess": 1774204804549
+      "total": 64,
+      "success": 64,
+      "last": 1774378258117,
+      "lastSuccess": 1774378258117
     },
     "anime-storyanime.js": {
       "total": 2,
@@ -6837,10 +6839,10 @@
       "lastSuccess": 1773460316278
     },
     "internet-fetch.js": {
-      "total": 36,
-      "success": 35,
-      "last": 1774367811938,
-      "lastSuccess": 1774272062034
+      "total": 38,
+      "success": 37,
+      "last": 1774383909678,
+      "lastSuccess": 1774383909678
     },
     "tools-tempmail.js": {
       "total": 5,
@@ -7399,10 +7401,10 @@
       "lastSuccess": 1773172615514
     },
     "ai-mitra.js": {
-      "total": 95,
-      "success": 92,
-      "last": 1774285629936,
-      "lastSuccess": 1774285629936
+      "total": 96,
+      "success": 93,
+      "last": 1774379941425,
+      "lastSuccess": 1774379941425
     },
     "asisten-rekap.js": {
       "total": 19,
@@ -7981,10 +7983,10 @@
       "lastSuccess": 1773586901355
     },
     "info-ping.js": {
-      "total": 85,
-      "success": 85,
-      "last": 1774375084826,
-      "lastSuccess": 1774375084826
+      "total": 87,
+      "success": 87,
+      "last": 1774382903957,
+      "lastSuccess": 1774382903957
     },
     "info-info_bot.js": {
       "total": 3,
@@ -8077,10 +8079,10 @@
       "lastSuccess": 1773749952204
     },
     "trading-ceo.js": {
-      "total": 60,
-      "success": 60,
-      "last": 1774356885142,
-      "lastSuccess": 1774356885142
+      "total": 61,
+      "success": 61,
+      "last": 1774384143176,
+      "lastSuccess": 1774384143176
     },
     "rpg-atm(tarik).js": {
       "total": 2,
@@ -8323,16 +8325,16 @@
       "lastSuccess": 1774243433450
     },
     "trading-indicator.js": {
-      "total": 44,
-      "success": 44,
-      "last": 1774375212005,
-      "lastSuccess": 1774375212005
+      "total": 57,
+      "success": 57,
+      "last": 1774385385084,
+      "lastSuccess": 1774385385084
     },
     "trading-portfolio.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1774317485209,
-      "lastSuccess": 1774317485209
+      "total": 11,
+      "success": 11,
+      "last": 1774385292258,
+      "lastSuccess": 1774385292258
     },
     "trading-trade.js": {
       "total": 28,
@@ -8401,10 +8403,10 @@
       "lastSuccess": 1774364749171
     },
     "owner-github.js": {
-      "total": 24,
-      "success": 24,
-      "last": 1774376474958,
-      "lastSuccess": 1774376474958
+      "total": 25,
+      "success": 25,
+      "last": 1774376516841,
+      "lastSuccess": 1774376516841
     },
     "rpg-hitman.js": {
       "total": 2,
@@ -8417,6 +8419,12 @@
       "success": 6,
       "last": 1774373974292,
       "lastSuccess": 1774373974292
+    },
+    "system-github-sync.js": {
+      "total": 5,
+      "success": 5,
+      "last": 1774386393835,
+      "lastSuccess": 1774386393835
     }
   },
   "msgs": {},
@@ -8509,95 +8517,95 @@
       ]
     },
     "trading": {
-      "lastUpdate": 1774376461268,
+      "lastUpdate": 1774386661113,
       "prices": {
-        "IVL": 70538,
-        "LBT": 626633,
-        "IRC": 3563993,
-        "LTN": 43181585,
-        "RSX": 393518049,
-        "TNX": 4708432848
+        "IVL": 54005,
+        "LBT": 618697,
+        "IRC": 3328778,
+        "LTN": 33599348,
+        "RSX": 520845887,
+        "TNX": 4300004612
       },
       "prevPrices": {
-        "IVL": 71533,
-        "LBT": 654043,
-        "IRC": 3472831,
-        "LTN": 41361336,
-        "RSX": 377880931,
-        "TNX": 4650689562
+        "IVL": 54441,
+        "LBT": 594104,
+        "IRC": 3334522,
+        "LTN": 34520749,
+        "RSX": 541396996,
+        "TNX": 4475072953
       },
       "history": {
         "IVL": [
-          73006,
-          74300,
-          74333,
-          74226,
-          76439,
-          75782,
-          73890,
-          72788,
-          71533,
-          70538
+          56787,
+          56293,
+          57839,
+          56906,
+          55708,
+          55173,
+          53923,
+          55145,
+          54441,
+          54005
         ],
         "LBT": [
-          605630,
-          609496,
-          634563,
-          658450,
-          637112,
-          656620,
-          633162,
-          656655,
-          654043,
-          626633
+          525846,
+          527500,
+          548235,
+          546053,
+          528100,
+          538369,
+          556566,
+          575943,
+          594104,
+          618697
         ],
         "IRC": [
-          3302743,
-          3358671,
-          3194535,
-          3333031,
-          3351924,
-          3427562,
-          3561425,
-          3600874,
-          3472831,
-          3563993
+          3347225,
+          3203181,
+          3208629,
+          3264725,
+          3249642,
+          3299897,
+          3138581,
+          3213075,
+          3334522,
+          3328778
         ],
         "LTN": [
-          38809982,
-          37539681,
-          37877042,
-          37737971,
-          38964347,
-          38979373,
-          37818271,
-          39439376,
-          41361336,
-          43181585
+          33564187,
+          33842666,
+          35218524,
+          34362999,
+          35510533,
+          35424479,
+          36022068,
+          35155881,
+          34520749,
+          33599348
         ],
         "RSX": [
-          392820126,
-          373616084,
-          368482085,
-          383010314,
-          397467884,
-          387867423,
-          369454629,
-          384380675,
-          377880931,
-          393518049
+          539559139,
+          531617589,
+          547132463,
+          527005467,
+          518823760,
+          521871628,
+          518928315,
+          519931904,
+          541396996,
+          520845887
         ],
         "TNX": [
-          4880918423,
-          5097020805,
-          4919447133,
-          4924568598,
-          4747056889,
-          4583193315,
-          4632409086,
-          4661860622,
-          4650689562,
-          4708432848
+          4440895632,
+          4333114526,
+          4234554325,
+          4219146364,
+          4336299992,
+          4197824883,
+          4237549017,
+          4280696178,
+          4475072953,
+          4300004612
         ]
       },
       "ath": {
@@ -8653,7 +8661,7 @@
         "120363406727405732@g.us",
         "120363284305573016@g.us"
       ],
-      "lastMinuteMarker": "2026-03-25 02:21",
+      "lastMinuteMarker": "2026-03-25 05:11",
       "vault": 430562121,
       "taxRates": {
         "IVL": 1.5,
@@ -8664,12 +8672,7 @@
         "TNX": 2
       },
       "taxProposal": null,
-      "eventHistory": [
-        {
-          "title": "VALIDATOR SLASHING",
-          "time": 1774375501165
-        }
-      ],
+      "eventHistory": [],
       "announcerGroup": "120363284305573016@g.us",
       "lastDividendClaim": 1774356902237,
       "lastCanceledEvent": null,
