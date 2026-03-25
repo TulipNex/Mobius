@@ -1,6 +1,7 @@
 /**
  * TULIPNEX GITHUB DATABASE SYNC
  * Fitur: Mengunggah database.json ke repositori GitHub secara otomatis.
+ * Update: Penambahan fitur saklar (On/Off) secara dinamis dengan Persistent State.
  */
 
 const fetch = require('node-fetch');
@@ -12,7 +13,7 @@ const GITHUB_TOKEN = "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";
 const REPO_OWNER = "TulipNex";
 const REPO_NAME = "Dashboard";
 const FILE_PATH = "database.json";
-const SYNC_INTERVAL = 3 * 60 * 1000; // 1 Menit
+const SYNC_INTERVAL = 1 * 60 * 1000; // 3 Menit
 // =================================================
 
 async function syncToGithub() {
@@ -41,7 +42,7 @@ async function syncToGithub() {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            message: `Bot Auto-Sync Database: ${new Date().toLocaleTimeString()}`,
+            message: `Bot Auto-Sync Database: ${new Date().toLocaleTimeString('id-ID', { timeZone: 'Asia/Jakarta' })}`,
             content: encodedContent,
             sha: sha || undefined
         })
@@ -52,20 +53,19 @@ async function syncToGithub() {
     console.log(`[GITHUB-SYNC] Database tersinkronisasi ke ${REPO_OWNER}/${REPO_NAME}`);
 }
 
-let handler = async (m, { isOwner }) => {
-    if (!isOwner) return;
-    await m.reply("🔄 Memulai sinkronisasi database.json ke GitHub...");
-    try {
-        await syncToGithub();
-        m.reply("✅ Selesai.");
-    } catch (e) {
-        m.reply(`❌ Gagal: ${e.message}`);
+function startAutoSync() {
+    // Bersihkan interval lama jika ada untuk mencegah double interval
+    if (global.githubSyncInterval) {
+        clearInterval(global.githubSyncInterval);
     }
-}
-
-// Menjalankan interval otomatis
-if (!global.githubSyncInterval) {
+    
     global.githubSyncInterval = setInterval(async () => {
+        // Pastikan object global db ada
+        let settings = global.db?.data?.settings || {};
+        
+        // Skip/Lewati proses sync jika saklar diatur ke off/false
+        if (!settings.githubSync) return; 
+        
         try {
             await syncToGithub();
         } catch (e) {
@@ -74,7 +74,59 @@ if (!global.githubSyncInterval) {
     }, SYNC_INTERVAL);
 }
 
-handler.help = ['syncgithub'];
+let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
+    if (!isOwner) return;
+
+    // Pastikan object settings ada di database agar tidak terjadi TypeError
+    if (global.db && global.db.data && !global.db.data.settings) {
+        global.db.data.settings = {};
+    }
+
+    let action = args[0] ? args[0].toLowerCase() : '';
+    let settings = global.db.data.settings;
+
+    // Jika pengguna mengetik .syncgithub on
+    if (action === 'on') {
+        if (settings.githubSync) return m.reply("⚠️ Auto-Sync sudah dalam keadaan *AKTIF*.");
+        settings.githubSync = true;
+        startAutoSync(); // Restart timer agar sinkronisasi pas 3 menit dari sekarang
+        return m.reply("✅ *Auto-Sync GitHub telah DIAKTIFKAN.*\nDatabase akan disinkronisasi ke GitHub setiap 3 menit.");
+    } 
+    
+    // Jika pengguna mengetik .syncgithub off
+    if (action === 'off') {
+        if (!settings.githubSync) return m.reply("⚠️ Auto-Sync sudah dalam keadaan *MATI*.");
+        settings.githubSync = false;
+        return m.reply("⛔ *Auto-Sync GitHub telah DIMATIKAN.*");
+    }
+
+    // Jika pengguna mengetik .syncgithub status
+    if (action === 'status') {
+        let status = settings.githubSync ? "🟢 *AKTIF*" : "🔴 *MATI*";
+        let text = `📊 *STATUS GITHUB SYNC*\nStatus Auto-Sync: ${status}\n\n*PANDUAN PENGGUNAAN:*\n`;
+        text += `> *${usedPrefix + command} on* (Menyalakan otomatisasi sync)\n`;
+        text += `> *${usedPrefix + command} off* (Mematikan otomatisasi sync)\n`;
+        text += `> *${usedPrefix + command}* (Memaksa sinkronisasi manual saat ini juga)`;
+        return m.reply(text);
+    }
+
+    // Jika tanpa argumen, jalankan sinkronisasi paksa (Manual Override) sesuai desain UX asli
+    await m.reply("🔄 Memulai sinkronisasi manual `database.json` ke GitHub...");
+    try {
+        await syncToGithub();
+        m.reply("✅ Sinkronisasi manual selesai.");
+    } catch (e) {
+        m.reply(`❌ Gagal sinkronisasi: ${e.message}`);
+    }
+}
+
+// Inisialisasi interval di latar belakang saat plugin diload
+// Timer akan tetap berjalan, tetapi eksekusi API-nya akan dicegah jika setting 'githubSync' bernilai false.
+if (!global.githubSyncInterval) {
+    startAutoSync();
+}
+
+handler.help = ['syncgithub [on/off/status]'];
 handler.tags = ['owner'];
 handler.command = /^(syncgithub)$/i;
 handler.owner = true;
