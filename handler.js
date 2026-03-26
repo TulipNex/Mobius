@@ -21,6 +21,7 @@ module.exports = {
             // console.log(m)
             m.exp = 0
             m.limit = false
+            m.token = false // Inisialisasi token
             try {
                 let user = global.db.data.users[m.sender]
                 if (typeof user !== 'object') global.db.data.users[m.sender] = {}
@@ -63,6 +64,7 @@ module.exports = {
                     if (!isNumber(user.coin)) user.coin = 0
                     if (!isNumber(user.atm)) user.atm = 0
                     if (!isNumber(user.limit)) user.limit = 100
+                    if (!isNumber(user.token)) user.token = 10 // Token modal awal
                     if (!isNumber(user.glimit)) user.glimit = 10
                     if (!isNumber(user.tprem)) user.tprem = 0
                     if (!isNumber(user.tigame)) user.tigame = 5
@@ -477,6 +479,7 @@ module.exports = {
                       coin: 0,
                       atm: 0,
                       limit: 100,
+                      token: 10, // Tambahkan token 
                       skata: 0,
                       tigame: 999,
                       lastclaim: 0,
@@ -1087,18 +1090,33 @@ module.exports = {
                         fail("nsfw", m, this);
                         continue;
                     }
+
                     m.isCommand = true
                     let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
                     if (xp > 200) m.reply('Ngecit -_-') // Hehehe
                     else m.exp += xp
+
+                    // =====================================
+                    // LOGIKA LIMIT
+                    // =====================================
                     if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
                         this.reply(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy* atau beli di *${usedPrefix}shop*`, m)
                         continue // Limit habis
                     }
+
+                    // =====================================
+                    // LOGIKA TOKEN (Sistem Baru)
+                    // =====================================
+                    if (!isOwner && plugin.token && global.db.data.users[m.sender].token < plugin.token * 1) {
+                        fail('token', m, this)
+                        continue // Token habis
+                    }
+
                     if (plugin.level > _user.level) {
                         this.reply(m.chat, `diperlukan level ${plugin.level} untuk menggunakan perintah ini. Level kamu ${_user.level}\m gunakan .levelup untuk menaikan level!`, m)
                         continue // If the level has not been reached
                     }
+
                     let extra = {
                         match,
                         usedPrefix,
@@ -1122,6 +1140,7 @@ module.exports = {
                     try {
                         await plugin.call(this, m, extra)
                         if (!isPrems) m.limit = m.limit || plugin.limit || false
+                        if (!isOwner) m.token = m.token || plugin.token || false // Pengesetan variabel pemotong token
                     } catch (e) {
                         // Error occured
                         m.error = e
@@ -1148,6 +1167,7 @@ module.exports = {
                             }
                         }
                         if (m.limit) m.reply(+ m.limit + ' Limit terpakai')
+                        if (m.token) m.reply(+ m.token + ' Token terpakai') // Info Token terpakai ke user
                    }
                     break
                 }
@@ -1162,6 +1182,7 @@ module.exports = {
                 if (m.sender && (user = global.db.data.users[m.sender])) {
                     user.exp += m.exp
                     user.limit -= m.limit * 1
+                    user.token -= m.token * 1 // Eksekusi pengurangan token
                 }
 
                 let stat
@@ -1287,8 +1308,9 @@ global.dfail = (type, m, conn) => {
         admin: 'Perintah ini hanya untuk *Admin* grup!',
         botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
         unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Mansur.16*',
-        restrict: 'Fitur ini di *disable*!'
-    }[type]
+        restrict: 'Fitur ini di *disable*!',
+        token: 'Token anda habis! Fitur ini memerlukan token khusus.' // Sistem token dimasukkan secara clean tanpa syntax error
+    }[type] // <- Tidak ada penambahan koma disini
     if (msg) return m.reply(msg)
 }
 

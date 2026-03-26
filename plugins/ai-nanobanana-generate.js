@@ -34,6 +34,7 @@ handler.tags = ['ai']
 handler.command = /^(nanobananagen|nanogen|bananagen|nanogenerate)$/i
 
 // Pembatasan fitur proporsional
-handler.limit = true // Memakan limit karena melakukan heavy load api
+handler.limit = true; // Memakan limit karena melakukan heavy load api
+handler.token = 5;
 
 module.exports = handler

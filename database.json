@@ -31,7 +31,7 @@
       "waifu": "Belum Di Set",
       "husbu": "Belum Di Set",
       "pc": 0,
-      "exp": 1862,
+      "exp": 1917,
       "coin": 0,
       "atm": 0,
       "limit": 95,
@@ -380,10 +380,11 @@
       "bibitapel": 0,
       "bibitmangga": 0,
       "bibitjeruk": 0,
-      "command": 59,
-      "commandTotal": 59,
-      "lastCmd": 1774363925169,
-      "tulipnex": 0
+      "command": 61,
+      "commandTotal": 61,
+      "lastCmd": 1774486680207,
+      "tulipnex": 0,
+      "token": 10
     },
     "6282215415550@s.whatsapp.net": {
       "taxi": 0,
@@ -416,7 +417,7 @@
       "waifu": "Belum Di Set",
       "husbu": "Belum Di Set",
       "pc": 0,
-      "exp": 1093284,
+      "exp": 1093815,
       "coin": 0,
       "atm": 0,
       "limit": 76,
@@ -731,9 +732,9 @@
       "lastdate": 0,
       "lasttambang": 0,
       "lastngepet": 0,
-      "command": 3454,
-      "commandTotal": 3454,
-      "lastCmd": 1774430444244,
+      "command": 3476,
+      "commandTotal": 3476,
+      "lastCmd": 1774543385366,
       "glimit": 10,
       "pertambangan": 0,
       "lastbossbattle": 0,
@@ -805,7 +806,8 @@
       ],
       "activeTitle": "🐬 Lumba-Lumba",
       "lilybit": 0,
-      "iriscode": 5
+      "iriscode": 5,
+      "token": 10
     },
     "6285795438344@s.whatsapp.net": {
       "taxi": 0,
@@ -1222,10 +1224,10 @@
       "waifu": "Belum Di Set",
       "husbu": "Belum Di Set",
       "pc": 0,
-      "exp": 537972,
+      "exp": 540187,
       "coin": 0,
       "atm": 0,
-      "limit": 77,
+      "limit": 73,
       "skata": 0,
       "tigame": 999,
       "lastclaim": 0,
@@ -1537,9 +1539,9 @@
       "lastdate": 0,
       "lasttambang": 0,
       "lastngepet": 0,
-      "command": 490,
-      "commandTotal": 490,
-      "lastCmd": 1774455854293,
+      "command": 587,
+      "commandTotal": 587,
+      "lastCmd": 1774540460778,
       "glimit": 10,
       "pertambangan": 0,
       "lastbossbattle": 0,
@@ -1596,7 +1598,9 @@
         "petualang",
         "verified"
       ],
-      "activeTitle": "💰 Miliarder"
+      "activeTitle": "💰 Miliarder",
+      "token": 4,
+      "claudeConvId": "f60ec5e5-0e35-4f0b-b47f-d9fd99d22997"
     },
     "32014921146504@lid": {
       "taxi": 0,
@@ -2010,7 +2014,7 @@
       "waifu": "Belum Di Set",
       "husbu": "Belum Di Set",
       "pc": 0,
-      "exp": 729,
+      "exp": 757,
       "coin": 0,
       "atm": 0,
       "limit": 100,
@@ -2359,9 +2363,10 @@
       "bibitapel": 0,
       "bibitmangga": 0,
       "bibitjeruk": 0,
-      "command": 31,
-      "commandTotal": 31,
-      "lastCmd": 1774396064370
+      "command": 32,
+      "commandTotal": 32,
+      "lastCmd": 1774523440863,
+      "token": 10
     },
     "135188390633710@lid": {
       "taxi": 0,
@@ -4271,7 +4276,7 @@
       "waifu": "Belum Di Set",
       "husbu": "Belum Di Set",
       "pc": 0,
-      "exp": 94,
+      "exp": 96,
       "coin": 0,
       "atm": 0,
       "limit": 100,
@@ -4622,7 +4627,8 @@
       "bibitjeruk": 0,
       "command": 3,
       "commandTotal": 3,
-      "lastCmd": 1774458451281
+      "lastCmd": 1774458451281,
+      "token": 10
     },
     "6282293133572@s.whatsapp.net": {
       "exp": 0,
@@ -4642,58 +4648,6 @@
     }
   },
   "chats": {
-    "628989240628@s.whatsapp.net": {
-      "isBanned": false,
-      "welcome": true,
-      "welcometype": 1,
-      "detect": false,
-      "isBannedTime": false,
-      "mute": false,
-      "listStr": {},
-      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
-      "sBye": "Selamat tinggal @user!",
-      "sPromote": "",
-      "sDemote": "",
-      "delete": false,
-      "antiLink": false,
-      "antiLinknokick": false,
-      "antiSticker": false,
-      "antiStickernokick": false,
-      "viewonce": false,
-      "antiToxic": true,
-      "antilinkig": false,
-      "antilinkignokick": false,
-      "antilinkyt": false,
-      "antilinkytnokick": false,
-      "antilinktwit": false,
-      "antilinktwitnokick": false,
-      "antilinkfb": false,
-      "antilinkfbnokick": false,
-      "antilinkall": false,
-      "antilinkallnokick": false,
-      "antilinkwame": false,
-      "antilinkwamenokick": false,
-      "antilinktele": false,
-      "antilinktelenokick": false,
-      "antilinktt": false,
-      "antilinkttnokick": false,
-      "antibot": false,
-      "rpg": false,
-      "memgc": {
-        "628989240628@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        }
-      },
-      "expired": 0,
-      "nsfw": false
-    },
     "120363284305573016@g.us": {
       "isBanned": false,
       "welcome": true,
@@ -4750,10 +4704,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 262,
-          "commandTotal": 262,
+          "command": 289,
+          "commandTotal": 289,
           "lastseen": 0,
-          "lastCmd": 1774454317479
+          "lastCmd": 1774540460778
         },
         "628989240628@s.whatsapp.net": {
           "blacklist": false,
@@ -4821,24 +4775,34 @@
       "isMuted": false,
       "memberStats": {
         "6282215415550@s.whatsapp.net": {
-          "chatCount": 560,
-          "lastSeen": 1774430400695
+          "chatCount": 562,
+          "lastSeen": 1774539687814
         },
         "6285324023198@s.whatsapp.net": {
-          "chatCount": 147,
-          "lastSeen": 1774454317479
+          "chatCount": 166,
+          "lastSeen": 1774532658380
         },
         "120363284305573016@g.us": {
           "chatCount": 3,
           "lastSeen": 1774443934845
         },
         "221203734204662@lid": {
-          "chatCount": 1,
-          "lastSeen": 1774436099098
+          "chatCount": 2,
+          "lastSeen": 1774528433454
         }
       },
       "mutedUsers": [],
-      "tradingNews": true
+      "tradingNews": true,
+      "radio": {
+        "isPlaying": false,
+        "queue": [],
+        "currentTrack": {
+          "title": "Mutt",
+          "url": "...",
+          "duration": "03:45"
+        },
+        "lastBroadcast": 0
+      }
     },
     "status@broadcast": {
       "isBanned": false,
@@ -4890,131 +4854,6 @@
         }
       },
       "expired": 0
-    },
-    "6282215415550@s.whatsapp.net": {
-      "isBanned": false,
-      "welcome": true,
-      "welcometype": 1,
-      "detect": false,
-      "isBannedTime": false,
-      "mute": false,
-      "listStr": {},
-      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
-      "sBye": "Selamat tinggal @user!",
-      "sPromote": "",
-      "sDemote": "",
-      "delete": false,
-      "antiLink": false,
-      "antiLinknokick": false,
-      "antiSticker": false,
-      "antiStickernokick": false,
-      "viewonce": false,
-      "antiToxic": true,
-      "antilinkig": false,
-      "antilinkignokick": false,
-      "antilinkyt": false,
-      "antilinkytnokick": false,
-      "antilinktwit": false,
-      "antilinktwitnokick": false,
-      "antilinkfb": false,
-      "antilinkfbnokick": false,
-      "antilinkall": false,
-      "antilinkallnokick": false,
-      "antilinkwame": false,
-      "antilinkwamenokick": false,
-      "antilinktele": false,
-      "antilinktelenokick": false,
-      "antilinktt": false,
-      "antilinkttnokick": false,
-      "antibot": false,
-      "rpg": true,
-      "memgc": {
-        "628989240628@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        },
-        "6282215415550@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        }
-      },
-      "expired": 0,
-      "nsfw": false,
-      "isMuted": false
-    },
-    "249348621369556@lid": {
-      "isBanned": false,
-      "welcome": true,
-      "welcometype": 1,
-      "detect": false,
-      "isBannedTime": false,
-      "mute": false,
-      "listStr": {},
-      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
-      "sBye": "Selamat tinggal @user!",
-      "sPromote": "",
-      "sDemote": "",
-      "delete": false,
-      "antiLink": false,
-      "antiLinknokick": false,
-      "antiSticker": false,
-      "antiStickernokick": false,
-      "viewonce": false,
-      "antiToxic": true,
-      "antilinkig": false,
-      "antilinkignokick": false,
-      "antilinkyt": false,
-      "antilinkytnokick": false,
-      "antilinktwit": false,
-      "antilinktwitnokick": false,
-      "antilinkfb": false,
-      "antilinkfbnokick": false,
-      "antilinkall": false,
-      "antilinkallnokick": false,
-      "antilinkwame": false,
-      "antilinkwamenokick": false,
-      "antilinktele": false,
-      "antilinktelenokick": false,
-      "antilinktt": false,
-      "antilinkttnokick": false,
-      "antibot": false,
-      "rpg": false,
-      "memgc": {
-        "249348621369556@lid": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        },
-        "628989240628@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        }
-      },
-      "expired": 0,
-      "nsfw": false
     },
     "120363208757055493@g.us": {
       "isBanned": false,
@@ -5117,69 +4956,6 @@
         }
       }
     },
-    "6285324023198@s.whatsapp.net": {
-      "isBanned": false,
-      "welcome": true,
-      "welcometype": 1,
-      "detect": false,
-      "isBannedTime": false,
-      "mute": false,
-      "listStr": {},
-      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
-      "sBye": "Selamat tinggal @user!",
-      "sPromote": "",
-      "sDemote": "",
-      "delete": false,
-      "antiLink": false,
-      "antiLinknokick": false,
-      "antiSticker": false,
-      "antiStickernokick": false,
-      "viewonce": false,
-      "antiToxic": true,
-      "antilinkig": false,
-      "antilinkignokick": false,
-      "antilinkyt": false,
-      "antilinkytnokick": false,
-      "antilinktwit": false,
-      "antilinktwitnokick": false,
-      "antilinkfb": false,
-      "antilinkfbnokick": false,
-      "antilinkall": false,
-      "antilinkallnokick": false,
-      "antilinkwame": false,
-      "antilinkwamenokick": false,
-      "antilinktele": false,
-      "antilinktelenokick": false,
-      "antilinktt": false,
-      "antilinkttnokick": false,
-      "antibot": false,
-      "rpg": false,
-      "memgc": {
-        "628989240628@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        },
-        "6285324023198@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        }
-      },
-      "expired": 0,
-      "stiker": false,
-      "nsfw": false
-    },
     "120363406727405732@g.us": {
       "isBanned": false,
       "welcome": true,
@@ -5235,10 +5011,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 1938,
-          "commandTotal": 1938,
+          "command": 1943,
+          "commandTotal": 1943,
           "lastseen": 0,
-          "lastCmd": 1774430444244
+          "lastCmd": 1774543385366
         },
         "628989240628@s.whatsapp.net": {
           "blacklist": false,
@@ -5257,10 +5033,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 318,
-          "commandTotal": 318,
+          "command": 380,
+          "commandTotal": 380,
           "lastseen": 0,
-          "lastCmd": 1774449340825
+          "lastCmd": 1774527866568
         },
         "6285795438344@s.whatsapp.net": {
           "blacklist": false,
@@ -5312,16 +5088,16 @@
       "mutedUsers": [],
       "memberStats": {
         "6282215415550@s.whatsapp.net": {
-          "chatCount": 1761,
-          "lastSeen": 1774430444244
+          "chatCount": 1766,
+          "lastSeen": 1774543355621
         },
         "249348621369556@lid": {
           "chatCount": 8,
           "lastSeen": 1773973410812
         },
         "6285324023198@s.whatsapp.net": {
-          "chatCount": 333,
-          "lastSeen": 1774449340822
+          "chatCount": 393,
+          "lastSeen": 1774532267360
         },
         "221203734204662@lid": {
           "chatCount": 1,
@@ -5515,192 +5291,6 @@
       },
       "expired": 0
     },
-    "6282293133572@s.whatsapp.net": {
-      "isBanned": false,
-      "welcome": true,
-      "welcometype": 1,
-      "detect": false,
-      "isBannedTime": false,
-      "mute": false,
-      "listStr": {},
-      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
-      "sBye": "Selamat tinggal @user!",
-      "sPromote": "",
-      "sDemote": "",
-      "delete": false,
-      "antiLink": false,
-      "antiLinknokick": false,
-      "antiSticker": false,
-      "antiStickernokick": false,
-      "viewonce": false,
-      "antiToxic": true,
-      "antilinkig": false,
-      "antilinkignokick": false,
-      "antilinkyt": false,
-      "antilinkytnokick": false,
-      "antilinktwit": false,
-      "antilinktwitnokick": false,
-      "antilinkfb": false,
-      "antilinkfbnokick": false,
-      "antilinkall": false,
-      "antilinkallnokick": false,
-      "antilinkwame": false,
-      "antilinkwamenokick": false,
-      "antilinktele": false,
-      "antilinktelenokick": false,
-      "antilinktt": false,
-      "antilinkttnokick": false,
-      "antibot": false,
-      "rpg": false,
-      "memgc": {
-        "628989240628@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        },
-        "6282293133572@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        }
-      },
-      "expired": 0,
-      "nsfw": false
-    },
-    "152677631676534@lid": {
-      "isBanned": false,
-      "welcome": true,
-      "welcometype": 1,
-      "detect": false,
-      "isBannedTime": false,
-      "mute": false,
-      "listStr": {},
-      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
-      "sBye": "Selamat tinggal @user!",
-      "sPromote": "",
-      "sDemote": "",
-      "delete": false,
-      "antiLink": false,
-      "antiLinknokick": false,
-      "antiSticker": false,
-      "antiStickernokick": false,
-      "viewonce": false,
-      "antiToxic": true,
-      "antilinkig": false,
-      "antilinkignokick": false,
-      "antilinkyt": false,
-      "antilinkytnokick": false,
-      "antilinktwit": false,
-      "antilinktwitnokick": false,
-      "antilinkfb": false,
-      "antilinkfbnokick": false,
-      "antilinkall": false,
-      "antilinkallnokick": false,
-      "antilinkwame": false,
-      "antilinkwamenokick": false,
-      "antilinktele": false,
-      "antilinktelenokick": false,
-      "antilinktt": false,
-      "antilinkttnokick": false,
-      "antibot": false,
-      "rpg": false,
-      "memgc": {
-        "628989240628@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        },
-        "152677631676534@lid": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        }
-      },
-      "expired": 0,
-      "nsfw": false
-    },
-    "628999800123@s.whatsapp.net": {
-      "isBanned": false,
-      "welcome": true,
-      "welcometype": 1,
-      "detect": false,
-      "isBannedTime": false,
-      "mute": false,
-      "listStr": {},
-      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
-      "sBye": "Selamat tinggal @user!",
-      "sPromote": "",
-      "sDemote": "",
-      "delete": false,
-      "antiLink": false,
-      "antiLinknokick": false,
-      "antiSticker": false,
-      "antiStickernokick": false,
-      "viewonce": false,
-      "antiToxic": true,
-      "antilinkig": false,
-      "antilinkignokick": false,
-      "antilinkyt": false,
-      "antilinkytnokick": false,
-      "antilinktwit": false,
-      "antilinktwitnokick": false,
-      "antilinkfb": false,
-      "antilinkfbnokick": false,
-      "antilinkall": false,
-      "antilinkallnokick": false,
-      "antilinkwame": false,
-      "antilinkwamenokick": false,
-      "antilinktele": false,
-      "antilinktelenokick": false,
-      "antilinktt": false,
-      "antilinkttnokick": false,
-      "antibot": false,
-      "rpg": false,
-      "memgc": {
-        "628999800123@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        },
-        "628989240628@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        }
-      },
-      "expired": 0,
-      "nsfw": false
-    },
     "120363229713520515@g.us": {
       "isBanned": false,
       "welcome": true,
@@ -5760,68 +5350,6 @@
           "lastseen": 0
         },
         "6282215415550@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        }
-      },
-      "expired": 0,
-      "nsfw": false
-    },
-    "135188390633710@lid": {
-      "isBanned": false,
-      "welcome": true,
-      "welcometype": 1,
-      "detect": false,
-      "isBannedTime": false,
-      "mute": false,
-      "listStr": {},
-      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
-      "sBye": "Selamat tinggal @user!",
-      "sPromote": "",
-      "sDemote": "",
-      "delete": false,
-      "antiLink": false,
-      "antiLinknokick": false,
-      "antiSticker": false,
-      "antiStickernokick": false,
-      "viewonce": false,
-      "antiToxic": false,
-      "antilinkig": false,
-      "antilinkignokick": false,
-      "antilinkyt": false,
-      "antilinkytnokick": false,
-      "antilinktwit": false,
-      "antilinktwitnokick": false,
-      "antilinkfb": false,
-      "antilinkfbnokick": false,
-      "antilinkall": false,
-      "antilinkallnokick": false,
-      "antilinkwame": false,
-      "antilinkwamenokick": false,
-      "antilinktele": false,
-      "antilinktelenokick": false,
-      "antilinktt": false,
-      "antilinkttnokick": false,
-      "antibot": false,
-      "rpg": false,
-      "memgc": {
-        "135188390633710@lid": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
-        },
-        "628989240628@s.whatsapp.net": {
           "blacklist": false,
           "banned": false,
           "bannedTime": 0,
@@ -6027,7 +5555,7 @@
         }
       }
     },
-    "221203734204662@lid": {
+    "6285324023198@s.whatsapp.net": {
       "isBanned": false,
       "welcome": true,
       "welcometype": 1,
@@ -6065,7 +5593,131 @@
       "antibot": false,
       "rpg": false,
       "memgc": {
-        "221203734204662@lid": {
+        "6285324023198@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        },
+        "628989240628@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        }
+      },
+      "expired": 0,
+      "nsfw": false
+    },
+    "6282215415550@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": true,
+      "welcometype": 1,
+      "detect": false,
+      "isBannedTime": false,
+      "mute": false,
+      "listStr": {},
+      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
+      "sBye": "Selamat tinggal @user!",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": false,
+      "antiLink": false,
+      "antiLinknokick": false,
+      "antiSticker": false,
+      "antiStickernokick": false,
+      "viewonce": false,
+      "antiToxic": false,
+      "antilinkig": false,
+      "antilinkignokick": false,
+      "antilinkyt": false,
+      "antilinkytnokick": false,
+      "antilinktwit": false,
+      "antilinktwitnokick": false,
+      "antilinkfb": false,
+      "antilinkfbnokick": false,
+      "antilinkall": false,
+      "antilinkallnokick": false,
+      "antilinkwame": false,
+      "antilinkwamenokick": false,
+      "antilinktele": false,
+      "antilinktelenokick": false,
+      "antilinktt": false,
+      "antilinkttnokick": false,
+      "antibot": false,
+      "rpg": false,
+      "memgc": {
+        "628989240628@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        },
+        "6282215415550@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        }
+      },
+      "expired": 0,
+      "nsfw": false
+    },
+    "249348621369556@lid": {
+      "isBanned": false,
+      "welcome": true,
+      "welcometype": 1,
+      "detect": false,
+      "isBannedTime": false,
+      "mute": false,
+      "listStr": {},
+      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
+      "sBye": "Selamat tinggal @user!",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": false,
+      "antiLink": false,
+      "antiLinknokick": false,
+      "antiSticker": false,
+      "antiStickernokick": false,
+      "viewonce": false,
+      "antiToxic": false,
+      "antilinkig": false,
+      "antilinkignokick": false,
+      "antilinkyt": false,
+      "antilinkytnokick": false,
+      "antilinktwit": false,
+      "antilinktwitnokick": false,
+      "antilinkfb": false,
+      "antilinkfbnokick": false,
+      "antilinkall": false,
+      "antilinkallnokick": false,
+      "antilinkwame": false,
+      "antilinkwamenokick": false,
+      "antilinktele": false,
+      "antilinktelenokick": false,
+      "antilinktt": false,
+      "antilinkttnokick": false,
+      "antibot": false,
+      "rpg": false,
+      "memgc": {
+        "249348621369556@lid": {
           "blacklist": false,
           "banned": false,
           "bannedTime": 0,
@@ -6088,10 +5740,10 @@
       "lastSuccess": 1773593201474
     },
     "sticker-sticker.js": {
-      "total": 183,
-      "success": 182,
-      "last": 1774398927382,
-      "lastSuccess": 1774398927382
+      "total": 185,
+      "success": 184,
+      "last": 1774542096502,
+      "lastSuccess": 1774542096502
     },
     "downloader-pindl.js": {
       "total": 32,
@@ -6106,10 +5758,10 @@
       "lastSuccess": 1773390860359
     },
     "menu.js": {
-      "total": 530,
-      "success": 530,
-      "last": 1774455855173,
-      "lastSuccess": 1774455855173
+      "total": 533,
+      "success": 533,
+      "last": 1774518777340,
+      "lastSuccess": 1774518777340
     },
     "_AI-agedetect.js": {
       "total": 7,
@@ -6130,10 +5782,10 @@
       "lastSuccess": 1774253523190
     },
     "rpg-tf.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1774375254760,
-      "lastSuccess": 1774375254760
+      "total": 4,
+      "success": 4,
+      "last": 1774487120497,
+      "lastSuccess": 1774487120497
     },
     "group-tagme.js": {
       "total": 10,
@@ -6208,10 +5860,10 @@
       "lastSuccess": 1771956936169
     },
     "owner-clearsessions.js": {
-      "total": 32,
-      "success": 32,
-      "last": 1774443584693,
-      "lastSuccess": 1774443584693
+      "total": 36,
+      "success": 36,
+      "last": 1774523542737,
+      "lastSuccess": 1774523542737
     },
     "fun-taugasi.js": {
       "total": 4,
@@ -6286,10 +5938,10 @@
       "lastSuccess": 1770955490666
     },
     "owner-cleartmp.js": {
-      "total": 28,
-      "success": 28,
-      "last": 1774443577139,
-      "lastSuccess": 1774443577139
+      "total": 29,
+      "success": 29,
+      "last": 1774491062389,
+      "lastSuccess": 1774491062389
     },
     "owner-self.js": {
       "total": 12,
@@ -6328,10 +5980,10 @@
       "lastSuccess": 1774194023267
     },
     "stalker-igstalk.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1770957232232,
-      "lastSuccess": 1770957232232
+      "total": 6,
+      "success": 5,
+      "last": 1774519685304,
+      "lastSuccess": 1774519685304
     },
     "_AI-openai.js": {
       "total": 8,
@@ -6358,16 +6010,16 @@
       "lastSuccess": 0
     },
     "info-dashboard.js": {
-      "total": 56,
-      "success": 54,
-      "last": 1774454318861,
-      "lastSuccess": 1774454318861
+      "total": 61,
+      "success": 59,
+      "last": 1774543357076,
+      "lastSuccess": 1774543357076
     },
     "info-database.js": {
-      "total": 16,
-      "success": 16,
-      "last": 1774408861333,
-      "lastSuccess": 1774408861333
+      "total": 17,
+      "success": 17,
+      "last": 1774488402795,
+      "lastSuccess": 1774488402795
     },
     "info-status.js": {
       "total": 33,
@@ -6556,10 +6208,10 @@
       "lastSuccess": 1770997182740
     },
     "owner-exec2.js": {
-      "total": 64,
-      "success": 64,
-      "last": 1774378258117,
-      "lastSuccess": 1774378258117
+      "total": 66,
+      "success": 66,
+      "last": 1774489158599,
+      "lastSuccess": 1774489158599
     },
     "anime-storyanime.js": {
       "total": 2,
@@ -6640,10 +6292,10 @@
       "lastSuccess": 0
     },
     "group-listgroup.js": {
-      "total": 59,
-      "success": 59,
-      "last": 1773976873421,
-      "lastSuccess": 1773976873421
+      "total": 60,
+      "success": 60,
+      "last": 1774488004472,
+      "lastSuccess": 1774488004472
     },
     "download-freya_jkt.js": {
       "total": 20,
@@ -6862,10 +6514,10 @@
       "lastSuccess": 1774446910932
     },
     "internet-fetch.js": {
-      "total": 39,
-      "success": 38,
-      "last": 1774441906196,
-      "lastSuccess": 1774441906196
+      "total": 40,
+      "success": 39,
+      "last": 1774498999112,
+      "lastSuccess": 1774498999112
     },
     "tools-tempmail.js": {
       "total": 5,
@@ -6910,9 +6562,9 @@
       "lastSuccess": 1771413448426
     },
     "owner-sfp-df.js": {
-      "total": 11,
+      "total": 12,
       "success": 5,
-      "last": 1774439314512,
+      "last": 1774491202936,
       "lastSuccess": 1774439314512
     },
     "payment.js": {
@@ -7036,10 +6688,10 @@
       "lastSuccess": 1771836559538
     },
     "owner-exec.js": {
-      "total": 48,
-      "success": 48,
-      "last": 1774449099147,
-      "lastSuccess": 1774449099147
+      "total": 49,
+      "success": 49,
+      "last": 1774488459131,
+      "lastSuccess": 1774488459131
     },
     "group-linkgc.js": {
       "total": 11,
@@ -7330,16 +6982,16 @@
       "lastSuccess": 1774092797294
     },
     "owner-delplugin.js": {
-      "total": 15,
-      "success": 15,
-      "last": 1774416588889,
-      "lastSuccess": 1774416588889
+      "total": 17,
+      "success": 17,
+      "last": 1774491227737,
+      "lastSuccess": 1774491227737
     },
     "owner-addplugin.js": {
-      "total": 40,
-      "success": 40,
-      "last": 1774445585520,
-      "lastSuccess": 1774445585520
+      "total": 43,
+      "success": 43,
+      "last": 1774491155747,
+      "lastSuccess": 1774491155747
     },
     "tools-iqc.js": {
       "total": 3,
@@ -7664,10 +7316,10 @@
       "lastSuccess": 1774091952550
     },
     "info-boost.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1773679285624,
-      "lastSuccess": 1773679285624
+      "total": 7,
+      "success": 7,
+      "last": 1774491378612,
+      "lastSuccess": 1774491378612
     },
     "group-startgiveaway.js": {
       "total": 2,
@@ -7712,10 +7364,10 @@
       "lastSuccess": 1773779943380
     },
     "owner-findplugin.js": {
-      "total": 78,
-      "success": 78,
-      "last": 1774442755375,
-      "lastSuccess": 1774442755375
+      "total": 79,
+      "success": 79,
+      "last": 1774487957777,
+      "lastSuccess": 1774487957777
     },
     "internet-cuaca.js": {
       "total": 14,
@@ -7910,10 +7562,10 @@
       "lastSuccess": 1773547666960
     },
     "owner-sf.js": {
-      "total": 34,
-      "success": 29,
-      "last": 1774441967733,
-      "lastSuccess": 1774441967733
+      "total": 35,
+      "success": 30,
+      "last": 1774509690438,
+      "lastSuccess": 1774509690438
     },
     "owner-getfile.js": {
       "total": 18,
@@ -8006,10 +7658,10 @@
       "lastSuccess": 1773586901355
     },
     "info-ping.js": {
-      "total": 95,
-      "success": 95,
-      "last": 1774454251232,
-      "lastSuccess": 1774454251232
+      "total": 106,
+      "success": 106,
+      "last": 1774528439775,
+      "lastSuccess": 1774528439775
     },
     "info-info_bot.js": {
       "total": 3,
@@ -8108,10 +7760,10 @@
       "lastSuccess": 1774384143176
     },
     "rpg-atm(tarik).js": {
-      "total": 2,
-      "success": 2,
-      "last": 1773697609212,
-      "lastSuccess": 1773697609212
+      "total": 3,
+      "success": 3,
+      "last": 1774486857958,
+      "lastSuccess": 1774486857958
     },
     "owner-delowner.js": {
       "total": 2,
@@ -8168,10 +7820,10 @@
       "lastSuccess": 1773725718394
     },
     "trading-cekevent.js": {
-      "total": 30,
-      "success": 30,
-      "last": 1774270593495,
-      "lastSuccess": 1774270593495
+      "total": 31,
+      "success": 31,
+      "last": 1774484566875,
+      "lastSuccess": 1774484566875
     },
     "rpg-restauran.js": {
       "total": 3,
@@ -8180,10 +7832,10 @@
       "lastSuccess": 1773735238445
     },
     "tools-wink.js": {
-      "total": 8,
-      "success": 8,
-      "last": 1774203660181,
-      "lastSuccess": 1774203660181
+      "total": 9,
+      "success": 9,
+      "last": 1774518805322,
+      "lastSuccess": 1774518805322
     },
     "downloader-viu.js": {
       "total": 8,
@@ -8258,10 +7910,10 @@
       "lastSuccess": 0
     },
     "ai-nanobanana-generate.js": {
-      "total": 6,
-      "success": 6,
-      "last": 1774366716169,
-      "lastSuccess": 1774366716169
+      "total": 7,
+      "success": 7,
+      "last": 1774487481086,
+      "lastSuccess": 1774487481086
     },
     "downloader-tiktoksearch.js": {
       "total": 2,
@@ -8306,16 +7958,16 @@
       "lastSuccess": 1774194947845
     },
     "ai-claude.js": {
-      "total": 6,
-      "success": 6,
-      "last": 1774197996557,
-      "lastSuccess": 1774197996557
+      "total": 39,
+      "success": 39,
+      "last": 1774540487878,
+      "lastSuccess": 1774540487878
     },
     "ai-nanobanana-edit.js": {
-      "total": 20,
-      "success": 20,
-      "last": 1774440853128,
-      "lastSuccess": 1774440853128
+      "total": 28,
+      "success": 28,
+      "last": 1774520636418,
+      "lastSuccess": 1774520636418
     },
     "melon.js": {
       "total": 2,
@@ -8348,10 +8000,10 @@
       "lastSuccess": 1774243433450
     },
     "trading-indicator.js": {
-      "total": 62,
-      "success": 62,
-      "last": 1774435552293,
-      "lastSuccess": 1774435552293
+      "total": 65,
+      "success": 65,
+      "last": 1774543347978,
+      "lastSuccess": 1774543347978
     },
     "trading-portfolio.js": {
       "total": 13,
@@ -8426,10 +8078,10 @@
       "lastSuccess": 1774364749171
     },
     "owner-github.js": {
-      "total": 33,
-      "success": 33,
-      "last": 1774458452515,
-      "lastSuccess": 1774458452515
+      "total": 35,
+      "success": 35,
+      "last": 1774458611581,
+      "lastSuccess": 1774458611581
     },
     "rpg-hitman.js": {
       "total": 2,
@@ -8468,16 +8120,64 @@
       "lastSuccess": 1774438018973
     },
     "dashboard-infobot.js": {
-      "total": 21,
-      "success": 21,
-      "last": 1774454273902,
-      "lastSuccess": 1774454273902
+      "total": 22,
+      "success": 22,
+      "last": 1774543398658,
+      "lastSuccess": 1774543398658
     },
     "game-ulartangga.js": {
       "total": 2,
       "success": 2,
       "last": 1774448264249,
       "lastSuccess": 1774448264249
+    },
+    "rpg-atm(nabung).js": {
+      "total": 2,
+      "success": 2,
+      "last": 1774486852210,
+      "lastSuccess": 1774486852210
+    },
+    "xp-token.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1774487266212,
+      "lastSuccess": 1774487266212
+    },
+    "owner-diagnostic.js": {
+      "total": 11,
+      "success": 9,
+      "last": 1774489164730,
+      "lastSuccess": 1774489164730
+    },
+    "radio.js": {
+      "total": 4,
+      "success": 4,
+      "last": 1774490606965,
+      "lastSuccess": 1774490606965
+    },
+    "albumart.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1774490858259,
+      "lastSuccess": 1774490858259
+    },
+    "tools-hidepesan.js": {
+      "total": 6,
+      "success": 6,
+      "last": 1774491042447,
+      "lastSuccess": 1774491042447
+    },
+    "tools-deepvoice.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1774491190418,
+      "lastSuccess": 1774491190418
+    },
+    "rescue.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1774522428999,
+      "lastSuccess": 1774522428999
     }
   },
   "msgs": {},
@@ -8570,103 +8270,103 @@
       ]
     },
     "trading": {
-      "lastUpdate": 1774458544467,
+      "lastUpdate": 1774543441398,
       "prices": {
-        "IVL": 39188,
-        "LBT": 367000,
-        "IRC": 3451993,
-        "LTN": 45585326,
-        "RSX": 668181209,
-        "TNX": 3618325010
+        "IVL": 45664,
+        "LBT": 380508,
+        "IRC": 6925908,
+        "LTN": 60659219,
+        "RSX": 661198067,
+        "TNX": 5243560573
       },
       "prevPrices": {
-        "IVL": 38264,
-        "LBT": 375735,
-        "IRC": 3291236,
-        "LTN": 47434872,
-        "RSX": 636818731,
-        "TNX": 3624684570
+        "IVL": 45801,
+        "LBT": 380277,
+        "IRC": 6908389,
+        "LTN": 61168245,
+        "RSX": 679191519,
+        "TNX": 5039174165
       },
       "history": {
         "IVL": [
-          41388,
-          41763,
-          40773,
-          40393,
-          39713,
-          39672,
-          38580,
-          37787,
-          38264,
-          39188
+          45973,
+          44958,
+          44981,
+          45025,
+          46279,
+          45902,
+          45727,
+          46277,
+          45801,
+          45664
         ],
         "LBT": [
-          356754,
-          355226,
-          366299,
-          370724,
-          375437,
-          361135,
-          370536,
-          381994,
-          375735,
-          367000
+          358249,
+          363178,
+          363566,
+          375303,
+          378613,
+          384320,
+          373335,
+          370687,
+          380277,
+          380508
         ],
         "IRC": [
-          3559124,
-          3664676,
-          3730920,
-          3713086,
-          3671946,
-          3538683,
-          3375850,
-          3298666,
-          3291236,
-          3451993
+          7281055,
+          7638554,
+          7441541,
+          7510919,
+          7634607,
+          7401038,
+          7031259,
+          6740645,
+          6908389,
+          6925908
         ],
         "LTN": [
-          51181617,
-          53617267,
-          51182799,
-          50903628,
-          49097786,
-          47523948,
-          49690768,
-          49462802,
-          47434872,
-          45585326
+          61240035,
+          60814211,
+          59054005,
+          61537491,
+          62040926,
+          62620685,
+          61098081,
+          60185156,
+          61168245,
+          60659219
         ],
         "RSX": [
-          701103440,
-          680491844,
-          665119527,
-          652743598,
-          651499011,
-          673366358,
-          664634738,
-          652702735,
-          636818731,
-          668181209
+          697819283,
+          706359153,
+          678113728,
+          699041143,
+          679273766,
+          681138156,
+          681493830,
+          663483596,
+          679191519,
+          661198067
         ],
         "TNX": [
-          3387134104,
-          3409781524,
-          3343808274,
-          3352604803,
-          3270585587,
-          3395867584,
-          3512852885,
-          3590660529,
-          3624684570,
-          3618325010
+          5714787892,
+          5732883651,
+          5479630516,
+          5451209904,
+          5383684517,
+          5239421346,
+          5103383254,
+          5076136970,
+          5039174165,
+          5243560573
         ]
       },
       "ath": {
         "IVL": 77353,
         "LBT": 804083,
-        "IRC": 8004291,
+        "IRC": 8177596,
         "LTN": 80353115,
-        "RSX": 811715330,
+        "RSX": 814918411,
         "TNX": 8041061391
       },
       "momentum": {
@@ -8714,7 +8414,7 @@
         "120363406727405732@g.us",
         "120363284305573016@g.us"
       ],
-      "lastMinuteMarker": "2026-03-26 01:09",
+      "lastMinuteMarker": "2026-03-27 00:44",
       "vault": 623603386,
       "taxRates": {
         "IVL": 1.5,
@@ -8725,7 +8425,16 @@
         "TNX": 2
       },
       "taxProposal": null,
-      "eventHistory": [],
+      "eventHistory": [
+        {
+          "title": "FORK RUMOR",
+          "time": 1774540861106
+        },
+        {
+          "title": "FED RATE CUT",
+          "time": 1774542241237
+        }
+      ],
       "announcerGroup": "120363284305573016@g.us",
       "lastDividendClaim": 1774356902237,
       "lastCanceledEvent": null,

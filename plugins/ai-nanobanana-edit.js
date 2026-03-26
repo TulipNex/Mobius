@@ -51,8 +51,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
             image: resultBuffer,
             caption: `🍌 *ɴᴀɴᴏ ʙᴀɴᴀɴᴀ ᴘʀᴏ*\n\n` +
                 `╭┈┈⬡「 📋 *ᴅᴇᴛᴀɪʟ* 」\n` +
-                `┃ 📝 ᴘʀᴏᴍᴘᴛ: \`${text}\`\n` +
-                `┃ 🤖 ᴍᴏᴅᴇʟ: \`nano-banana\`\n` +
+                `┃ 📝 ᴘʀᴏᴍᴘᴛ:\n> ${text}\n` +
+                `┃ 🤖 ᴍᴏᴅᴇʟ: Nano Banana\n` +
                 `╰┈┈⬡`
         }, { quoted: m })
 
@@ -66,6 +66,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.help = ['nanoedit <prompt>']
 handler.tags = ['ai']
 handler.command = /^(nanobananaedit|nanoedit|bananaedit)$/i
-handler.limit = true 
+handler.limit = true;
+handler.token = 5;
 
 module.exports = handler

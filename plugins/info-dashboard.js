@@ -230,6 +230,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
 handler.help = ['dashboard', 'dbd [@user]'];
 handler.tags = ['info'];
 handler.command = /^(dashboard|dbd)$/i;
+handler.token = 5;
 
 module.exports = handler;
 
