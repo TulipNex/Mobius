@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-global.owner = ["6282215415550", "6285324023198"]; // wajib di isi tidak boleh kosong
+global.owner = ["6282215415550"]; // wajib di isi tidak boleh kosong
 global.mods = ["6282215415550"]; // wajib di isi tidak boleh kosong
 global.prems = ["6282215415550"]; // wajib di isi tidak boleh kosong
 global.nameowner = "Mitraaa"; // wajib di isi tidak boleh kosong

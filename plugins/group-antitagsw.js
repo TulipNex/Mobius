@@ -1,71 +1,97 @@
-let handler = async (m, { conn, args, isAdmin, isOwner }) => {
-    if (!m.isGroup) return m.reply("Fitur ini hanya dapat digunakan dalam grup.")
-    if (!(isAdmin || isOwner)) return m.reply("Maaf, fitur ini hanya dapat digunakan oleh admin grup.")
-    
-    global.db.data.chats = global.db.data.chats || {}
-    
-    if (!global.db.data.chats[m.chat]) {
-        global.db.data.chats[m.chat] = {}
-    }
-    
-    if (!args[0]) return m.reply("Silakan gunakan: .antitagsw *on/off*")
-    
-    if (args[0] === "on") {
-        if (global.db.data.chats[m.chat].antitagsw) return m.reply("Fitur Anti Tag Status WhatsApp sudah aktif di grup ini.")
-        global.db.data.chats[m.chat].antitagsw = true
-        return m.reply("*Anti Tag Status WhatsApp* berhasil diaktifkan dalam grup ini.")
-    } else if (args[0] === "off") {
-        if (!global.db.data.chats[m.chat].antitagsw) return m.reply("Fitur Anti Tag Status WhatsApp sudah nonaktif di grup ini.")
-        global.db.data.chats[m.chat].antitagsw = false
-        return m.reply("*Anti Tag Status WhatsApp* berhasil dinonaktifkan dalam grup ini.")
-    } else {
-        return m.reply("Mohon pilih opsi yang valid: *on/off*")
-    }
-}
+/**
+ * Plugin: Anti Tag Status (Group)
+ * Adapted for Baileys Base Framework
+ */
 
-handler.before = async (m, { conn, isBotAdmin, isAdmin }) => {
-    global.db.data.chats = global.db.data.chats || {}
-    if (!global.db.data.chats[m.chat]) {
-        global.db.data.chats[m.chat] = {}
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+    // 1. Ambil data grup dari database global
+    let chat = global.db.data.chats[m.chat];
+    const action = args[0]?.toLowerCase();
+
+    // 2. Menu Bantuan & Cek Status
+    if (!action) {
+        const status = chat.antitagsw === true ? 'on' : 'off';
+
+        return m.reply(
+            `📢 *ᴀɴᴛɪᴛᴀɢsᴡ sᴇᴛᴛɪɴɢs*\n\n` +
+            `> Status: *${status === 'on' ? '✅ Aktif' : '❌ Nonaktif'}*\n\n` +
+            `> Fitur ini menghapus pesan tag status\n` +
+            `> (groupStatusMentionMessage)\n\n` +
+            `\`\`\`━━━ ᴘɪʟɪʜᴀɴ ━━━\`\`\`\n` +
+            `> \`${usedPrefix}${command} on\` → Aktifkan\n` +
+            `> \`${usedPrefix}${command} off\` → Nonaktifkan`
+        );
     }
+
+    // 3. Logika untuk "Group ON"
+    if (action === 'on') {
+        chat.antitagsw = true;
+        return m.reply(
+            `✅ *ᴀɴᴛɪᴛᴀɢsᴡ ᴀᴋᴛɪꜰ*\n\n` +
+            `> Anti tag status berhasil diaktifkan!\n` +
+            `> Pesan tag status akan dihapus otomatis.`
+        );
+    }
+
+    // 4. Logika untuk "Group OFF"
+    if (action === 'off') {
+        chat.antitagsw = false;
+        return m.reply(
+            `❌ *ᴀɴᴛɪᴛᴀɢsᴡ ɴᴏɴᴀᴋᴛɪꜰ*\n\n` +
+            `> Anti tag status berhasil dinonaktifkan.`
+        );
+    }
+
+    // 5. Error Handling Input
+    await m.reply(
+        `❌ *ᴘɪʟɪʜᴀɴ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ*\n\n` +
+        `> Gunakan: *on* atau *off*\n` +
+        `> Contoh: \`${usedPrefix}${command} on\``
+    );
+};
+
+// ==========================================
+// EVENT INTERCEPTOR (Menangkap & Menghapus Status Tag)
+// ==========================================
+handler.before = async function (m, { conn, isAdmin, isBotAdmin }) {
+    if (!m.isGroup) return false;
     
-    if (!m.isGroup || !global.db.data.chats[m.chat].antitagsw) return
-    
-    const isTaggingInStatus = (
-        m.mtype === 'groupStatusMentionMessage' || 
-        (m.quoted && m.quoted.mtype === 'groupStatusMentionMessage') ||
-        (m.message && m.message.groupStatusMentionMessage) ||
-        (m.message && m.message.protocolMessage && m.message.protocolMessage.type === 25)
-    )
-    
-    if (!isTaggingInStatus) return
-    
-    await conn.sendMessage(m.chat, { delete: m.key })
-   
-    if (isAdmin) { // nambahin jika admin maka ha di kick cuma hapus pesan aja
-        let warningMessage = `Grup ini terdeteksi ditandai dalam Status WhatsApp\n\n` +
-                            `@${m.sender.split("@")[0]}, mohon untuk tidak menandai grup dalam status WhatsApp` +
-                            `\n\nHal tersebut tidak diperbolehkan dalam grup ini.`
+    let chat = global.db.data.chats[m.chat];
+    if (!chat || !chat.antitagsw) return false;
+
+    // Mendeteksi apakah pesan merupakan 'groupStatusMentionMessage'
+    let isStatusMention = false;
+    if (m.message) {
+        const messageKeys = Object.keys(m.message);
+        if (messageKeys.includes('groupStatusMentionMessage')) {
+            isStatusMention = true;
+        }
+    }
+
+    if (isStatusMention) {
+        // Abaikan jika yang mengirim adalah Admin Grup (Opsional, tapi direkomendasikan)
+        if (isAdmin) return false;
         
-        return conn.sendMessage(m.chat, { text: warningMessage, mentions: [m.sender] })
-    }
-    
-    if (isBotAdmin) {
-        await conn.groupParticipantsUpdate(m.chat, [m.sender], "remove")
-        await conn.sendMessage(m.chat, { text: `@${m.sender.split("@")[0]} telah dikeluarkan dari grup karena menandai grup dalam status WhatsApp.`, mentions: [m.sender] })
-    } else {
-        let warningMessage = `Grup ini terdeteksi ditandai dalam Status WhatsApp\n\n` +
-                            `@${m.sender.split("@")[0]}, mohon untuk tidak menandai grup dalam status WhatsApp` +
-                            `\n\nHal tersebut tidak diperbolehkan dalam grup ini.`
-        
-        return conn.sendMessage(m.chat, { text: warningMessage, mentions: [m.sender] })
-    }
-}
+        // Bot harus menjadi admin untuk dapat menghapus pesan orang lain
+        if (!isBotAdmin) return false; 
 
-handler.command = ['antitagsw']
-handler.help = ['antitagsw'].map(a => a + ' *on/off*');
-handler.tags = ['group']
-handler.group = true
-handler.admin = true
+        // Eksekusi penghapusan pesan (Tarik pesan)
+        await conn.sendMessage(m.chat, { delete: m.key });
+        return true;
+    }
 
-module.exports = handler
+    return false;
+};
+
+// ==========================================
+// METADATA PLUGIN
+// ==========================================
+handler.help = ['antitagsw'].map(v => v + ' <on/off>');
+handler.tags = ['group'];
+handler.command = /^(antitagsw|antitag|antistatustag)$/i;
+
+handler.group = true;      // Fitur ini hanya jalan di Grup
+handler.admin = true;      // Hanya admin yang bisa mengaktifkan/mematikan
+handler.botAdmin = true;   // Bot wajib admin agar bisa menghapus pesan
+
+module.exports = handler;

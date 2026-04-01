@@ -32,7 +32,7 @@ let handler = async (m, { conn, text }) => {
 }
 handler.help = ['kalkulator <soal>']
 handler.tags = ['tools']
-handler.command = /^(calc(ulat(e|or))?|kalk(ulator)?)$/i
+handler.command = /^(calc|calculator|kalk|kalkulator)$/i
 handler.exp = 5
 handler.register = false
 module.exports = handler

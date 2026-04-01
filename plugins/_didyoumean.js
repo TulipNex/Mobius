@@ -40,10 +40,11 @@ handler.before = function (m, { conn, match }) {
     // ==========================================
     let text = m.text || '';
     
-    // Regex untuk mendeteksi apakah karakter pertama adalah BUKAN huruf dan angka (spesifik simbol prefix)
-    let isPrefixSymbol = /^[^\w\s]/;
+    // Regex spesifik untuk simbol prefix yang umum digunakan bot.
+    // Jika bot Anda menggunakan awalan lain, Anda bisa menambahkannya di dalam kurung siku [...]
+    let isPrefixSymbol = /^[.,!/#$%&\\-_+=|~?><]/;
 
-    // Jika pesan tidak diawali dengan simbol (berarti chat biasa), hentikan proses
+    // Jika pesan tidak diawali dengan simbol di atas (termasuk jika diawali emoji), hentikan proses
     if (!isPrefixSymbol.test(text)) return;
 
     // Ambil karakter pertama sebagai prefix, dan sisanya sebagai command
