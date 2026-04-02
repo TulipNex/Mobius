@@ -80,7 +80,7 @@ handler.before = async function (m, { conn, isOwner }) {
     let content = fs.readFileSync(filePath, 'utf-8')
     
     await conn.sendMessage(m.chat, {
-        text: `\`\`\`javascript\n${content}\n\`\`\``
+        text: `${content}`
     }, { quoted: m })
 
     return true

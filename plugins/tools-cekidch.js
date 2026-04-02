@@ -38,7 +38,8 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   }
 }
 
-handler.command = ['cekidch'];
+handler.help = ['cekidch'];
+handler.command = /^(cekidch)$/i ;
 handler.tags = ['tools'];
 handler.premium = false;
 handler.limit = true;

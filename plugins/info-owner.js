@@ -7,14 +7,14 @@
 let handler = async (m, { conn, usedPrefix, command }) => {
     // Ambil data owner dari konfigurasi global (global.owner)
     // Default fallback jika tidak ada data di global
-    let ownerData = global.owner || [['6282215415550', 'Owner Bot']]; 
+    let ownerData = global.owner || [['6282215415550', 'Mitraaa']]; 
     let contacts = [];
 
     // Looping semua data owner untuk dibuatkan vCard-nya
     for (let i = 0; i < ownerData.length; i++) {
         // Handle format array string ['628xxx'] atau array of arrays [['628xxx', 'Name']]
         let number = typeof ownerData[i] === 'object' ? ownerData[i][0] : ownerData[i];
-        let name = typeof ownerData[i] === 'object' ? (ownerData[i][1] || 'Owner Bot') : 'Owner Bot';
+        let name = typeof ownerData[i] === 'object' ? (ownerData[i][1] || 'Mitraaa') : 'Mitraaa';
         
         // Bersihkan karakter non-digit pada nomor
         number = String(number).replace(/[^0-9]/g, '');
@@ -38,9 +38,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     await m.reply(`👋 Halo! Di atas adalah kontak owner bot ini.\n\n_Catatan: Harap chat jika ada kepentingan mendesak, bug report, atau request sewa bot. Jangan melakukan spam._`);
 }
 
-handler.help = ['nay']
+handler.help = ['owner']
 handler.tags = ['info']
-handler.command = /^(nay)$/i
+handler.command = /^(owner)$/i
 
 // Tidak membutuhkan limit atau status premium
 handler.limit = false

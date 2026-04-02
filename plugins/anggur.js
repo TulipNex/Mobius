@@ -46,7 +46,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['anggur'];
+handler.help = ['anggur <link>'];
 handler.tags = ['downloader'];
 handler.command = /^(anggur)$/i;
 // handler.limit = true; // Uncomment jika ingin menggunakan sistem limit

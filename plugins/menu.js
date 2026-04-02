@@ -46,8 +46,6 @@ const allTags = {
 // Desain UI/UX Baru: Minimalis & Elegan
 const defaultMenu = {
     before: `
-*✦  W A N N  —  S T A B L E  ✦*
-
 Halo %name 👋,
 Selamat datang di pusat kontrol.
 
@@ -57,7 +55,7 @@ Selamat datang di pusat kontrol.
  ⚬ *Prefix* : [ %p ]
 `.trimStart(),
     header: '\n*✦ %category*',
-    body: '  ⚬ %cmd %islimit %isPremium',
+    body: '  ⌑ %cmd %islimit %isPremium',
     footer: '',
     after: `\n> *Hint:* Ketik *%pmenu <kategori>* untuk membuka menu.\n\n> Contoh: *%pmenu tools*`
 }
@@ -112,9 +110,16 @@ let handler = async (m, { conn, usedPrefix: _p, args = [], command, isOwner }) =
                 extendedTextMessage:{
                     text: text, 
                     contextInfo: {
+                        forwardingScore: 1,
+                        isForwarded: true,
+                        forwardedNewsletterMessageInfo: {
+                            newsletterJid: '120363407187309269@newsletter',
+                            newsletterName: '𝗗𝗔𝗦𝗛𝗕𝗢𝗔𝗥𝗗 𝗠𝗘𝗡𝗨',
+                            serverMessageId: 127
+                        },
                         mentionedJid: [m.sender],
                         externalAdReply: {
-                            title: 'Wann Assistant',
+                            title: 'Wann',
                             body: 'Powered by TulipNex',
                             mediaType: 1,
                             previewType: 0,
@@ -189,9 +194,16 @@ let handler = async (m, { conn, usedPrefix: _p, args = [], command, isOwner }) =
             extendedTextMessage:{
                 text: text, 
                 contextInfo: {
+                    forwardingScore: 1,
+                    isForwarded: true,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363407187309269@newsletter',
+                        newsletterName: '𝗗𝗔𝗦𝗛𝗕𝗢𝗔𝗥𝗗 𝗠𝗘𝗡𝗨',
+                        serverMessageId: 127
+                    },
                     mentionedJid: [m.sender],
                     externalAdReply: {
-                        title: 'Wann Assistant',
+                        title: 'Wann',
                         body: 'Powered by TulipNex',
                         mediaType: 1,
                         previewType: 0,
