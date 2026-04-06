@@ -40,7 +40,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         )
     }
 
-    //await conn.sendMessage(m.chat, { react: { text: '🤔', key: m.key } })
+    await conn.sendMessage(m.chat, { react: { text: '🤔', key: m.key } })
 
     try {
         // ==========================================
@@ -131,7 +131,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
             // Batasi ingatan 10 riwayat terakhir
             if (sejarah.length > 10) sejarah.shift() 
 
-            //await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key } })
+            await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key } })
         } else {
             throw new Error('ChatGPT memberikan respon kosong.')
         }

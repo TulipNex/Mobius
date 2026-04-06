@@ -81,7 +81,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     }
 
     // Menyusun laporan akhir
-    let replyText = `🎯 *RADAR KODE SELESAI*\n──────────────────\n\n🔍 *Pencarian:* \`${text}\`\n📁 *Terdeteksi pada:* ${results.length} file\n\n`
+    let replyText = `🎯 *PENCARIAN KODE SELESAI*\n──────────────────\n\n🔍 *Pencarian:* \`${text}\`\n📁 *Terdeteksi pada:* ${results.length} file\n\n`
     
     // Membatasi output agar WhatsApp tidak lag jika hasil pencarian terlalu banyak (WhatsApp limit)
     const MAX_RESULTS_DISPLAY = 30
@@ -97,7 +97,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
 handler.help = ['findcode <code>']
 handler.tags = ['owner']
-handler.command = /^(findcode|carikode)$/i
+handler.command = /^(findcode|carikode|ck)$/i
 handler.owner = true
 
 module.exports = handler

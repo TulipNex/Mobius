@@ -20,7 +20,8 @@ const handler = async (m, { text, usedPrefix, command }) => {
     console.error(error);
   }
 };
-handler.command = ['whois2'];
-handler.tags = ['internet'];
+handler.help = ['whois2']
+handler.command = /^(whois2)$/i;
+handler.tags = ['tools'];
 handler.premium = false;
 module.exports = handler;

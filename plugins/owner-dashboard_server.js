@@ -204,7 +204,7 @@ let handler = async (m, { conn, usedPrefix, command, DevMode }) => {
 
         ctx.fillStyle = COLOR_WHITE;
         ctx.font = 'bold 36px Montserrat';
-        ctx.fillText("SERVER MONITOR DASHBOARD", PADDING, 60);
+        ctx.fillText("SERVER DASHBOARD", PADDING, 60);
         ctx.font = '20px Montserrat';
         ctx.fillStyle = COLOR_TEXT_GRAY;
         ctx.fillText(`Net Ping: ${ping}ms | Uptime: ${uptime}`, PADDING, 95);
@@ -356,9 +356,9 @@ let handler = async (m, { conn, usedPrefix, command, DevMode }) => {
     }
 };
 
-handler.help = ['sysinfo', 'monitor'];
-handler.tags = ['info'];
-handler.command = /^(sysinfo|monitor)$/i;
+handler.help = ['dashboardserver'];
+handler.tags = ['owner'];
+handler.command = /^(serverdbd|dashboardserver|monitor)$/i;
 handler.owner = true; 
 handler.group = false;
 

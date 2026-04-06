@@ -34,7 +34,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
 handler.help = ['deletefile <path>']
 handler.tags = ['owner']
-handler.command = /^(deletefile|df|hapusfile|delfile)$/i
+handler.command = /^(df|deletefile|hapusfile)$/i
 handler.rowner = true // Mutlak hanya untuk Boss
 
 module.exports = handler

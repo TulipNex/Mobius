@@ -139,7 +139,8 @@ Kirim/Reply foto/video/audio dengan atau tanpa caption`);
   await conn.sendMessage(m.chat, { react: { text: "✅", key: m.key } });
 };
 
-handler.command = ["upswgc", "swgc"];
+handler.help = ['upswtag'];
+handler.command = /^(upswtag|swgc)$/i;
 module.exports = handler;
 handler.admin = true;
 handler.group = true;

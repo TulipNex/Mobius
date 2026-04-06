@@ -76,7 +76,7 @@ handler.all = async function (m) {
     }
 }
 
-handler.help = ['dcmd <command>', 'ecmd <command>']
+handler.help = ['disablecmd <command>', 'enablecmd <command>']
 handler.tags = ['owner']
 handler.command = /^(dcmd|ecmd|disablecmd|enablecmd)$/i
 handler.owner = true

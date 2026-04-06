@@ -45,7 +45,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     }
 }
 
-handler.help = ['addplugin <nama> <kode>', 'svplugin <nama>']
+handler.help = ['addplugin <nama> <kode>']
 handler.tags = ['owner']
 handler.command = /^(addplugin|svplugin|saveplugin|ap)$/i
 handler.owner = true // MUTLAK: Hanya Boss (Owner) yang bisa mencipta!

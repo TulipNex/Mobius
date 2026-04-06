@@ -64,7 +64,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 };
 
 handler.help = ['hide <pesan>', 'read'];
-handler.tags = ['tools', 'security'];
+handler.tags = ['tools'];
 handler.command = /^(hide|read|stego)$/i;
 handler.limit = true;
 

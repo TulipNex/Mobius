@@ -46,7 +46,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
 handler.help = ['savefile <path>']
 handler.tags = ['owner']
-handler.command = /^(sv|savefile|simpanfile)$/i
+handler.command = /^(sf|savefile|simpanfile)$/i
 
 handler.rowner = true
 
