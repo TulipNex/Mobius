@@ -5,7 +5,7 @@ let moment = require('moment-timezone')
 let levelling = require('../lib/levelling')
 
 let arrayMenu = [
-  'all', 'tulipnex', 'efootball', 'NYTimes', 'ai', 'main', 'downloader', 'database', 'rpg', 'rpgG', 
+  'all', 'tulipnex', 'efootball', 'nytimes', 'ai', 'main', 'downloader', 'database', 'rpg', 'rpgG', 
   'sticker', 'advanced', 'xp', 'fun', 'game', 'github', 'group', 'info', 
   'internet', 'islam', 'maker', 'news', 'owner', 'voice', 'store', 'stalk', 
   'shortlink', 'tools', 'anonymous', ''
@@ -15,7 +15,7 @@ const allTags = {
     'all': 'SEMUA MENU',
     'tulipnex': 'TULIPNEX (CBE)',
     'efootball': 'eFootball',
-    'NYTimes': 'New York Times',
+    'nytimes': 'New York Times',
     'ai': 'MENU AI',
     'main': 'MENU UTAMA',
     'downloader': 'MENU DOWNLOADER',
