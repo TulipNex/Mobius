@@ -9,12 +9,13 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
   if (!who.includes('@')) who += '@s.whatsapp.net'
 
   let users = global.db.data.users
-  if (!users[who]) users[who] = { exp: 0, limit: 10, lastclaim: 0, registered: false, name: '', age: -1, regTime: -1, premium: false, premiumTime: 0, level: 0, money: 0, pasangan: '', role: 'Newbie ㋡', banned: false, unlockedTitles: [], activeTitle: "" }
+  // Database fallback: Menghapus 'unlockedTitles' dan 'activeTitle'
+  if (!users[who]) users[who] = { exp: 0, limit: 10, lastclaim: 0, registered: false, name: '', age: -1, regTime: -1, premium: false, premiumTime: 0, level: 0, money: 0, role: 'Newbie ㋡', banned: false }
 
   let user = users[who]
   
-  // Mengambil variabel activeTitle untuk menampilkan Gelar
-  let { name, limit, exp, money, lastclaim, premiumTime, premium, registered, age, level, pasangan, activeTitle } = user
+  // Destructuring bersih tanpa activeTitle
+  let { name, limit, exp, money, lastclaim, premiumTime, premium, registered, age, level } = user
   let username = registered ? name : await conn.getName(who) || 'User';
 
   // Get Profile Picture dengan fallback UI Avatars jika tidak ada/diprivasi
@@ -119,12 +120,10 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
   let remainingXp = max - exp
   let sn = createHash('md5').update(who).digest('hex').substring(0, 12)
 
-  // LOGIKA TAMPILAN GELAR
-  let displayTitle = activeTitle ? `\n*│* 🎖️ *Gelar:* ${activeTitle}` : '';
-
+  // LOGIKA TAMPILAN UI
   let str = `
 *╭───[ 👤 PROFILE USER ]───*
-*│* 🆔 *Nama:* ${username}${displayTitle}
+*│* 🆔 *Nama:* ${username}
 *│* 🏷️ *Tag:* @${who.split('@')[0]}
 *│* 📝 *Bio:* ${about || 'Tidak ada bio'}
 *│* 🎂 *Umur:* ${registered ? age + ' thn' : '-'}
@@ -204,8 +203,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
       finalImage = { url: ppUrl };
   }
 
-  // Kirim output gabungan antara Canvas UI dan teks
-  await conn.sendMessage(m.chat, { image: finalImage, caption: str, mentions: [who, ...(pasangan ? [pasangan] : [])] }, { quoted: m })
+  await conn.sendMessage(m.chat, { image: finalImage, caption: str, mentions: [who] }, { quoted: m })
 }
 
 handler.help = ['profile', 'profil [@user]']

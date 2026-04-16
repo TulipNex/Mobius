@@ -25,7 +25,6 @@ let handler = async (m, { conn, text, usedPrefix }) => {
       banned: false,
       level: 0,
       money: 0,
-      pasangan: '',
       role: 'Newbie'
     }
   }
