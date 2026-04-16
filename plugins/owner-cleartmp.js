@@ -39,7 +39,7 @@ let handler = async (m, { conn, usedPrefix, args }) => {
 
 handler.help = ['cleartmp'];
 handler.tags = ['owner'];
-handler.command = /^(cleartmp)$/i;
+handler.command = /^(cleartmp|ct)$/i;
 handler.rowner = true;
 
 module.exports = handler;

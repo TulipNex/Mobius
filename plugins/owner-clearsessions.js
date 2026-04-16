@@ -41,7 +41,7 @@ let handler = async (m, { conn, usedPrefix, args }) => {
 
 handler.help = ['clearsession'];
 handler.tags = ['owner'];
-handler.command = /^(clearsession|clearsessions)$/i;
+handler.command = /^(clearsession|clearsessions|cs)$/i;
 handler.rowner = true;
 
 module.exports = handler;

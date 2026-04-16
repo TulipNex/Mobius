@@ -84,7 +84,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let replyText = `🎯 *PENCARIAN KODE SELESAI*\n──────────────────\n\n🔍 *Pencarian:* \`${text}\`\n📁 *Terdeteksi pada:* ${results.length} file\n\n`
     
     // Membatasi output agar WhatsApp tidak lag jika hasil pencarian terlalu banyak (WhatsApp limit)
-    const MAX_RESULTS_DISPLAY = 30
+    const MAX_RESULTS_DISPLAY = 150
     replyText += results.slice(0, MAX_RESULTS_DISPLAY).join('\n\n')
 
     if (results.length > MAX_RESULTS_DISPLAY) {

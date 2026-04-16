@@ -64,7 +64,7 @@ let handler = async (m, { conn, command, usedPrefix, text }) => {
     if (command === 'kerja') {
         if (user.job === 'Pengangguran') throw `Kamu belum memiliki pekerjaan! Ketik *${usedPrefix}pekerjaan* untuk mencari kerja.`
         
-        let cooldown = 3600000 // Cooldown 1 Jam
+        let cooldown = 300000 // Cooldown 1 Jam
         let timeRemaining = cooldown - (new Date() - user.lastkerja)
         
         if (timeRemaining > 0) {

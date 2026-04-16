@@ -145,7 +145,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
 handler.help = ['mitra on/off', 'mitra reset']
 handler.tags = ['ai']
-handler.command = /^(mitra|wann)$/i 
+handler.command = /^(mitra|wann)$/i
+handler.owner = true
 
 // ==========================================
 // PENDETEKSI OTOMATIS (HANYA MERESPON REPLY)

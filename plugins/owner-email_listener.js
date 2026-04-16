@@ -69,7 +69,7 @@ handler.before = async function (m, { conn }) {
                             let subjek = parsed.subject || 'Tidak ada subjek';
                             
                             let isiMentah = parsed.text || parsed.textAsHtml || 'Tidak ada isi teks';
-                            let isi = isiMentah.length > 700 ? isiMentah.substring(0, 700) + '... [Teks dipotong]' : isiMentah;
+                            let isi = isiMentah;
                             
                             let targetOwner = global.numberowner + '@s.whatsapp.net';
                             
