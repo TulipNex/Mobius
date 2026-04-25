@@ -5,9 +5,9 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     
     // Validasi input awal
     if (!text) {
-        let txt = `*Cek Rekening / E-Wallet*\n\n`;
+        let txt = `*Cek E-Wallet*\n\n`;
         txt += `Contoh penggunaan:\n*${usedPrefix + command} dana 08123456789*\n\n`;
-        txt += `*Daftar Bank / E-Wallet yang didukung:*\n`;
+        txt += `*Daftar E-Wallet yang didukung:*\n`;
         txt += `- ${listBank.join("\n- ")}`;
         return m.reply(txt);
     }
@@ -17,7 +17,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     
     // Validasi kelengkapan parameter
     if (argsArray.length < 2) {
-        return m.reply(`⚠️ Format salah! Gunakan spasi sebagai pemisah antara nama bank/e-wallet dan nomor rekening.\n\nContoh: *${usedPrefix + command} dana 08123456789*`);
+        return m.reply(`⚠️ Format salah! Gunakan spasi sebagai pemisah antara nama e-wallet dan nomor rekening.\n\nContoh: *${usedPrefix + command} dana 08123456789*`);
     }
 
     let type = argsArray[0];
@@ -42,29 +42,28 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
         // Cek jika response dari API menyatakan gagal / rekening tidak ditemukan
         if (!result.data.success) {
-            return m.reply("❌ Data rekening tidak ditemukan. Pastikan nama bank/e-wallet dan nomor yang dimasukkan sudah benar.");
+            return m.reply("❌ Data rekening tidak ditemukan. Pastikan nama e-wallet dan nomor yang dimasukkan sudah benar.");
         }
 
         const tot = result.data.data;
         
         // Output User-Friendly
-        let resp = `*💳 C E K - R E K E N I N G*\n\n`;
-        resp += `🏦 *Bank/Wallet :* ${tot.bankName}\n`;
+        let resp = `*💳 C E K  E - W A L L E T*\n\n`;
+        resp += `🏦 *E-Wallet :* ${tot.bankName}\n`;
         resp += `🔢 *Nomor       :* ${tot.accountNumber}\n`;
         resp += `👤 *Nama        :* ${tot.accountName}\n\n`;
-        resp += `> _*Peringatan:* Harap berhati-hati saat melakukan transaksi._`;
 
         await m.reply(resp);
 
     } catch (err) {
         console.error(err);
-        m.reply("⚠️ Terjadi kesalahan saat menghubungi layanan pengecekan rekening. Mungkin API sedang down atau ada masalah koneksi.");
+        m.reply("⚠️ Terjadi kesalahan saat menghubungi layanan pengecekan e-wallet. Mungkin API sedang down atau ada masalah koneksi.");
     }
 }
 
-handler.help = ['cekrek <bank> <norek>', 'rekrekening <bank> <norek>'];
+handler.help = ['cekwal <e-wallet> <norek>', 'cekwallet <e-waller> <norek>'];
 handler.tags = ['tools', 'internet'];
-handler.command = /^(cekrek|rekrekening)$/i;
+handler.command = /^(cekwal|cekwallet)$/i;
 
 // Fitur keamanan/limitasi
 handler.limit = true;

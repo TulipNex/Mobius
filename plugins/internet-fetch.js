@@ -1,6 +1,3 @@
-// wm © BOTCAHX jangan di ilangin
-// Dioptimalkan dengan Auto-Bypass Cloudflare menggunakan modul 'bycf'
-
 const axios = require('axios');
 const { shannz: cf } = require('bycf'); 
 
