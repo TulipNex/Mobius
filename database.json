@@ -14,7 +14,7 @@
       "pasangan": "",
       "location": "Gubuk",
       "pc": 0,
-      "exp": 4192,
+      "exp": 4961,
       "coin": 0,
       "limit": 100,
       "token": 10,
@@ -78,9 +78,9 @@
       "ovo": 0,
       "dana": 0,
       "gopay": 0,
-      "command": 165,
-      "commandTotal": 165,
-      "lastCmd": 1777122794176,
+      "command": 192,
+      "commandTotal": 192,
+      "lastCmd": 1777218804297,
       "lastbossbattle": 0,
       "anggur": 0,
       "vebriy": false,
@@ -199,8 +199,8 @@
       "level": 0,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 951,
-      "limit": 92,
+      "exp": 996,
+      "limit": 90,
       "token": 5,
       "skata": 0,
       "lastkerja": 0,
@@ -238,9 +238,9 @@
       "followers": 0,
       "coin": 0,
       "bank": 0,
-      "command": 39,
-      "commandTotal": 39,
-      "lastCmd": 1777107935795
+      "command": 41,
+      "commandTotal": 41,
+      "lastCmd": 1777218502895
     },
     "249348621369556@lid": {
       "taxi": 0,
@@ -299,7 +299,7 @@
       "level": 0,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 71,
+      "exp": 119,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -338,9 +338,9 @@
       "followers": 0,
       "coin": 0,
       "bank": 0,
-      "command": null,
-      "commandTotal": null,
-      "lastCmd": 1777105225001
+      "command": 2,
+      "commandTotal": 2,
+      "lastCmd": 1777197629592
     },
     "628989240628@s.whatsapp.net": {
       "taxi": 0,
@@ -396,7 +396,7 @@
       "level": 0,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 146,
+      "exp": 226,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -427,9 +427,9 @@
       "job": "Pengangguran",
       "role": "Newbie ㋡",
       "autolevelup": true,
-      "command": 6,
-      "commandTotal": 6,
-      "lastCmd": 1777127384134,
+      "command": 9,
+      "commandTotal": 9,
+      "lastCmd": 1777197002122,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -597,10 +597,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 378,
-          "commandTotal": 378,
+          "command": 379,
+          "commandTotal": 379,
           "lastseen": 0,
-          "lastCmd": 1777038230105
+          "lastCmd": 1777197634434
         },
         "628989240628@s.whatsapp.net": {
           "blacklist": false,
@@ -652,10 +652,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 1,
-          "commandTotal": 1,
+          "command": 2,
+          "commandTotal": 2,
           "lastseen": 0,
-          "lastCmd": 1774436099110
+          "lastCmd": 1777197629592
         },
         "6285591068997@s.whatsapp.net": {
           "blacklist": false,
@@ -663,10 +663,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 87,
-          "commandTotal": 87,
+          "command": 89,
+          "commandTotal": 89,
           "lastseen": 0,
-          "lastCmd": 1777042961041
+          "lastCmd": 1777197765725
         },
         "258149730799767@lid": {
           "blacklist": false,
@@ -703,12 +703,12 @@
           "lastSeen": 1775188967318
         },
         "221203734204662@lid": {
-          "chatCount": 3,
-          "lastSeen": 1776512866834
+          "chatCount": 4,
+          "lastSeen": 1777197629592
         },
         "6285591068997@s.whatsapp.net": {
-          "chatCount": 128,
-          "lastSeen": 1777042961041
+          "chatCount": 131,
+          "lastSeen": 1777197784310
         },
         "258149730799767@lid": {
           "chatCount": 1,
@@ -1011,10 +1011,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 324,
-          "commandTotal": 324,
+          "command": 334,
+          "commandTotal": 334,
           "lastseen": 0,
-          "lastCmd": 1777116384142
+          "lastCmd": 1777210897680
         }
       },
       "expired": 0,
@@ -1048,8 +1048,8 @@
           "lastSeen": 1776342642146
         },
         "6285591068997@s.whatsapp.net": {
-          "chatCount": 378,
-          "lastSeen": 1777116384139
+          "chatCount": 390,
+          "lastSeen": 1777210827406
         },
         "628989240628@s.whatsapp.net": {
           "chatCount": 1,
@@ -2844,10 +2844,10 @@
       "lastSuccess": 1775747345165
     },
     "downloader-tiktok.js": {
-      "total": 57,
-      "success": 47,
-      "last": 1777122803480,
-      "lastSuccess": 1777122803480
+      "total": 58,
+      "success": 48,
+      "last": 1777218508916,
+      "lastSuccess": 1777218508916
     },
     "info-gempa.js": {
       "total": 4,
@@ -2940,10 +2940,10 @@
       "lastSuccess": 1776260557176
     },
     "downloader-ig.js": {
-      "total": 65,
-      "success": 56,
-      "last": 1777122647772,
-      "lastSuccess": 1777122647772
+      "total": 66,
+      "success": 57,
+      "last": 1777214003455,
+      "lastSuccess": 1777214003455
     },
     "info-creator.js": {
       "total": 32,
@@ -3258,10 +3258,10 @@
       "lastSuccess": 1770997182740
     },
     "owner-exec2.js": {
-      "total": 78,
-      "success": 78,
-      "last": 1776267856989,
-      "lastSuccess": 1776267856989
+      "total": 79,
+      "success": 79,
+      "last": 1777204547098,
+      "lastSuccess": 1777204547098
     },
     "anime-storyanime.js": {
       "total": 2,
@@ -3564,10 +3564,10 @@
       "lastSuccess": 1775554003983
     },
     "internet-fetch.js": {
-      "total": 160,
-      "success": 146,
-      "last": 1777050510916,
-      "lastSuccess": 1777050510916
+      "total": 161,
+      "success": 147,
+      "last": 1777189707633,
+      "lastSuccess": 1777189707633
     },
     "tools-tempmail.js": {
       "total": 67,
@@ -3738,10 +3738,10 @@
       "lastSuccess": 1771836559538
     },
     "owner-exec.js": {
-      "total": 89,
-      "success": 89,
-      "last": 1776783226479,
-      "lastSuccess": 1776783226479
+      "total": 101,
+      "success": 101,
+      "last": 1777218804298,
+      "lastSuccess": 1777218804298
     },
     "group-linkgc.js": {
       "total": 11,
@@ -4032,10 +4032,10 @@
       "lastSuccess": 1775473003896
     },
     "owner-delplugin.js": {
-      "total": 58,
-      "success": 58,
-      "last": 1776452581344,
-      "lastSuccess": 1776452581344
+      "total": 59,
+      "success": 59,
+      "last": 1777197701872,
+      "lastSuccess": 1777197701872
     },
     "owner-addplugin.js": {
       "total": 177,
@@ -4564,10 +4564,10 @@
       "lastSuccess": 1775996724437
     },
     "owner-findcode.js": {
-      "total": 73,
-      "success": 73,
-      "last": 1776370181279,
-      "lastSuccess": 1776370181279
+      "total": 75,
+      "success": 75,
+      "last": 1777209704938,
+      "lastSuccess": 1777209704938
     },
     "group-poll.js": {
       "total": 3,
@@ -4672,10 +4672,10 @@
       "lastSuccess": 1773738120755
     },
     "internet-jadwal_bola.js": {
-      "total": 23,
-      "success": 23,
-      "last": 1776276273093,
-      "lastSuccess": 1776276273093
+      "total": 25,
+      "success": 25,
+      "last": 1777136242884,
+      "lastSuccess": 1777136242884
     },
     "internet-skor_bola.js": {
       "total": 8,
@@ -4708,10 +4708,10 @@
       "lastSuccess": 1773586901355
     },
     "info-ping.js": {
-      "total": 334,
-      "success": 334,
-      "last": 1777122706379,
-      "lastSuccess": 1777122706379
+      "total": 339,
+      "success": 339,
+      "last": 1777204553818,
+      "lastSuccess": 1777204553818
     },
     "info-info_bot.js": {
       "total": 3,
@@ -5128,10 +5128,10 @@
       "lastSuccess": 1776369180292
     },
     "owner-github.js": {
-      "total": 63,
-      "success": 63,
-      "last": 1776500710610,
-      "lastSuccess": 1776500710610
+      "total": 64,
+      "success": 64,
+      "last": 1777130108740,
+      "lastSuccess": 1777130108740
     },
     "rpg-hitman.js": {
       "total": 2,
@@ -5668,10 +5668,10 @@
       "lastSuccess": 1775653645679
     },
     "Rich.js": {
-      "total": 35,
-      "success": 35,
-      "last": 1775574374303,
-      "lastSuccess": 1775574374303
+      "total": 39,
+      "success": 39,
+      "last": 1777197634836,
+      "lastSuccess": 1777197634836
     },
     "owner-ounadmin.js": {
       "total": 6,
@@ -5704,10 +5704,10 @@
       "lastSuccess": 1775579434207
     },
     "owner-readplugin.js": {
-      "total": 67,
-      "success": 67,
-      "last": 1777042612071,
-      "lastSuccess": 1777042612071
+      "total": 68,
+      "success": 68,
+      "last": 1777204034331,
+      "lastSuccess": 1777204034331
     },
     "main-jadibot.js": {
       "total": 4,
@@ -6190,10 +6190,10 @@
       "lastSuccess": 1776873098788
     },
     "downloader-webvid.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1776963867150,
-      "lastSuccess": 1776963867150
+      "total": 3,
+      "success": 3,
+      "last": 1777189693250,
+      "lastSuccess": 1777189693250
     },
     "igstory.js": {
       "total": 6,
@@ -6206,6 +6206,12 @@
       "success": 3,
       "last": 1777051181647,
       "lastSuccess": 1777051181647
+    },
+    "cekid.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1777210897900,
+      "lastSuccess": 1777210897900
     }
   },
   "msgs": {},
@@ -6307,95 +6313,95 @@
       ]
     },
     "trading": {
-      "lastUpdate": 1777130041709,
+      "lastUpdate": 1777218783915,
       "prices": {
-        "IVL": 21627,
-        "LBT": 815588,
-        "IRC": 8683393,
-        "LTN": 67680643,
-        "RSX": 464944782,
-        "TNX": 5770538336
+        "IVL": 24894,
+        "LBT": 161434,
+        "IRC": 3477149,
+        "LTN": 82692444,
+        "RSX": 415510259,
+        "TNX": 6056847167
       },
       "prevPrices": {
-        "IVL": 20992,
-        "LBT": 813836,
-        "IRC": 8785321,
-        "LTN": 66602204,
-        "RSX": 476117800,
-        "TNX": 5864168935
+        "IVL": 25064,
+        "LBT": 174899,
+        "IRC": 3582925,
+        "LTN": 81157198,
+        "RSX": 427488841,
+        "TNX": 6071074357
       },
       "history": {
         "IVL": [
-          27948,
-          26509,
-          25389,
-          25431,
-          24315,
-          23197,
-          22773,
-          21998,
-          20992,
-          21627
+          27154,
+          27437,
+          26847,
+          26984,
+          27351,
+          25903,
+          24799,
+          24822,
+          25064,
+          24894
         ],
         "LBT": [
-          801201,
-          811863,
-          809379,
-          806673,
-          800671,
-          793328,
-          807602,
-          828896,
-          813836,
-          815588
+          196744,
+          175315,
+          195294,
+          184058,
+          188461,
+          207345,
+          203070,
+          194970,
+          174899,
+          161434
         ],
         "IRC": [
-          8640075,
-          8787067,
-          8574765,
-          8760969,
-          8611787,
-          8548662,
-          8469702,
-          8584414,
-          8785321,
-          8683393
+          4352022,
+          4412051,
+          4205675,
+          4235420,
+          4010993,
+          3884886,
+          3678763,
+          3806367,
+          3582925,
+          3477149
         ],
         "LTN": [
-          62485576,
-          63031561,
-          64552829,
-          65661858,
-          64892128,
-          64781588,
-          66625145,
-          64897155,
-          66602204,
-          67680643
+          84452876,
+          83279663,
+          81809790,
+          80519829,
+          80313922,
+          80247664,
+          80714713,
+          80904932,
+          81157198,
+          82692444
         ],
         "RSX": [
-          452000403,
-          431623066,
-          426683688,
-          442167563,
-          463790669,
-          466292969,
-          467971650,
-          461343814,
-          476117800,
-          464944782
+          432011271,
+          410920255,
+          411975286,
+          431154799,
+          424605808,
+          423716291,
+          432150815,
+          426798281,
+          427488841,
+          415510259
         ],
         "TNX": [
-          5742412176,
-          5959586175,
-          6031069234,
-          6044869113,
-          6239623534,
-          6092433806,
-          6197439240,
-          6076335025,
-          5864168935,
-          5770538336
+          5920190139,
+          5875906139,
+          5891975629,
+          5812615322,
+          5975197208,
+          5925439877,
+          5945892447,
+          6072062467,
+          6071074357,
+          6056847167
         ]
       },
       "ath": {
@@ -6451,7 +6457,7 @@
         "120363406727405732@g.us",
         "120363284305573016@g.us"
       ],
-      "lastMinuteMarker": "2026-04-25 23:14",
+      "lastMinuteMarker": "2026-04-26 23:53",
       "vault": 124720678,
       "taxRates": {
         "IVL": 1.5,
@@ -6468,13 +6474,13 @@
       "lastCanceledEvent": null,
       "probabilities": {
         "IVL": "50%",
-        "LBT": "50%",
+        "LBT": "95%",
         "IRC": "50%",
         "LTN": "50%",
         "RSX": "50%",
         "TNX": "50%"
       },
-      "eventCooldown": 15
+      "eventCooldown": 0
     },
     "githubSync": false
   },
