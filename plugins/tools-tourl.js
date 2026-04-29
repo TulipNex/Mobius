@@ -83,7 +83,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
 handler.help = ['tourl', 'upload'].map(v => v + ' <opsi>')
 handler.tags = ['tools']
-handler.command = /^(tourl|upload|toimg)$/i
+handler.command = /^(tourl|upload)$/i
 handler.limit = true
 
 module.exports = handler

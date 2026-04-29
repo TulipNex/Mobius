@@ -90,7 +90,7 @@ let handler = async (m, { conn, text, usedPrefix, command, args, isOwner, isAdmi
 // Metadata Plugin
 handler.help = ['pinterest'].map(v => v + ' <url/query>')
 handler.tags = ['downloader']
-handler.command = /^(pinterest)$/i
+handler.command = /^(pinterest|pint)$/i
 
 // Pembatasan akses & penggunaan limit (opsional, disesuaikan dengan ekonomi RPG)
 handler.limit = true

@@ -14,9 +14,9 @@
       "pasangan": "",
       "location": "Gubuk",
       "pc": 0,
-      "exp": 4961,
+      "exp": 7813,
       "coin": 0,
-      "limit": 100,
+      "limit": 94,
       "token": 10,
       "skata": 0,
       "lastclaim": 0,
@@ -78,14 +78,14 @@
       "ovo": 0,
       "dana": 0,
       "gopay": 0,
-      "command": 192,
-      "commandTotal": 192,
-      "lastCmd": 1777218804297,
+      "command": 314,
+      "commandTotal": 314,
+      "lastCmd": 1777468920166,
       "lastbossbattle": 0,
       "anggur": 0,
       "vebriy": false,
       "vebriy_history": [],
-      "tempmail_recipient": "mitra"
+      "tempmail_recipient": "mitra1"
     },
     "6282215415550@s.whatsapp.net": {
       "taxi": 0,
@@ -94,7 +94,7 @@
       "level": 20,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 5681,
+      "exp": 5817,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -125,9 +125,9 @@
       "job": "Pengangguran",
       "role": "Private Grade 1 ⚌¹",
       "autolevelup": true,
-      "command": 100,
-      "commandTotal": 100,
-      "lastCmd": 1777001429333,
+      "command": 106,
+      "commandTotal": 106,
+      "lastCmd": 1777377318070,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -199,8 +199,8 @@
       "level": 0,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 996,
-      "limit": 90,
+      "exp": 1475,
+      "limit": 82,
       "token": 5,
       "skata": 0,
       "lastkerja": 0,
@@ -221,10 +221,10 @@
       "antispam": 0,
       "lastngojek": 0,
       "lastseen": 0,
-      "registered": false,
-      "name": {},
-      "age": -1,
-      "regTime": -1,
+      "registered": true,
+      "name": "Wann",
+      "age": 18,
+      "regTime": 1777366753009,
       "premium": false,
       "premiumTime": 0,
       "job": "Pengangguran",
@@ -238,9 +238,10 @@
       "followers": 0,
       "coin": 0,
       "bank": 0,
-      "command": 41,
-      "commandTotal": 41,
-      "lastCmd": 1777218502895
+      "command": 65,
+      "commandTotal": 65,
+      "lastCmd": 1777452874478,
+      "tempmail_recipient": "42a687f862"
     },
     "249348621369556@lid": {
       "taxi": 0,
@@ -249,7 +250,7 @@
       "level": 0,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 384,
+      "exp": 429,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -280,9 +281,9 @@
       "job": "Pengangguran",
       "role": "Newbie ㋡",
       "autolevelup": true,
-      "command": 13,
-      "commandTotal": 13,
-      "lastCmd": 1777001397800,
+      "command": 15,
+      "commandTotal": 15,
+      "lastCmd": 1777438481894,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -299,7 +300,7 @@
       "level": 0,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 119,
+      "exp": 124,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -396,7 +397,7 @@
       "level": 0,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 226,
+      "exp": 319,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -427,9 +428,9 @@
       "job": "Pengangguran",
       "role": "Newbie ㋡",
       "autolevelup": true,
-      "command": 9,
-      "commandTotal": 9,
-      "lastCmd": 1777197002122,
+      "command": 13,
+      "commandTotal": 13,
+      "lastCmd": 1777437219014,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -496,7 +497,7 @@
       "level": 0,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 74,
+      "exp": 118,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -527,9 +528,9 @@
       "job": "Pengangguran",
       "role": "Newbie ㋡",
       "autolevelup": true,
-      "command": null,
-      "commandTotal": null,
-      "lastCmd": 1776872993319,
+      "command": 2,
+      "commandTotal": 2,
+      "lastCmd": 1777452081041,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -597,10 +598,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 379,
-          "commandTotal": 379,
+          "command": 380,
+          "commandTotal": 380,
           "lastseen": 0,
-          "lastCmd": 1777197634434
+          "lastCmd": 1777452874478
         },
         "628989240628@s.whatsapp.net": {
           "blacklist": false,
@@ -663,10 +664,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 89,
-          "commandTotal": 89,
+          "command": 97,
+          "commandTotal": 97,
           "lastseen": 0,
-          "lastCmd": 1777197765725
+          "lastCmd": 1777235777905
         },
         "258149730799767@lid": {
           "blacklist": false,
@@ -695,8 +696,8 @@
           "lastSeen": 1776370798219
         },
         "6285324023198@s.whatsapp.net": {
-          "chatCount": 277,
-          "lastSeen": 1777038109013
+          "chatCount": 278,
+          "lastSeen": 1777452874472
         },
         "120363284305573016@g.us": {
           "chatCount": 5,
@@ -956,10 +957,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 602,
-          "commandTotal": 602,
+          "command": 603,
+          "commandTotal": 603,
           "lastseen": 0,
-          "lastCmd": 1776861010092
+          "lastCmd": 1777366900842
         },
         "120363406727405732@g.us": {
           "blacklist": false,
@@ -967,10 +968,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 14,
-          "commandTotal": 14,
+          "command": 16,
+          "commandTotal": 16,
           "lastseen": 0,
-          "lastCmd": 1776872993319
+          "lastCmd": 1777452081041
         },
         "6285324023198@s.whatsapp.net": {
           "blacklist": false,
@@ -978,10 +979,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 60,
-          "commandTotal": 60,
+          "command": 69,
+          "commandTotal": 69,
           "lastseen": 0,
-          "lastCmd": 1777106412596
+          "lastCmd": 1777400674609
         },
         "249348621369556@lid": {
           "blacklist": false,
@@ -1011,10 +1012,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 334,
-          "commandTotal": 334,
+          "command": 370,
+          "commandTotal": 370,
           "lastseen": 0,
-          "lastCmd": 1777210897680
+          "lastCmd": 1777454891529
         }
       },
       "expired": 0,
@@ -1024,32 +1025,32 @@
       "mutedUsers": [],
       "memberStats": {
         "6282215415550@s.whatsapp.net": {
-          "chatCount": 2524,
-          "lastSeen": 1776861010089
+          "chatCount": 2525,
+          "lastSeen": 1777366900836
         },
         "249348621369556@lid": {
           "chatCount": 10,
           "lastSeen": 1775671795959
         },
         "6285324023198@s.whatsapp.net": {
-          "chatCount": 497,
-          "lastSeen": 1777106412593
+          "chatCount": 509,
+          "lastSeen": 1777400875391
         },
         "221203734204662@lid": {
           "chatCount": 1,
           "lastSeen": 1774217273333
         },
         "120363406727405732@g.us": {
-          "chatCount": 20,
-          "lastSeen": 1776872993319
+          "chatCount": 22,
+          "lastSeen": 1777452081041
         },
         "6283853531950@s.whatsapp.net": {
           "chatCount": 18,
           "lastSeen": 1776342642146
         },
         "6285591068997@s.whatsapp.net": {
-          "chatCount": 390,
-          "lastSeen": 1777210827406
+          "chatCount": 445,
+          "lastSeen": 1777455078893
         },
         "628989240628@s.whatsapp.net": {
           "chatCount": 1,
@@ -2790,10 +2791,10 @@
       "lastSuccess": 1773593201474
     },
     "sticker-sticker.js": {
-      "total": 222,
-      "success": 221,
-      "last": 1776368891485,
-      "lastSuccess": 1776368891485
+      "total": 224,
+      "success": 223,
+      "last": 1777453360952,
+      "lastSuccess": 1777453360952
     },
     "downloader-pindl.js": {
       "total": 32,
@@ -2802,16 +2803,16 @@
       "lastSuccess": 1773387795339
     },
     "downloader-spotify.js": {
-      "total": 52,
-      "success": 43,
-      "last": 1777043014014,
-      "lastSuccess": 1777043014014
+      "total": 53,
+      "success": 44,
+      "last": 1777454895395,
+      "lastSuccess": 1777454895395
     },
     "menu.js": {
-      "total": 787,
-      "success": 787,
-      "last": 1777117829147,
-      "lastSuccess": 1777117829147
+      "total": 792,
+      "success": 792,
+      "last": 1777467559918,
+      "lastSuccess": 1777467559918
     },
     "_AI-agedetect.js": {
       "total": 7,
@@ -2844,10 +2845,10 @@
       "lastSuccess": 1775747345165
     },
     "downloader-tiktok.js": {
-      "total": 58,
-      "success": 48,
-      "last": 1777218508916,
-      "lastSuccess": 1777218508916
+      "total": 59,
+      "success": 49,
+      "last": 1777220270807,
+      "lastSuccess": 1777220270807
     },
     "info-gempa.js": {
       "total": 4,
@@ -2892,10 +2893,10 @@
       "lastSuccess": 1770846370607
     },
     "tools-delete.js": {
-      "total": 110,
-      "success": 105,
-      "last": 1777122697509,
-      "lastSuccess": 1777122697509
+      "total": 111,
+      "success": 106,
+      "last": 1777468681063,
+      "lastSuccess": 1777468681063
     },
     "maker-sdmtinggi.js": {
       "total": 2,
@@ -2940,10 +2941,10 @@
       "lastSuccess": 1776260557176
     },
     "downloader-ig.js": {
-      "total": 66,
-      "success": 57,
-      "last": 1777214003455,
-      "lastSuccess": 1777214003455
+      "total": 84,
+      "success": 75,
+      "last": 1777454772851,
+      "lastSuccess": 1777454772851
     },
     "info-creator.js": {
       "total": 32,
@@ -3042,10 +3043,10 @@
       "lastSuccess": 1773709888312
     },
     "xp-regist.js": {
-      "total": 23,
-      "success": 16,
-      "last": 1776455297097,
-      "lastSuccess": 1776370741016
+      "total": 24,
+      "success": 17,
+      "last": 1777366753009,
+      "lastSuccess": 1777366753009
     },
     "owner-addxp.js": {
       "total": 6,
@@ -3402,16 +3403,16 @@
       "lastSuccess": 1771007984183
     },
     "internet-chagiya.js": {
-      "total": 48,
-      "success": 48,
-      "last": 1776873089123,
-      "lastSuccess": 1776873089123
+      "total": 50,
+      "success": 50,
+      "last": 1777452081043,
+      "lastSuccess": 1777452081043
     },
     "info-sc.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1776370798221,
-      "lastSuccess": 1776370798221
+      "total": 10,
+      "success": 10,
+      "last": 1777358211536,
+      "lastSuccess": 1777358211536
     },
     "internet-randbokep.js": {
       "total": 2,
@@ -3558,22 +3559,22 @@
       "lastSuccess": 1773330808514
     },
     "owner-getplugins.js": {
-      "total": 48,
-      "success": 41,
-      "last": 1775554003983,
-      "lastSuccess": 1775554003983
+      "total": 50,
+      "success": 42,
+      "last": 1777218841102,
+      "lastSuccess": 1777218841102
     },
     "internet-fetch.js": {
-      "total": 161,
-      "success": 147,
-      "last": 1777189707633,
-      "lastSuccess": 1777189707633
+      "total": 164,
+      "success": 150,
+      "last": 1777414284929,
+      "lastSuccess": 1777414284929
     },
     "tools-tempmail.js": {
-      "total": 67,
-      "success": 67,
-      "last": 1777120869150,
-      "lastSuccess": 1777120869150
+      "total": 78,
+      "success": 78,
+      "last": 1777461105673,
+      "lastSuccess": 1777461105673
     },
     "tools-wastalk.js": {
       "total": 26,
@@ -3774,10 +3775,10 @@
       "lastSuccess": 0
     },
     "internet-translate.js": {
-      "total": 15,
-      "success": 14,
-      "last": 1776343057350,
-      "lastSuccess": 1776343057350
+      "total": 22,
+      "success": 20,
+      "last": 1777384496775,
+      "lastSuccess": 1777384496775
     },
     "downloader-threads.js": {
       "total": 3,
@@ -3954,9 +3955,9 @@
       "lastSuccess": 1772522464431
     },
     "downloader-gitclone.js": {
-      "total": 10,
+      "total": 11,
       "success": 4,
-      "last": 1776485298282,
+      "last": 1777354634883,
       "lastSuccess": 1775803616221
     },
     "sticker-tts.js": {
@@ -4032,16 +4033,16 @@
       "lastSuccess": 1775473003896
     },
     "owner-delplugin.js": {
-      "total": 59,
-      "success": 59,
-      "last": 1777197701872,
-      "lastSuccess": 1777197701872
+      "total": 64,
+      "success": 64,
+      "last": 1777468920166,
+      "lastSuccess": 1777468920166
     },
     "owner-addplugin.js": {
-      "total": 177,
-      "success": 177,
-      "last": 1777049839493,
-      "lastSuccess": 1777049839493
+      "total": 182,
+      "success": 182,
+      "last": 1777452077841,
+      "lastSuccess": 1777452077841
     },
     "tools-iqc.js": {
       "total": 3,
@@ -4126,10 +4127,10 @@
       "lastSuccess": 1773172615514
     },
     "ai-mitra.js": {
-      "total": 151,
-      "success": 148,
-      "last": 1776872618732,
-      "lastSuccess": 1776872618732
+      "total": 159,
+      "success": 156,
+      "last": 1777451510268,
+      "lastSuccess": 1777451510268
     },
     "asisten-rekap.js": {
       "total": 19,
@@ -4252,10 +4253,10 @@
       "lastSuccess": 1773281168681
     },
     "downloader-pinterest.js": {
-      "total": 10,
-      "success": 7,
-      "last": 1775911000233,
-      "lastSuccess": 1775654542107
+      "total": 14,
+      "success": 11,
+      "last": 1777368036495,
+      "lastSuccess": 1777368036495
     },
     "ai-nanobanana.js": {
       "total": 40,
@@ -4270,10 +4271,10 @@
       "lastSuccess": 1773741583468
     },
     "tools-cekidch.js": {
-      "total": 11,
-      "success": 4,
-      "last": 1775116581083,
-      "lastSuccess": 1775116581083
+      "total": 12,
+      "success": 5,
+      "last": 1777372748268,
+      "lastSuccess": 1777372748268
     },
     "info-runtime.js": {
       "total": 5,
@@ -4414,10 +4415,10 @@
       "lastSuccess": 1773779943380
     },
     "owner-findplugin.js": {
-      "total": 134,
-      "success": 134,
-      "last": 1776860713136,
-      "lastSuccess": 1776860713136
+      "total": 135,
+      "success": 135,
+      "last": 1777468772702,
+      "lastSuccess": 1777468772702
     },
     "internet-cuaca.js": {
       "total": 14,
@@ -4564,10 +4565,10 @@
       "lastSuccess": 1775996724437
     },
     "owner-findcode.js": {
-      "total": 75,
-      "success": 75,
-      "last": 1777209704938,
-      "lastSuccess": 1777209704938
+      "total": 76,
+      "success": 76,
+      "last": 1777453624907,
+      "lastSuccess": 1777453624907
     },
     "group-poll.js": {
       "total": 3,
@@ -4618,16 +4619,16 @@
       "lastSuccess": 1775476361857
     },
     "owner-getfile.js": {
-      "total": 56,
-      "success": 50,
-      "last": 1776946447126,
-      "lastSuccess": 1776946447126
+      "total": 58,
+      "success": 52,
+      "last": 1777219060243,
+      "lastSuccess": 1777219060243
     },
     "owner-deletefile.js": {
-      "total": 23,
-      "success": 23,
-      "last": 1775788925160,
-      "lastSuccess": 1775788925160
+      "total": 25,
+      "success": 25,
+      "last": 1777451581119,
+      "lastSuccess": 1777451581119
     },
     "owner-renamefile.js": {
       "total": 6,
@@ -4708,10 +4709,10 @@
       "lastSuccess": 1773586901355
     },
     "info-ping.js": {
-      "total": 339,
-      "success": 339,
-      "last": 1777204553818,
-      "lastSuccess": 1777204553818
+      "total": 342,
+      "success": 342,
+      "last": 1777440653590,
+      "lastSuccess": 1777440653590
     },
     "info-info_bot.js": {
       "total": 3,
@@ -5002,10 +5003,10 @@
       "lastSuccess": 0
     },
     "maker-qc.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1774194947845,
-      "lastSuccess": 1774194947845
+      "total": 3,
+      "success": 3,
+      "last": 1777467529556,
+      "lastSuccess": 1777467529556
     },
     "ai-claude.js": {
       "total": 55,
@@ -5050,10 +5051,10 @@
       "lastSuccess": 1774243433450
     },
     "trading-indicator.js": {
-      "total": 190,
-      "success": 190,
-      "last": 1777029413520,
-      "lastSuccess": 1777029413520
+      "total": 193,
+      "success": 193,
+      "last": 1777440664487,
+      "lastSuccess": 1777440664487
     },
     "trading-portfolio.js": {
       "total": 25,
@@ -5128,10 +5129,10 @@
       "lastSuccess": 1776369180292
     },
     "owner-github.js": {
-      "total": 64,
-      "success": 64,
-      "last": 1777130108740,
-      "lastSuccess": 1777130108740
+      "total": 65,
+      "success": 65,
+      "last": 1777360335198,
+      "lastSuccess": 1777360335198
     },
     "rpg-hitman.js": {
       "total": 2,
@@ -5212,10 +5213,10 @@
       "lastSuccess": 1776919227844
     },
     "tools-hidepesan.js": {
-      "total": 7,
-      "success": 7,
-      "last": 1774547212400,
-      "lastSuccess": 1774547212400
+      "total": 12,
+      "success": 12,
+      "last": 1777453374425,
+      "lastSuccess": 1777453374425
     },
     "tools-deepvoice.js": {
       "total": 2,
@@ -5236,10 +5237,10 @@
       "lastSuccess": 0
     },
     "amba.js": {
-      "total": 4,
-      "success": 3,
-      "last": 1774577607441,
-      "lastSuccess": 1774577556790
+      "total": 7,
+      "success": 5,
+      "last": 1777218920166,
+      "lastSuccess": 1777218872993
     },
     "owner-gitpull.js": {
       "total": 3,
@@ -5266,10 +5267,10 @@
       "lastSuccess": 1776259607851
     },
     "auditbot.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1774892665431,
-      "lastSuccess": 1774892665431
+      "total": 3,
+      "success": 3,
+      "last": 1777468645757,
+      "lastSuccess": 1777468645757
     },
     "rpg-taxi.js": {
       "total": 18,
@@ -5332,10 +5333,10 @@
       "lastSuccess": 1774949684469
     },
     "tools-lrc.js": {
-      "total": 35,
-      "success": 35,
-      "last": 1776919243349,
-      "lastSuccess": 1776919243349
+      "total": 36,
+      "success": 36,
+      "last": 1777365689586,
+      "lastSuccess": 1777365689586
     },
     "tools-kalkulator.js": {
       "total": 8,
@@ -5446,10 +5447,10 @@
       "lastSuccess": 1777042251356
     },
     "owner-modulesize.js": {
-      "total": 12,
-      "success": 12,
-      "last": 1776052815314,
-      "lastSuccess": 1776052815314
+      "total": 14,
+      "success": 14,
+      "last": 1777383511712,
+      "lastSuccess": 1777383511712
     },
     "owner-updatemodule.js": {
       "total": 14,
@@ -5548,10 +5549,10 @@
       "lastSuccess": 1776353722740
     },
     "owner-checkplugin.js": {
-      "total": 11,
-      "success": 11,
-      "last": 1776370213293,
-      "lastSuccess": 1776370213293
+      "total": 12,
+      "success": 12,
+      "last": 1777468632500,
+      "lastSuccess": 1777468632500
     },
     "asisten.js": {
       "total": 8,
@@ -5584,10 +5585,10 @@
       "lastSuccess": 0
     },
     "owner-findcommand.js": {
-      "total": 80,
-      "success": 80,
-      "last": 1777049995345,
-      "lastSuccess": 1777049995345
+      "total": 85,
+      "success": 85,
+      "last": 1777468685970,
+      "lastSuccess": 1777468685970
     },
     "allmenu.js": {
       "total": 21,
@@ -5704,10 +5705,10 @@
       "lastSuccess": 1775579434207
     },
     "owner-readplugin.js": {
-      "total": 68,
-      "success": 68,
-      "last": 1777204034331,
-      "lastSuccess": 1777204034331
+      "total": 70,
+      "success": 70,
+      "last": 1777466401690,
+      "lastSuccess": 1777466401690
     },
     "main-jadibot.js": {
       "total": 4,
@@ -5728,9 +5729,9 @@
       "lastSuccess": 1775617735304
     },
     "donwloader-githubdl.js": {
-      "total": 9,
+      "total": 14,
       "success": 0,
-      "last": 1777107935797,
+      "last": 1777360355678,
       "lastSuccess": 0
     },
     "group-setnamegc.js": {
@@ -5746,10 +5747,10 @@
       "lastSuccess": 1775909878948
     },
     "downloader-twitter.js": {
-      "total": 4,
-      "success": 1,
-      "last": 1776103227092,
-      "lastSuccess": 1776103227092
+      "total": 8,
+      "success": 5,
+      "last": 1777437518781,
+      "lastSuccess": 1777437518781
     },
     "xdownloader-twitter.js": {
       "total": 8,
@@ -5860,10 +5861,10 @@
       "lastSuccess": 0
     },
     "latex.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1775734964659,
-      "lastSuccess": 1775734964659
+      "total": 7,
+      "success": 7,
+      "last": 1777468801190,
+      "lastSuccess": 1777468801190
     },
     "owner-mutasi.js": {
       "total": 41,
@@ -5878,10 +5879,10 @@
       "lastSuccess": 1775737742917
     },
     "richimage.js": {
-      "total": 15,
-      "success": 15,
-      "last": 1775742798551,
-      "lastSuccess": 1775742798551
+      "total": 16,
+      "success": 16,
+      "last": 1777468908249,
+      "lastSuccess": 1777468908249
     },
     "testrells.js": {
       "total": 2,
@@ -5992,10 +5993,10 @@
       "lastSuccess": 1775833985246
     },
     "tools-tourl.js": {
-      "total": 9,
-      "success": 7,
-      "last": 1776861011175,
-      "lastSuccess": 1776860963981
+      "total": 10,
+      "success": 8,
+      "last": 1777451699745,
+      "lastSuccess": 1777451699745
     },
     "internet-gimage.js": {
       "total": 2,
@@ -6064,10 +6065,10 @@
       "lastSuccess": 1776365097675
     },
     "owner-addscrape.js": {
-      "total": 11,
-      "success": 11,
-      "last": 1776860449414,
-      "lastSuccess": 1776860449414
+      "total": 14,
+      "success": 14,
+      "last": 1777454708951,
+      "lastSuccess": 1777454708951
     },
     "internet-ig_profile.js": {
       "total": 17,
@@ -6178,16 +6179,16 @@
       "lastSuccess": 1776853883259
     },
     "jagung.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1776785064456,
-      "lastSuccess": 1776785064456
+      "total": 12,
+      "success": 12,
+      "last": 1777468863375,
+      "lastSuccess": 1777468863375
     },
     "tools-converter.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1776873098788,
-      "lastSuccess": 1776873098788
+      "total": 11,
+      "success": 11,
+      "last": 1777453369885,
+      "lastSuccess": 1777453369885
     },
     "downloader-webvid.js": {
       "total": 3,
@@ -6212,6 +6213,24 @@
       "success": 2,
       "last": 1777210897900,
       "lastSuccess": 1777210897900
+    },
+    "internet-spamngl.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1777377318938,
+      "lastSuccess": 1777377318938
+    },
+    "owner-tree.js": {
+      "total": 17,
+      "success": 17,
+      "last": 1777468716863,
+      "lastSuccess": 1777468716863
+    },
+    "owner-clearbin.js": {
+      "total": 5,
+      "success": 5,
+      "last": 1777468618619,
+      "lastSuccess": 1777468618619
     }
   },
   "msgs": {},
@@ -6313,95 +6332,95 @@
       ]
     },
     "trading": {
-      "lastUpdate": 1777218783915,
+      "lastUpdate": 1777469100821,
       "prices": {
-        "IVL": 24894,
-        "LBT": 161434,
-        "IRC": 3477149,
-        "LTN": 82692444,
-        "RSX": 415510259,
-        "TNX": 6056847167
+        "IVL": 34787,
+        "LBT": 925083,
+        "IRC": 8566509,
+        "LTN": 24339873,
+        "RSX": 819149634,
+        "TNX": 4272867764
       },
       "prevPrices": {
-        "IVL": 25064,
-        "LBT": 174899,
-        "IRC": 3582925,
-        "LTN": 81157198,
-        "RSX": 427488841,
-        "TNX": 6071074357
+        "IVL": 34822,
+        "LBT": 906428,
+        "IRC": 8606932,
+        "LTN": 25281631,
+        "RSX": 826668743,
+        "TNX": 4407312043
       },
       "history": {
         "IVL": [
-          27154,
-          27437,
-          26847,
-          26984,
-          27351,
-          25903,
-          24799,
-          24822,
-          25064,
-          24894
+          34332,
+          33327,
+          34614,
+          34852,
+          33630,
+          34836,
+          33501,
+          33959,
+          34822,
+          34787
         ],
         "LBT": [
-          196744,
-          175315,
-          195294,
-          184058,
-          188461,
-          207345,
-          203070,
-          194970,
-          174899,
-          161434
+          885344,
+          878134,
+          866170,
+          887743,
+          906801,
+          912491,
+          897228,
+          893575,
+          906428,
+          925083
         ],
         "IRC": [
-          4352022,
-          4412051,
-          4205675,
-          4235420,
-          4010993,
-          3884886,
-          3678763,
-          3806367,
-          3582925,
-          3477149
+          8205126,
+          8368851,
+          8339605,
+          8217093,
+          8374348,
+          8504989,
+          8512764,
+          8472740,
+          8606932,
+          8566509
         ],
         "LTN": [
-          84452876,
-          83279663,
-          81809790,
-          80519829,
-          80313922,
-          80247664,
-          80714713,
-          80904932,
-          81157198,
-          82692444
+          27345230,
+          27272186,
+          28507267,
+          27069970,
+          25934943,
+          27148901,
+          28168539,
+          27150111,
+          25281631,
+          24339873
         ],
         "RSX": [
-          432011271,
-          410920255,
-          411975286,
-          431154799,
-          424605808,
-          423716291,
-          432150815,
-          426798281,
-          427488841,
-          415510259
+          896487753,
+          882669336,
+          871426144,
+          875793546,
+          884889876,
+          866049258,
+          853379163,
+          847445541,
+          826668743,
+          819149634
         ],
         "TNX": [
-          5920190139,
-          5875906139,
-          5891975629,
-          5812615322,
-          5975197208,
-          5925439877,
-          5945892447,
-          6072062467,
-          6071074357,
-          6056847167
+          4090336588,
+          4181787260,
+          4285273500,
+          4454708517,
+          4278767568,
+          4159842378,
+          4265345326,
+          4368061905,
+          4407312043,
+          4272867764
         ]
       },
       "ath": {
@@ -6410,7 +6429,7 @@
         "IRC": 9416263,
         "LTN": 94466318,
         "RSX": 964285502,
-        "TNX": 9478796022
+        "TNX": 9520266452
       },
       "momentum": {
         "IVL": 0,
@@ -6457,7 +6476,7 @@
         "120363406727405732@g.us",
         "120363284305573016@g.us"
       ],
-      "lastMinuteMarker": "2026-04-26 23:53",
+      "lastMinuteMarker": "2026-04-29 21:25",
       "vault": 124720678,
       "taxRates": {
         "IVL": 1.5,
@@ -6471,10 +6490,14 @@
       "eventHistory": [],
       "announcerGroup": "120363284305573016@g.us",
       "lastDividendClaim": 1775219551731,
-      "lastCanceledEvent": null,
+      "lastCanceledEvent": {
+        "title": "HIVE MIND SYNCHRONIZATION",
+        "reason": "Bullish ditolak (LBT sudah menyentuh Resisten/Pucuk)",
+        "time": 1777462140381
+      },
       "probabilities": {
         "IVL": "50%",
-        "LBT": "95%",
+        "LBT": "50%",
         "IRC": "50%",
         "LTN": "50%",
         "RSX": "50%",
