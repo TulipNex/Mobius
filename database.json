@@ -14,9 +14,9 @@
       "pasangan": "",
       "location": "Gubuk",
       "pc": 0,
-      "exp": 8483,
+      "exp": 9213,
       "coin": 0,
-      "limit": 94,
+      "limit": 90,
       "token": 10,
       "skata": 0,
       "lastclaim": 0,
@@ -78,9 +78,9 @@
       "ovo": 0,
       "dana": 0,
       "gopay": 0,
-      "command": 347,
-      "commandTotal": 347,
-      "lastCmd": 1777551168034,
+      "command": 379,
+      "commandTotal": 379,
+      "lastCmd": 1777588085818,
       "lastbossbattle": 0,
       "anggur": 0,
       "vebriy": false,
@@ -105,8 +105,8 @@
       "level": 20,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 6092,
-      "limit": 100,
+      "exp": 6730,
+      "limit": 99,
       "token": 10,
       "skata": 0,
       "lastkerja": 0,
@@ -136,9 +136,9 @@
       "job": "Pengangguran",
       "role": "Private Grade 1 ⚌¹",
       "autolevelup": true,
-      "command": 118,
-      "commandTotal": 118,
-      "lastCmd": 1777547338014,
+      "command": 145,
+      "commandTotal": 145,
+      "lastCmd": 1777570927905,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -150,8 +150,42 @@
       "vebriy": false,
       "vebriy_history": [],
       "pengingat": [],
-      "saldo_kas": 0,
-      "riwayatKeuangan": []
+      "saldo_kas": 290000,
+      "riwayatKeuangan": [
+        {
+          "id": 1777570889430,
+          "trxId": "TDAW",
+          "tipe": "MASUK",
+          "nominal": 200000,
+          "ket": "Transfer",
+          "tanggal": "01/05/26, 01.41",
+          "hari": "Jumat",
+          "tanggalLengkap": "1 Mei 2026",
+          "waktu": "01.41 WITA"
+        },
+        {
+          "id": 1777570912258,
+          "trxId": "1YUK",
+          "tipe": "MASUK",
+          "nominal": 100000,
+          "ket": "Transfer",
+          "tanggal": "01/05/26, 01.41",
+          "hari": "Jumat",
+          "tanggalLengkap": "1 Mei 2026",
+          "waktu": "01.41 WITA"
+        },
+        {
+          "id": 1777570923459,
+          "trxId": "GLBV",
+          "tipe": "KELUAR",
+          "nominal": 10000,
+          "ket": "Ayam geprek",
+          "tanggal": "01/05/26, 01.42",
+          "hari": "Jumat",
+          "tanggalLengkap": "1 Mei 2026",
+          "waktu": "01.42 WITA"
+        }
+      ]
     },
     "6283853531950@s.whatsapp.net": {
       "taxi": 0,
@@ -210,8 +244,8 @@
       "level": 0,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 1552,
-      "limit": 80,
+      "exp": 1646,
+      "limit": 79,
       "token": 5,
       "skata": 0,
       "lastkerja": 0,
@@ -249,9 +283,9 @@
       "followers": 0,
       "coin": 0,
       "bank": 0,
-      "command": 67,
-      "commandTotal": 67,
-      "lastCmd": 1777494451322,
+      "command": 70,
+      "commandTotal": 70,
+      "lastCmd": 1777563027933,
       "tempmail_recipient": "42a687f862"
     },
     "249348621369556@lid": {
@@ -261,7 +295,7 @@
       "level": 0,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 429,
+      "exp": 449,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -292,9 +326,9 @@
       "job": "Pengangguran",
       "role": "Newbie ㋡",
       "autolevelup": true,
-      "command": 15,
-      "commandTotal": 15,
-      "lastCmd": 1777438481894,
+      "command": 16,
+      "commandTotal": 16,
+      "lastCmd": 1777569209022,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -361,7 +395,7 @@
       "level": 0,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 48,
+      "exp": 52,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -408,7 +442,7 @@
       "level": 0,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 355,
+      "exp": 396,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -439,9 +473,9 @@
       "job": "Pengangguran",
       "role": "Newbie ㋡",
       "autolevelup": true,
-      "command": 14,
-      "commandTotal": 14,
-      "lastCmd": 1777549507159,
+      "command": 16,
+      "commandTotal": 16,
+      "lastCmd": 1777588079933,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -508,7 +542,7 @@
       "level": 0,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 118,
+      "exp": 166,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -539,9 +573,9 @@
       "job": "Pengangguran",
       "role": "Newbie ㋡",
       "autolevelup": true,
-      "command": 2,
-      "commandTotal": 2,
-      "lastCmd": 1777452081041,
+      "command": 4,
+      "commandTotal": 4,
+      "lastCmd": 1777563242127,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -968,10 +1002,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 608,
-          "commandTotal": 608,
+          "command": 609,
+          "commandTotal": 609,
           "lastseen": 0,
-          "lastCmd": 1777547338014
+          "lastCmd": 1777563280372
         },
         "120363406727405732@g.us": {
           "blacklist": false,
@@ -979,10 +1013,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 16,
-          "commandTotal": 16,
+          "command": 18,
+          "commandTotal": 18,
           "lastseen": 0,
-          "lastCmd": 1777452081041
+          "lastCmd": 1777563242127
         },
         "6285324023198@s.whatsapp.net": {
           "blacklist": false,
@@ -990,10 +1024,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 71,
-          "commandTotal": 71,
+          "command": 74,
+          "commandTotal": 74,
           "lastseen": 0,
-          "lastCmd": 1777494451322
+          "lastCmd": 1777563027933
         },
         "249348621369556@lid": {
           "blacklist": false,
@@ -1046,24 +1080,24 @@
       "mutedUsers": [],
       "memberStats": {
         "6282215415550@s.whatsapp.net": {
-          "chatCount": 2531,
-          "lastSeen": 1777547326024
+          "chatCount": 2535,
+          "lastSeen": 1777563524364
         },
         "249348621369556@lid": {
           "chatCount": 10,
           "lastSeen": 1775671795959
         },
         "6285324023198@s.whatsapp.net": {
-          "chatCount": 515,
-          "lastSeen": 1777547230297
+          "chatCount": 526,
+          "lastSeen": 1777563053691
         },
         "221203734204662@lid": {
           "chatCount": 1,
           "lastSeen": 1774217273333
         },
         "120363406727405732@g.us": {
-          "chatCount": 22,
-          "lastSeen": 1777452081041
+          "chatCount": 24,
+          "lastSeen": 1777563242127
         },
         "6283853531950@s.whatsapp.net": {
           "chatCount": 18,
@@ -2828,16 +2862,16 @@
       "lastSuccess": 1773387795339
     },
     "downloader-spotify.js": {
-      "total": 53,
-      "success": 44,
-      "last": 1777454895395,
-      "lastSuccess": 1777454895395
+      "total": 60,
+      "success": 51,
+      "last": 1777568187551,
+      "lastSuccess": 1777568187551
     },
     "menu.js": {
-      "total": 795,
-      "success": 795,
-      "last": 1777547326238,
-      "lastSuccess": 1777547326238
+      "total": 799,
+      "success": 799,
+      "last": 1777573055223,
+      "lastSuccess": 1777573055223
     },
     "_AI-agedetect.js": {
       "total": 7,
@@ -2918,10 +2952,10 @@
       "lastSuccess": 1770846370607
     },
     "tools-delete.js": {
-      "total": 111,
-      "success": 106,
-      "last": 1777468681063,
-      "lastSuccess": 1777468681063
+      "total": 113,
+      "success": 108,
+      "last": 1777576726801,
+      "lastSuccess": 1777576726801
     },
     "maker-sdmtinggi.js": {
       "total": 2,
@@ -2936,10 +2970,10 @@
       "lastSuccess": 1775116752925
     },
     "owner-clearsessions.js": {
-      "total": 66,
-      "success": 66,
-      "last": 1777106410116,
-      "lastSuccess": 1777106410116
+      "total": 67,
+      "success": 67,
+      "last": 1777572834022,
+      "lastSuccess": 1777572834022
     },
     "fun-taugasi.js": {
       "total": 4,
@@ -2978,10 +3012,10 @@
       "lastSuccess": 1775117303413
     },
     "main-gcbot.js": {
-      "total": 17,
-      "success": 17,
-      "last": 1776000772559,
-      "lastSuccess": 1776000772559
+      "total": 19,
+      "success": 19,
+      "last": 1777562558531,
+      "lastSuccess": 1777562558531
     },
     "_store-addlist.js": {
       "total": 5,
@@ -3014,10 +3048,10 @@
       "lastSuccess": 1770955490666
     },
     "owner-cleartmp.js": {
-      "total": 39,
-      "success": 39,
-      "last": 1777106412600,
-      "lastSuccess": 1777106412600
+      "total": 40,
+      "success": 40,
+      "last": 1777572843600,
+      "lastSuccess": 1777572843600
     },
     "owner-self.js": {
       "total": 12,
@@ -3590,10 +3624,10 @@
       "lastSuccess": 1777218841102
     },
     "internet-fetch.js": {
-      "total": 164,
-      "success": 150,
-      "last": 1777414284929,
-      "lastSuccess": 1777414284929
+      "total": 171,
+      "success": 157,
+      "last": 1777576008410,
+      "lastSuccess": 1777576008410
     },
     "tools-tempmail.js": {
       "total": 78,
@@ -3764,10 +3798,10 @@
       "lastSuccess": 1771836559538
     },
     "owner-exec.js": {
-      "total": 101,
-      "success": 101,
-      "last": 1777218804298,
-      "lastSuccess": 1777218804298
+      "total": 102,
+      "success": 102,
+      "last": 1777572365494,
+      "lastSuccess": 1777572365494
     },
     "group-linkgc.js": {
       "total": 11,
@@ -4058,10 +4092,10 @@
       "lastSuccess": 1775473003896
     },
     "owner-delplugin.js": {
-      "total": 64,
-      "success": 64,
-      "last": 1777468920166,
-      "lastSuccess": 1777468920166
+      "total": 65,
+      "success": 65,
+      "last": 1777572964104,
+      "lastSuccess": 1777572964104
     },
     "owner-addplugin.js": {
       "total": 186,
@@ -4392,10 +4426,10 @@
       "lastSuccess": 1775449204754
     },
     "info-boost.js": {
-      "total": 34,
-      "success": 29,
-      "last": 1777029405363,
-      "lastSuccess": 1777029405363
+      "total": 35,
+      "success": 30,
+      "last": 1777572820920,
+      "lastSuccess": 1777572820920
     },
     "group-startgiveaway.js": {
       "total": 2,
@@ -4440,10 +4474,10 @@
       "lastSuccess": 1773779943380
     },
     "owner-findplugin.js": {
-      "total": 135,
-      "success": 135,
-      "last": 1777468772702,
-      "lastSuccess": 1777468772702
+      "total": 142,
+      "success": 142,
+      "last": 1777570435172,
+      "lastSuccess": 1777570435172
     },
     "internet-cuaca.js": {
       "total": 14,
@@ -4590,10 +4624,10 @@
       "lastSuccess": 1775996724437
     },
     "owner-findcode.js": {
-      "total": 78,
-      "success": 78,
-      "last": 1777472390183,
-      "lastSuccess": 1777472390183
+      "total": 79,
+      "success": 79,
+      "last": 1777570505356,
+      "lastSuccess": 1777570505356
     },
     "group-poll.js": {
       "total": 3,
@@ -4734,10 +4768,10 @@
       "lastSuccess": 1773586901355
     },
     "info-ping.js": {
-      "total": 345,
-      "success": 345,
-      "last": 1777549507582,
-      "lastSuccess": 1777549507582
+      "total": 352,
+      "success": 352,
+      "last": 1777576756325,
+      "lastSuccess": 1777576756325
     },
     "info-info_bot.js": {
       "total": 3,
@@ -5148,16 +5182,16 @@
       "lastSuccess": 1774442094289
     },
     "scipio.js": {
-      "total": 28,
-      "success": 28,
-      "last": 1776369180292,
-      "lastSuccess": 1776369180292
+      "total": 29,
+      "success": 29,
+      "last": 1777570845257,
+      "lastSuccess": 1777570845257
     },
     "owner-github.js": {
-      "total": 80,
-      "success": 80,
-      "last": 1777551168063,
-      "lastSuccess": 1777551168063
+      "total": 83,
+      "success": 83,
+      "last": 1777588085837,
+      "lastSuccess": 1777588085837
     },
     "rpg-hitman.js": {
       "total": 2,
@@ -5454,16 +5488,16 @@
       "lastSuccess": 1775150479237
     },
     "downloader-fb.js": {
-      "total": 7,
+      "total": 8,
       "success": 0,
-      "last": 1776460483743,
+      "last": 1777568570497,
       "lastSuccess": 0
     },
     "info-owner.js": {
-      "total": 10,
-      "success": 10,
-      "last": 1777494451783,
-      "lastSuccess": 1777494451783
+      "total": 13,
+      "success": 13,
+      "last": 1777566840234,
+      "lastSuccess": 1777566840234
     },
     "owner-scanmodule.js": {
       "total": 20,
@@ -5610,10 +5644,10 @@
       "lastSuccess": 0
     },
     "owner-findcommand.js": {
-      "total": 86,
-      "success": 86,
-      "last": 1777522380538,
-      "lastSuccess": 1777522380538
+      "total": 88,
+      "success": 88,
+      "last": 1777572927364,
+      "lastSuccess": 1777572927364
     },
     "allmenu.js": {
       "total": 21,
@@ -5892,10 +5926,10 @@
       "lastSuccess": 1777468801190
     },
     "owner-mutasi.js": {
-      "total": 42,
-      "success": 42,
-      "last": 1777550978326,
-      "lastSuccess": 1777550978326
+      "total": 47,
+      "success": 47,
+      "last": 1777570927914,
+      "lastSuccess": 1777570927914
     },
     "ai-meta.js": {
       "total": 5,
@@ -6120,10 +6154,10 @@
       "lastSuccess": 1776320542397
     },
     "test-button.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1776335538912,
-      "lastSuccess": 1776335538912
+      "total": 6,
+      "success": 6,
+      "last": 1777575294712,
+      "lastSuccess": 1777575294712
     },
     "owner-delvar.js": {
       "total": 16,
@@ -6216,10 +6250,10 @@
       "lastSuccess": 1777471682166
     },
     "downloader-webvid.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1777189693250,
-      "lastSuccess": 1777189693250
+      "total": 5,
+      "success": 5,
+      "last": 1777575789178,
+      "lastSuccess": 1777575789178
     },
     "igstory.js": {
       "total": 6,
@@ -6268,6 +6302,18 @@
       "success": 2,
       "last": 1777547338015,
       "lastSuccess": 1777547338015
+    },
+    "main-main.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1777566907731,
+      "lastSuccess": 1777566907731
+    },
+    "kucing.js": {
+      "total": 4,
+      "success": 4,
+      "last": 1777572575661,
+      "lastSuccess": 1777572575661
     }
   },
   "msgs": {},
@@ -6369,95 +6415,95 @@
       ]
     },
     "trading": {
-      "lastUpdate": 1777551124929,
+      "lastUpdate": 1777588080725,
       "prices": {
-        "IVL": 42973,
-        "LBT": 418198,
-        "IRC": 8638548,
-        "LTN": 55846931,
-        "RSX": 905690260,
-        "TNX": 7072965374
+        "IVL": 68093,
+        "LBT": 799323,
+        "IRC": 7389032,
+        "LTN": 61197640,
+        "RSX": 771748787,
+        "TNX": 4027379758
       },
       "prevPrices": {
-        "IVL": 42314,
-        "LBT": 399224,
-        "IRC": 8467241,
-        "LTN": 54230031,
-        "RSX": 884221536,
-        "TNX": 6952008658
+        "IVL": 68889,
+        "LBT": 800559,
+        "IRC": 7246574,
+        "LTN": 62564796,
+        "RSX": 779878880,
+        "TNX": 3842728710
       },
       "history": {
         "IVL": [
-          40588,
-          40354,
-          41223,
-          40511,
-          41963,
-          41636,
-          41210,
-          42345,
-          42314,
-          42973
+          73914,
+          73140,
+          72081,
+          72311,
+          71087,
+          70482,
+          69987,
+          69579,
+          68889,
+          68093
         ],
         "LBT": [
-          461834,
-          439602,
-          443226,
-          437882,
-          419627,
-          412199,
-          407207,
-          418696,
-          399224,
-          418198
+          822111,
+          835151,
+          827525,
+          816570,
+          825848,
+          833995,
+          812379,
+          792466,
+          800559,
+          799323
         ],
         "IRC": [
-          8422657,
-          8415176,
-          8445731,
-          8235730,
-          8271532,
-          8418293,
-          8416732,
-          8547063,
-          8467241,
-          8638548
+          6775937,
+          6820945,
+          6951354,
+          7116456,
+          7299791,
+          7084127,
+          7197426,
+          7196961,
+          7246574,
+          7389032
         ],
         "LTN": [
-          53806338,
-          52575651,
-          51425062,
-          53408538,
-          53134082,
-          53211673,
-          53915416,
-          55822874,
-          54230031,
-          55846931
+          62729635,
+          62404383,
+          64499259,
+          64839971,
+          66643400,
+          64566959,
+          62432840,
+          63847953,
+          62564796,
+          61197640
         ],
         "RSX": [
-          882779149,
-          873687855,
-          864218882,
-          880620575,
-          892055572,
-          904106280,
-          893408101,
-          884693211,
-          884221536,
-          905690260
+          756174916,
+          757156963,
+          746865079,
+          738358345,
+          752079376,
+          748128683,
+          766386951,
+          785259582,
+          779878880,
+          771748787
         ],
         "TNX": [
-          6765817848,
-          6879387354,
-          6845703059,
-          6823467742,
-          7007319232,
-          6851869740,
-          7056512293,
-          6929533020,
-          6952008658,
-          7072965374
+          4059598498,
+          3963129736,
+          4017448354,
+          3908011012,
+          4080499752,
+          3919426463,
+          3803990105,
+          3663317352,
+          3842728710,
+          4027379758
         ]
       },
       "ath": {
@@ -6513,7 +6559,7 @@
         "120363406727405732@g.us",
         "120363284305573016@g.us"
       ],
-      "lastMinuteMarker": "2026-04-30 20:12",
+      "lastMinuteMarker": "2026-05-01 06:28",
       "vault": 124720678,
       "taxRates": {
         "IVL": 1.5,
