@@ -14,7 +14,7 @@
       "pasangan": "",
       "location": "Gubuk",
       "pc": 0,
-      "exp": 8249,
+      "exp": 8410,
       "coin": 0,
       "limit": 94,
       "token": 10,
@@ -78,9 +78,9 @@
       "ovo": 0,
       "dana": 0,
       "gopay": 0,
-      "command": 337,
-      "commandTotal": 337,
-      "lastCmd": 1777550801889,
+      "command": 344,
+      "commandTotal": 344,
+      "lastCmd": 1777551093709,
       "lastbossbattle": 0,
       "anggur": 0,
       "vebriy": false,
@@ -94,7 +94,9 @@
           "text": "Halo! Kenalin, aku Vebriy.\n\nPresiden Indonesia saat ini adalah *Prabowo Subianto*. Beliau menjabat bersama *Gibran Rakabuming Raka* sebagai Wakil Presiden sejak resmi dilantik pada 20 Oktober 2024 lalu.\n\nAda lagi yang ingin kamu diskusikan tentang pemerintahan atau topik lainnya? Aku siap bantu!"
         }
       ],
-      "tempmail_recipient": "mitra1"
+      "tempmail_recipient": "mitra1",
+      "saldo_kas": 0,
+      "riwayatKeuangan": []
     },
     "6282215415550@s.whatsapp.net": {
       "taxi": 0,
@@ -5152,10 +5154,10 @@
       "lastSuccess": 1776369180292
     },
     "owner-github.js": {
-      "total": 72,
-      "success": 72,
-      "last": 1777550801909,
-      "lastSuccess": 1777550801909
+      "total": 77,
+      "success": 77,
+      "last": 1777551093727,
+      "lastSuccess": 1777551093727
     },
     "rpg-hitman.js": {
       "total": 2,
@@ -5728,10 +5730,10 @@
       "lastSuccess": 1775579434207
     },
     "owner-readplugin.js": {
-      "total": 72,
-      "success": 72,
-      "last": 1777522899130,
-      "lastSuccess": 1777522899130
+      "total": 73,
+      "success": 73,
+      "last": 1777550861951,
+      "lastSuccess": 1777550861951
     },
     "main-jadibot.js": {
       "total": 4,
@@ -5890,10 +5892,10 @@
       "lastSuccess": 1777468801190
     },
     "owner-mutasi.js": {
-      "total": 41,
-      "success": 41,
-      "last": 1776455844853,
-      "lastSuccess": 1776455844853
+      "total": 42,
+      "success": 42,
+      "last": 1777550978326,
+      "lastSuccess": 1777550978326
     },
     "ai-meta.js": {
       "total": 5,
@@ -6367,95 +6369,95 @@
       ]
     },
     "trading": {
-      "lastUpdate": 1777550764907,
+      "lastUpdate": 1777551064924,
       "prices": {
-        "IVL": 40511,
-        "LBT": 437882,
-        "IRC": 8235730,
-        "LTN": 53408538,
-        "RSX": 880620575,
-        "TNX": 6823467742
+        "IVL": 42314,
+        "LBT": 399224,
+        "IRC": 8467241,
+        "LTN": 54230031,
+        "RSX": 884221536,
+        "TNX": 6952008658
       },
       "prevPrices": {
-        "IVL": 41223,
-        "LBT": 443226,
-        "IRC": 8445731,
-        "LTN": 51425062,
-        "RSX": 864218882,
-        "TNX": 6845703059
+        "IVL": 42345,
+        "LBT": 418696,
+        "IRC": 8547063,
+        "LTN": 55822874,
+        "RSX": 884693211,
+        "TNX": 6929533020
       },
       "history": {
         "IVL": [
-          41018,
-          39576,
-          38822,
-          38757,
-          39687,
           39858,
           40588,
           40354,
           41223,
-          40511
+          40511,
+          41963,
+          41636,
+          41210,
+          42345,
+          42314
         ],
         "LBT": [
-          469910,
-          473239,
-          453453,
-          468941,
-          473760,
           473384,
           461834,
           439602,
           443226,
-          437882
+          437882,
+          419627,
+          412199,
+          407207,
+          418696,
+          399224
         ],
         "IRC": [
-          8592435,
-          8738091,
-          8532737,
-          8312863,
-          8451639,
           8364795,
           8422657,
           8415176,
           8445731,
-          8235730
+          8235730,
+          8271532,
+          8418293,
+          8416732,
+          8547063,
+          8467241
         ],
         "LTN": [
-          44929636,
-          45977102,
-          48156867,
-          49531308,
-          49527750,
           51760810,
           53806338,
           52575651,
           51425062,
-          53408538
+          53408538,
+          53134082,
+          53211673,
+          53915416,
+          55822874,
+          54230031
         ],
         "RSX": [
-          864889378,
-          885277363,
-          896795172,
-          910553106,
-          896047867,
           885136121,
           882779149,
           873687855,
           864218882,
-          880620575
+          880620575,
+          892055572,
+          904106280,
+          893408101,
+          884693211,
+          884221536
         ],
         "TNX": [
-          7413841943,
-          7359805636,
-          7290308298,
-          7245103322,
-          7096434099,
           6981637371,
           6765817848,
           6879387354,
           6845703059,
-          6823467742
+          6823467742,
+          7007319232,
+          6851869740,
+          7056512293,
+          6929533020,
+          6952008658
         ]
       },
       "ath": {
@@ -6511,7 +6513,7 @@
         "120363406727405732@g.us",
         "120363284305573016@g.us"
       ],
-      "lastMinuteMarker": "2026-04-30 20:06",
+      "lastMinuteMarker": "2026-04-30 20:11",
       "vault": 124720678,
       "taxRates": {
         "IVL": 1.5,
