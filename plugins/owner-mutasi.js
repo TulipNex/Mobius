@@ -96,9 +96,12 @@ let handler = async (m, { conn, text, usedPrefix, command, args }) => {
     else if (act === 'mutasi' || act === 'cashflow') {
         if (user.riwayatKeuangan.length === 0) return m.reply('⚠️ Anda belum memiliki riwayat transaksi keuangan.');
 
-        // Tabel Detail: Memisahkan Pemasukan & Pengeluaran, tanpa kolom Tipe
-        let detailRows = [
-            { items: ["ID", "In", "Out", "Keterangan", "Saldo"], isHeading: true }
+        // Menggunakan library AIRich untuk Tabel
+        const { AIRich } = require('../lib/MessageBuilder.js');
+
+        // Struktur array tabel detail (baris pertama adalah header)
+        let detailTableData = [
+            ["ID", "In", "Out", "Keterangan", "Saldo"]
         ];
 
         let runningBalance = 0; 
@@ -122,77 +125,41 @@ let handler = async (m, { conn, text, usedPrefix, command, args }) => {
 
             let formattedSaldo = runningBalance.toLocaleString('id-ID');
             
-            // Menampilkan teks keterangan secara utuh (tanpa pemotongan)
+            // Menampilkan teks keterangan secara utuh
             let shortKet = item.ket; 
             let idText = item.trxId || item.id.toString().slice(-4);
             
-            detailRows.push({
-                items: [idText, inStr, outStr, shortKet, formattedSaldo]
-            });
+            detailTableData.push([idText, inStr, outStr, shortKet, formattedSaldo]);
         }
 
-        // Tabel Ringkasan
-        let summaryRows = [
-            { items: ["Keterangan", "Total Nominal"], isHeading: true },
-            { items: ["Pemasukan", `Rp ${totalPemasukan.toLocaleString('id-ID')}`] },
-            { items: ["Pengeluaran", `Rp ${totalPengeluaran.toLocaleString('id-ID')}`] },
-            { items: ["Sisa Saldo", `Rp ${user.saldo_kas.toLocaleString('id-ID')}`] }
+        // Struktur array tabel ringkasan (baris pertama adalah header)
+        let summaryTableData = [
+            ["Keterangan", "Total Nominal"],
+            ["Pemasukan", `Rp ${totalPemasukan.toLocaleString('id-ID')}`],
+            ["Pengeluaran", `Rp ${totalPengeluaran.toLocaleString('id-ID')}`],
+            ["Sisa Saldo", `Rp ${user.saldo_kas.toLocaleString('id-ID')}`]
         ];
 
         // Teks Pendamping / Pengantar Pesan
         let preText = `╔═════════════════╗\n`;
-		preText += `        *CATATAN KEUANGAN*     \n`;
-        preText += `╚═════════════════╝`;
-        preText += `\n\n*RINGKASAN ARUS KAS:*`;
+        preText += `        *CATATAN KEUANGAN* \n`;
+        preText += `╚═════════════════╝\n\n`;
+        preText += `📊 *RINGKASAN ARUS KAS:*`;
 
-        let midText = `\n*DETAIL ARUS KAS:*`;
+        let midText = `\n🧾 *DETAIL ARUS KAS:*`;
 
-
-        // Eksekusi pengiriman menggunakan Raw Protobuf (Menggabungkan Text dan 2 Tabel dalam 1 Pesan)
-        await conn.relayMessage(m.chat, {
-            botForwardedMessage: {
-                message: {
-                    richResponseMessage: {
-                        messageType: 1,
-                        submessages: [
-                            {
-                                // 1. Menyisipkan Header/Judul Teks
-                                messageType: 2,
-                                messageText: preText
-                            },
-                            {
-                                // 2. Menyisipkan Tabel Ringkasan (Summary)
-                                messageType: 4,
-                                tableMetadata: {
-                                    title: "📊 Ringkasan Keuangan",
-                                    rows: summaryRows
-                                }
-                            },
-                             {
-                                // 1. Menyisipkan Judul Tabel
-                                messageType: 2,
-                                messageText: midText
-                            },
-                            {
-                                // 3. Menyisipkan Tabel Detail Riwayat
-                                messageType: 4,
-                                tableMetadata: {
-                                    title: "🧾 Detail Arus Kas",
-                                    rows: detailRows
-                                }
-                            }
-                        ],
-                        contextInfo: {
-                            mentionedJid: [m.sender],
-                            forwardingScore: 1,
-                            isForwarded: true,
-                            forwardedAiBotMessageInfo: { botJid: "867051314767696@s.whatsapp.net" },
-                            forwardOrigin: 4
-                        }
-                    }
-                }
-            }
-        }, {});
+        try {
+            // Mengeksekusi pembuatan pesan dengan class AIRich
+            await new AIRich()
+                .addText(preText)
+                .addTable(summaryTableData)
+                .addText(midText)
+                .addTable(detailTableData)
+                .run(m.chat, conn, m);
+        } catch (e) {
+            console.error("Gagal mengirim mutasi AIRich:", e);
+            m.reply("Terjadi kesalahan saat memuat tampilan mutasi.");
+        }
     }
 
     // ==========================================

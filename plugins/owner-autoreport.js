@@ -10,7 +10,7 @@ let handler = async (m, { conn, command }) => {
         try {
             // Mengirim pesan langsung (Japri) menggunakan conn.sendMessage
             await conn.sendMessage(targetOwner, { 
-                text: '🚨 *PESAN UJI COBA DARI WANN BOT* 🚨\n\nJika anda menerima pesan ini, berarti jalur komunikasi bot ke Owner terbuka lebar dan siap digunakan untuk Auto-Report!' 
+                text: '🚨 *PESAN UJI COBA DARI BOT* 🚨\n\nJika anda menerima pesan ini, berarti jalur komunikasi bot ke Owner terbuka lebar dan siap digunakan untuk Auto-Report!' 
             });
             return m.reply('✅ *SUKSES!* Pesan berhasil dikirim ke nomor Owner. Silakan cek chat pribadi dari bot.');
         } catch (e) {
@@ -26,7 +26,7 @@ let handler = async (m, { conn, command }) => {
         
         setTimeout(() => {
             // Kita gunakan 'Unhandled Rejection' agar mesin tidak mati mendadak (Mencegah Instant Death)
-            Promise.reject(new Error("🚨 SIMULASI BUG BERHASIL: Ini adalah pesan percobaan dari sistem keamanan Wann Bot!"));
+            Promise.reject(new Error("🚨 SIMULASI BUG BERHASIL: Ini adalah pesan percobaan dari sistem keamanan Bot!"));
         }, 2000);
         
         return;

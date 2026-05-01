@@ -24,6 +24,7 @@ let handler = async (m, { conn }) => {
     
     // Perbaikan zona waktu
     let timeZone = (json.timeZones && json.timeZones.length > 0) ? json.timeZones[0] : 'N/A';
+    let name = global.botname || 'Mitra';
     
     // ==========================================
     // PERBAIKAN BUG CURRENCY "UNDEFINED"
@@ -57,7 +58,7 @@ let handler = async (m, { conn }) => {
         text: txt,
         contextInfo: {
           externalAdReply: {
-            title: `SERVER INFORMATION - WANN BOT`,
+            title: `SERVER INFORMATION - ${name}`,
             body: `Powered by TulipNex`,
             mediaType: 1,
             previewType: 0,

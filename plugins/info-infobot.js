@@ -5,6 +5,7 @@ var osu = require("node-os-utils");
 var { performance } = require("perf_hooks");
 var { sizeFormatter } = require("human-readable");
 
+let name = global.botname || 'TulipNex';
 var format = sizeFormatter({
   std: "JEDEC", 
   decimalPlaces: 2,
@@ -150,7 +151,7 @@ ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${
         text: txt, 
         contextInfo: {
             externalAdReply: {
-                title: `SERVER MONITORING - WANN BOT`,
+                title: `SERVER MONITORING - ${name}`,
                 body: `${require('os').cpus()[0].model}`,
                 mediaType: 1,
                 previewType: 0,

@@ -8,7 +8,7 @@ global.numberowner = "6282215415550"; // wajib di isi tidak boleh kosong
 global.mail = "tulipnexsupport@gmail.com"; // wajib di isi tidak boleh kosong
 global.gc = "https://chat.whatsapp.com/Futdln0tFp2Jf0uSkp9o1O?mode=gi_t"; // wajib di isi tidak boleh kosong
 global.instagram = "https://instagram.com/mitrawann"; // wajib di isi tidak boleh kosong
-global.botname = "Mobius"; //isi nama bot kalian
+global.botname = "Pandora"; //isi nama bot kalian
 global.wm = `© ${global.botname}`; // isi nama bot atau nama kalian
 global.wait = "_*Tunggu sedang di proses...*_"; // ini pesan simulasi loading
 global.eror = "_*Server Error*_"; // ini pesan saat terjadi kesalahan

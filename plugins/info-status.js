@@ -56,7 +56,7 @@ let handler = async(m, { conn, command, usedPrefix, DevMode }) => {
         
         // Kalkulasi persentase RAM yang dirapikan
         let ramPercent = (/[0-9.+/]/g.test(ramUsed) && /[0-9.+/]/g.test(ramTotal)) ? Math.round(100 * (ramUsed / ramTotal)) + '%' : NotDetect
-
+		let name = global.botname || 'TulipNex';
         // Desain UI Baru (Tanpa Reaksi Emoji)
         var txt = `🖥️ *S Y S T E M   S T A T U S*
 ────────────────────
@@ -81,7 +81,7 @@ let handler = async(m, { conn, command, usedPrefix, DevMode }) => {
                 text: txt, 
                 contextInfo: {
                     externalAdReply: {
-                        title: `STATUS MONITORING - WANN BOT`,
+                        title: `STATUS MONITORING - ${name}`,
                         body: `Powered by TulipNex`,
                         mediaType: 1,
                         previewType: 0,

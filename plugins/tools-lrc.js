@@ -1,5 +1,8 @@
 const axios = require('axios');
 
+// IMPOR HELPER DARI LIBRARY BARU
+const { sendButton, extractPayload } = require('../lib/nativeFlow');
+
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   // Inisialisasi tempat penyimpanan sesi lirik
   conn.lrcSession = conn.lrcSession || {};
@@ -10,7 +13,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
   try {
     // Mengirim pesan loading
-    m.reply(global.wait);
+    m.reply(global.wait || '⏳ _Sedang mencari lirik..._');
 
     // Endpoint API resmi LRCLIB
     let apiUrl = `https://lrclib.net/api/search?q=${encodeURIComponent(text)}`;
@@ -28,7 +31,6 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     // Simpan hasil pencarian ke dalam session bot
     conn.lrcSession[m.sender] = {
       data: data,
-      page: 1,
       query: text,
       // Hapus sesi otomatis setelah 5 menit untuk mencegah kebocoran memori
       timeout: setTimeout(() => {
@@ -36,144 +38,129 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
       }, 5 * 60 * 1000)
     };
 
-    // Pagination: Menyiapkan 10 hasil pertama
-    let limit = 10;
-    let totalPages = Math.ceil(data.length / limit);
-    let chunk = data.slice(0, limit);
+    // ==========================================
+    // PERAKITAN DATA BUTTON (Maksimal 30 Hasil)
+    // ==========================================
+    let txt = `🎵 *Hasil Pencarian Lirik: ${text}*\n\n`;
+    txt += `> _Silahkan ketuk tombol "PILIH LAGU" di bawah untuk melihat liriknya._`;
 
-    let caption = `🎵 *Hasil Pencarian Lirik: ${text}*\n\n`;
-    chunk.forEach((song, i) => {
-      // Perubahan: Hanya menampilkan judul dan penyanyi
-      caption += `${i + 1}. ${song.trackName} - ${song.artistName}\n`;
-    });
+    // Ambil maksimal 30 lagu teratas agar daftar di WA tidak crash
+    let limit = Math.min(30, data.length);
+    let buttonRows = [];
 
-    caption += `\n*Halaman 1/${totalPages}*`;
-    caption += `\n\n> Balas pesan ini dengan *nomor* untuk melihat lirik.`;
-    if (totalPages > 1) {
-      caption += `\n> Balas pesan ini dengan *next* untuk halaman selanjutnya.`;
+    for (let i = 0; i < limit; i++) {
+        let song = data[i];
+        let title = song.trackName || 'Tidak diketahui';
+        let artist = song.artistName || 'Tidak diketahui';
+        
+        buttonRows.push({
+            title: title.length > 50 ? title.substring(0, 47) + '...' : title, // Batas aman WA
+            description: `Artis: ${artist}`.substring(0, 70), // Maksimal karakter deskripsi list WA
+            id: `lrc_select_${i}` // Payload ID untuk ditangkap oleh interceptor
+        });
     }
 
-    await conn.reply(m.chat, caption, m);
+    if (data.length > 30) {
+        txt += `\n\n_Catatan: Hanya menampilkan 30 hasil terbaik pencarian._`;
+    }
+
+    // Konfigurasi Button Type: List/Single Select
+    const buttons = [
+        {
+            name: "single_select",
+            buttonParamsJson: JSON.stringify({
+                title: "🎵 PILIH LAGU",
+                sections: [{
+                    title: `Pencarian Lirik: ${text}`,
+                    highlight_label: "Lyrics",
+                    rows: buttonRows
+                }]
+            })
+        }
+    ];
+
+    // Kirim menggunakan library
+    await sendButton(conn, m.chat, buttons, m, {
+        content: txt.trim(),
+        footer: global.wm || '© Lyrics Finder API'
+    });
 
   } catch (e) {
     console.error(e);
-    m.reply(global.eror);
+    m.reply(global.eror || '❌ Terjadi kesalahan pada server pencarian.');
   }
 }
 
-// Handler Before untuk menangkap balasan (reply) dari pengguna
-handler.before = async function (m, { conn }) {
-  conn.lrcSession = conn.lrcSession || {};
-  let session = conn.lrcSession[m.sender];
+// ==========================================
+// INTERCEPTOR: Pembaca Respon Native Flow 
+// ==========================================
+handler.all = async function (m) {
+  let conn = this;
+  
+  // Gunakan Helper untuk Mengekstrak ID Tombol
+  let params = extractPayload(m);
 
-  // Hanya proses jika sesi ada, pesan tidak kosong, dan pesan mereply pesan bot
-  if (!session || m.isBaileys || !m.text || !m.quoted || !m.quoted.fromMe) return;
+  // Jika pesan tombol berhasil diekstrak dan merupakan ID untuk memilih lirik
+  if (params?.id && params.id.startsWith('lrc_select_')) {
+      try {
+          conn.lrcSession = conn.lrcSession || {};
+          let session = conn.lrcSession[m.sender];
 
-  let text = m.text.trim().toLowerCase();
-  let limit = 10;
-  let totalPages = Math.ceil(session.data.length / limit);
+          // Validasi apakah sesi pencarian user masih ada
+          if (!session || !session.data) {
+              return m.reply("❌ Sesi pencarian lirik telah berakhir (lebih dari 5 menit). Silahkan lakukan pencarian ulang.");
+          }
 
-  // Jika pengguna membalas "next"
-  if (text === 'next') {
-    if (session.page >= totalPages) {
-      return m.reply('❌ Ini adalah halaman terakhir pencarian.');
-    }
+          // Ekstrak index array dari ID payload
+          let index = parseInt(params.id.replace('lrc_select_', ''));
+          
+          if (isNaN(index) || index < 0 || index >= session.data.length) {
+              return m.reply("❌ Pilihan lagu tidak valid.");
+          }
 
-    session.page += 1;
-    let start = (session.page - 1) * limit;
-    let end = start + limit;
-    let chunk = session.data.slice(start, end);
+          let song = session.data[index];
+          let title = song.trackName || 'Tidak diketahui';
+          let artist = song.artistName || 'Tidak diketahui';
+          let album = song.albumName || 'Tidak diketahui';
+          
+          // Mengutamakan lirik tersinkronisasi (LRC) jika ada
+          let lyricsText = song.syncedLyrics || song.plainLyrics;
 
-    let caption = `🎵 *Hasil Pencarian Lirik: ${session.query}*\n\n`;
-    chunk.forEach((song, i) => {
-      // Perubahan: Hanya menampilkan judul dan penyanyi
-      caption += `${start + i + 1}. ${song.trackName} - ${song.artistName}\n`;
-    });
+          if (lyricsText) {
+              let caption = `*Judul:* ${title}\n*Artis:* ${artist}\n*Album:* ${album}\n\n*Lirik:*\n${lyricsText}`;
+              
+              // Batasi ukuran teks copy untuk mencegah error payload (max 15.000 karakter)
+              let copyPayload = lyricsText.length > 15000 ? lyricsText.substring(0, 15000) : lyricsText;
+              
+              // Merakit tombol Copy (Salin Lirik)
+              const buttons = [
+                  {
+                      name: "cta_copy",
+                      buttonParamsJson: JSON.stringify({
+                          display_text: "📋 Salin Lirik",
+                          copy_code: copyPayload
+                      })
+                  }
+              ];
+              
+              // Kirim lirik final beserta tombol menggunakan helper sendButton
+              await sendButton(conn, m.chat, buttons, m, {
+                  content: caption,
+                  footer: global.wm || '© Lyrics Finder API'
+              });
+          } else {
+              m.reply(`❌ Lagu *${title}* oleh *${artist}* ditemukan, tetapi liriknya belum tersedia di database.`);
+          }
 
-    caption += `\n*Halaman ${session.page}/${totalPages}*`;
-    caption += `\n\n> Balas pesan ini dengan *nomor* untuk melihat lirik.`;
-    if (session.page > 1) {
-      caption += `\n> Balas pesan ini dengan *prev* untuk kembali.`;
-    }
-    if (session.page < totalPages) {
-      caption += `\n> Balas pesan ini dengan *next* untuk lanjut.`;
-    }
+          // Hapus sesi setelah pengguna berhasil memilih agar tidak memberatkan memori bot
+          clearTimeout(session.timeout);
+          delete conn.lrcSession[m.sender];
 
-    // Reset timeout agar pengguna punya waktu merespons halaman baru
-    clearTimeout(session.timeout);
-    session.timeout = setTimeout(() => {
-      delete conn.lrcSession[m.sender];
-    }, 5 * 60 * 1000);
-
-    return conn.reply(m.chat, caption, m);
+      } catch (e) {
+          console.error("Gagal membaca respon lirik:", e);
+      }
   }
-
-  // Jika pengguna membalas "prev" atau "back"
-  if (text === 'prev' || text === 'back') {
-    if (session.page <= 1) {
-      return m.reply('❌ Ini sudah halaman pertama.');
-    }
-
-    session.page -= 1;
-    let start = (session.page - 1) * limit;
-    let end = start + limit;
-    let chunk = session.data.slice(start, end);
-
-    let caption = `🎵 *Hasil Pencarian Lirik: ${session.query}*\n\n`;
-    chunk.forEach((song, i) => {
-      // Perubahan: Hanya menampilkan judul dan penyanyi
-      caption += `*${start + i + 1}.* ${song.trackName} - ${song.artistName}\n`;
-    });
-
-    caption += `\n*Halaman ${session.page}/${totalPages}*`;
-    caption += `\n\n> Balas pesan ini dengan *nomor* untuk melihat lirik.`;
-    if (session.page > 1) {
-      caption += `\n> Balas pesan ini dengan *prev* untuk kembali.`;
-    }
-    if (session.page < totalPages) {
-      caption += `\n> Balas pesan ini dengan *next* untuk lanjut.`;
-    }
-
-    // Reset timeout agar pengguna punya waktu merespons halaman baru
-    clearTimeout(session.timeout);
-    session.timeout = setTimeout(() => {
-      delete conn.lrcSession[m.sender];
-    }, 5 * 60 * 1000);
-
-    return conn.reply(m.chat, caption, m);
-  }
-
-  // Jika pengguna membalas dengan Nomor Pilihan (angka)
-  if (!isNaN(text) && text.length > 0) {
-    let choice = parseInt(text);
-
-    // Validasi input angka sesuai panjang data
-    if (choice < 1 || choice > session.data.length) return; 
-
-    let song = session.data[choice - 1];
-    let title = song.trackName || 'Tidak diketahui';
-    let artist = song.artistName || 'Tidak diketahui';
-    // Info album tetap dipertahankan pada saat menampilkan detail lirik
-    let album = song.albumName || 'Tidak diketahui';
-    
-    // Mengutamakan lirik tersinkronisasi (LRC)
-    let lyricsText = song.syncedLyrics || song.plainLyrics;
-
-    if (lyricsText) {
-      let caption = `*Judul:* ${title}\n*Artis:* ${artist}\n*Album:* ${album}\n\n*Lirik:*\n${lyricsText}`;
-      
-      // Kirim lirik final
-      await conn.sendMessage(m.chat, { text: caption }, { quoted: m });
-    } else {
-      m.reply(`❌ Lagu *${title}* oleh *${artist}* ditemukan, tetapi liriknya belum tersedia di database.`);
-    }
-
-    // Hapus sesi setelah pengguna berhasil memilih (agar tidak memenuhi memory bot)
-    clearTimeout(session.timeout);
-    delete conn.lrcSession[m.sender];
-    return true; // Hentikan eksekusi handler lainnya
-  }
-}
+};
 
 handler.help = ['lrc <judul>'];
 handler.tags = ['tools'];
