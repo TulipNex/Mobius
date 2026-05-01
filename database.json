@@ -14,7 +14,7 @@
       "pasangan": "",
       "location": "Gubuk",
       "pc": 0,
-      "exp": 11663,
+      "exp": 12041,
       "coin": 0,
       "limit": 89,
       "token": 10,
@@ -78,9 +78,9 @@
       "ovo": 0,
       "dana": 0,
       "gopay": 0,
-      "command": 484,
-      "commandTotal": 484,
-      "lastCmd": 1777641681855,
+      "command": 500,
+      "commandTotal": 500,
+      "lastCmd": 1777648888179,
       "lastbossbattle": 0,
       "anggur": 0,
       "vebriy": false,
@@ -92,10 +92,26 @@
         {
           "role": "bot",
           "text": "Halo! Kenalin, aku Vebriy.\n\nPresiden Indonesia saat ini adalah *Prabowo Subianto*. Beliau menjabat bersama *Gibran Rakabuming Raka* sebagai Wakil Presiden sejak resmi dilantik pada 20 Oktober 2024 lalu.\n\nAda lagi yang ingin kamu diskusikan tentang pemerintahan atau topik lainnya? Aku siap bantu!"
+        },
+        {
+          "role": "user",
+          "text": "apakah anda bisa menganalisis gambar?"
+        },
+        {
+          "role": "bot",
+          "text": "Halo lagi! Tentu saja bisa. Sebagai AI, aku punya kemampuan untuk \"melihat\" dan menganalisis gambar yang kamu kirimkan. \n\nKamu tinggal unggah fotonya, lalu aku bisa bantu untuk:\n\n*   *Menjelaskan isi gambar:* Memberi tahu apa saja objek atau pemandangan yang ada di dalamnya.\n*   *Membaca teks (OCR):* Menyalin tulisan yang ada di dalam gambar atau dokumen.\n*   *Identifikasi:* Menebak jenis tanaman, hewan, atau landmark populer.\n*   *Diskusi Visual:* Membantu memecahkan soal matematika di buku, memberi saran outfit dari foto pakaian, atau sekadar kasih opini tentang estetika sebuah desain.\n\nJadi, ada gambar yang mau kita bahas bareng sekarang? Langsung kirim aja!"
+        },
+        {
+          "role": "user",
+          "text": "kamu ai model apa?"
+        },
+        {
+          "role": "bot",
+          "text": "Halo! Senang bisa ngobrol lagi sama kamu.\n\nKenalin, aku adalah *Gemini 3 Flash*, model AI yang dikembangkan oleh Google. Karena aku beroperasi di tingkat *Free*, aku dirancang untuk memberikan respon yang cepat, ringan, dan tetap cerdas buat bantuin tugas-tugas kamu sehari-hari.\n\nOh iya, sebagai bagian dari keluarga besar Gemini, aku punya beberapa \"saudara\" lain dengan spesialisasi yang beda-beda, seperti:\n\n*   *Nano Banana 2:* Khusus buat urusan bikin atau edit gambar (fitur *image generation*).\n*   *Veo:* Jagonya bikin video berkualitas tinggi dari teks.\n*   *Lyria 3:* Ahlinya kalau soal bikin musik atau komposisi audio.\n\nJadi, meskipun namaku Vebriy di sini, \"otak\" di baliknya adalah teknologi terbaru dari Google untuk tahun 2026 ini. Ada hal spesifik yang ingin kamu tanyakan soal kemampuanku?"
         }
       ],
       "tempmail_recipient": "pandora",
-      "saldo_kas": 56000,
+      "saldo_kas": 52000,
       "riwayatKeuangan": [
         {
           "id": 1777639687582,
@@ -107,6 +123,28 @@
           "hari": "Jumat",
           "tanggalLengkap": "1 Mei 2026",
           "waktu": "20.48 WITA"
+        },
+        {
+          "id": 1777645672549,
+          "trxId": "GCYU",
+          "tipe": "MASUK",
+          "nominal": 3000,
+          "ket": "Cash",
+          "tanggal": "01/05/26, 22.27",
+          "hari": "Jumat",
+          "tanggalLengkap": "1 Mei 2026",
+          "waktu": "22.27 WITA"
+        },
+        {
+          "id": 1777645687201,
+          "trxId": "Y811",
+          "tipe": "KELUAR",
+          "nominal": 7000,
+          "ket": "Mie instan",
+          "tanggal": "01/05/26, 22.28",
+          "hari": "Jumat",
+          "tanggalLengkap": "1 Mei 2026",
+          "waktu": "22.28 WITA"
         }
       ]
     },
@@ -1072,10 +1110,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 392,
-          "commandTotal": 392,
+          "command": 394,
+          "commandTotal": 394,
           "lastseen": 0,
-          "lastCmd": 1777640281044
+          "lastCmd": 1777645479922
         },
         "258149730799767@lid": {
           "blacklist": false,
@@ -1119,8 +1157,8 @@
           "lastSeen": 1776342642146
         },
         "6285591068997@s.whatsapp.net": {
-          "chatCount": 470,
-          "lastSeen": 1777640281041
+          "chatCount": 472,
+          "lastSeen": 1777645479922
         },
         "628989240628@s.whatsapp.net": {
           "chatCount": 1,
@@ -2883,10 +2921,10 @@
       "lastSuccess": 1777568187551
     },
     "menu.js": {
-      "total": 803,
-      "success": 803,
-      "last": 1777635554772,
-      "lastSuccess": 1777635554772
+      "total": 805,
+      "success": 805,
+      "last": 1777645480121,
+      "lastSuccess": 1777645480121
     },
     "_AI-agedetect.js": {
       "total": 7,
@@ -4107,10 +4145,10 @@
       "lastSuccess": 1775473003896
     },
     "owner-delplugin.js": {
-      "total": 65,
-      "success": 65,
-      "last": 1777572964104,
-      "lastSuccess": 1777572964104
+      "total": 66,
+      "success": 66,
+      "last": 1777642179819,
+      "lastSuccess": 1777642179819
     },
     "owner-addplugin.js": {
       "total": 187,
@@ -4771,10 +4809,10 @@
       "lastSuccess": 1773579522640
     },
     "ai-vebriy.js": {
-      "total": 56,
-      "success": 56,
-      "last": 1777492317016,
-      "lastSuccess": 1777492317016
+      "total": 58,
+      "success": 58,
+      "last": 1777648894581,
+      "lastSuccess": 1777648894581
     },
     "gratis.js": {
       "total": 2,
@@ -4783,10 +4821,10 @@
       "lastSuccess": 1773586901355
     },
     "info-ping.js": {
-      "total": 360,
-      "success": 360,
-      "last": 1777639130864,
-      "lastSuccess": 1777639130864
+      "total": 361,
+      "success": 361,
+      "last": 1777645476689,
+      "lastSuccess": 1777645476689
     },
     "info-info_bot.js": {
       "total": 3,
@@ -5203,10 +5241,10 @@
       "lastSuccess": 1777570845257
     },
     "owner-github.js": {
-      "total": 87,
-      "success": 87,
-      "last": 1777588297106,
-      "lastSuccess": 1777588297106
+      "total": 88,
+      "success": 88,
+      "last": 1777642093954,
+      "lastSuccess": 1777642093954
     },
     "rpg-hitman.js": {
       "total": 2,
@@ -5941,10 +5979,10 @@
       "lastSuccess": 1777468801190
     },
     "owner-mutasi.js": {
-      "total": 61,
-      "success": 61,
-      "last": 1777640281229,
-      "lastSuccess": 1777640281229
+      "total": 65,
+      "success": 65,
+      "last": 1777645690997,
+      "lastSuccess": 1777645690997
     },
     "ai-meta.js": {
       "total": 5,
@@ -6049,10 +6087,10 @@
       "lastSuccess": 1775818208166
     },
     "internet-lyricsify.js": {
-      "total": 16,
-      "success": 13,
-      "last": 1776919294970,
-      "lastSuccess": 1776919294970
+      "total": 18,
+      "success": 14,
+      "last": 1777646741737,
+      "lastSuccess": 1777646741737
     },
     "internet-transfermarket.js": {
       "total": 17,
@@ -6343,10 +6381,10 @@
       "lastSuccess": 1777631584160
     },
     "tabell.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1777641684183,
-      "lastSuccess": 1777641684183
+      "total": 12,
+      "success": 12,
+      "last": 1777642364981,
+      "lastSuccess": 1777642364981
     }
   },
   "msgs": {},
@@ -6448,95 +6486,95 @@
       ]
     },
     "trading": {
-      "lastUpdate": 1777642021640,
+      "lastUpdate": 1777649882308,
       "prices": {
-        "IVL": 80199,
-        "LBT": 892290,
-        "IRC": 5642335,
-        "LTN": 73067238,
-        "RSX": 532043302,
-        "TNX": 4201077842
+        "IVL": 85482,
+        "LBT": 857075,
+        "IRC": 2651664,
+        "LTN": 89866542,
+        "RSX": 561303173,
+        "TNX": 3108984265
       },
       "prevPrices": {
-        "IVL": 81252,
-        "LBT": 907734,
-        "IRC": 5734923,
-        "LTN": 72075378,
-        "RSX": 540664201,
-        "TNX": 4086707828
+        "IVL": 86636,
+        "LBT": 874673,
+        "IRC": 2646362,
+        "LTN": 91556668,
+        "RSX": 578520955,
+        "TNX": 2917811329
       },
       "history": {
         "IVL": [
-          81598,
-          82872,
-          83075,
-          82309,
-          82687,
-          82079,
-          82960,
-          82260,
-          81252,
-          80199
+          88286,
+          87276,
+          86550,
+          87420,
+          87525,
+          87061,
+          86373,
+          86279,
+          86636,
+          85482
         ],
         "LBT": [
-          896396,
-          902267,
-          883316,
-          868371,
-          886384,
-          902385,
-          892686,
-          899180,
-          907734,
-          892290
+          922835,
+          909474,
+          919366,
+          915596,
+          912709,
+          892846,
+          891756,
+          880505,
+          874673,
+          857075
         ],
         "IRC": [
-          5771229,
-          5710758,
-          5531315,
-          5571827,
-          5460012,
-          5622274,
-          5845578,
-          5644120,
-          5734923,
-          5642335
+          3223263,
+          3025662,
+          2825701,
+          2876115,
+          2912628,
+          2927481,
+          2868072,
+          2790966,
+          2646362,
+          2651664
         ],
         "LTN": [
-          72993787,
-          74237777,
-          73540736,
-          74590663,
-          76523007,
-          74487347,
-          73167928,
-          72442349,
-          72075378,
-          73067238
+          89018419,
+          86819027,
+          87093541,
+          86994250,
+          88767266,
+          89865375,
+          90170203,
+          89667861,
+          91556668,
+          89866542
         ],
         "RSX": [
-          488283004,
-          493753943,
-          507956739,
-          501576736,
-          516874632,
-          537035764,
-          516119711,
-          521059195,
-          540664201,
-          532043302
+          615610111,
+          618995606,
+          603305564,
+          598755342,
+          589763923,
+          570493875,
+          576976710,
+          593158156,
+          578520955,
+          561303173
         ],
         "TNX": [
-          3247882832,
-          3333941194,
-          3366878181,
-          3515282555,
-          3727904354,
-          3735808874,
-          3947948509,
-          3953543199,
-          4086707828,
-          4201077842
+          2458687531,
+          2617396270,
+          2558597490,
+          2730088075,
+          2572905038,
+          2527403125,
+          2674099788,
+          2787656208,
+          2917811329,
+          3108984265
         ]
       },
       "ath": {
@@ -6592,7 +6630,7 @@
         "120363406727405732@g.us",
         "120363284305573016@g.us"
       ],
-      "lastMinuteMarker": "2026-05-01 21:27",
+      "lastMinuteMarker": "2026-05-01 23:38",
       "vault": 124720678,
       "taxRates": {
         "IVL": 1.5,
@@ -6611,11 +6649,11 @@
         "IVL": "50%",
         "LBT": "50%",
         "IRC": "50%",
-        "LTN": "50%",
+        "LTN": "5%",
         "RSX": "50%",
         "TNX": "50%"
       },
-      "eventCooldown": 31
+      "eventCooldown": 48
     },
     "githubSync": false
   },
