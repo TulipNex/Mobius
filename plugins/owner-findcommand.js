@@ -96,7 +96,6 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
                 title: "📂 PILIH FILE",
                 sections: [{
                     title: `Pencarian Command: ${text}`,
-                    highlight_label: "Commands",
                     rows: buttonRows
                 }]
             })

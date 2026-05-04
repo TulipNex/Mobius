@@ -17,7 +17,10 @@ async function handler(m, { command }) {
             if (!room) throw 'Kamu tidak sedang berada di anonymous chat'
             m.reply('Ok')
             let other = room.other(m.sender)
-            if (other) conn.sendMessage(other, 'Partner meninggalkan chat',{quoted:m})
+            
+            // ✅ BARIS YANG DIPERBAIKI: Menggunakan format objek { text: ... }
+            if (other) conn.sendMessage(other, { text: 'Partner meninggalkan chat' }, { quoted: m })
+            
             delete this.anonymous[room.id]
             if (command === 'leave') break
         }
@@ -43,7 +46,7 @@ async function handler(m, { command }) {
                         return who === this.a ? this.b : who === this.b ? this.a : ''
                     },
                 }
-                m.reply('Menunggu parter anonymous chat...')
+                m.reply('Menunggu partner anonymous chat...')
             }
             break
         }
