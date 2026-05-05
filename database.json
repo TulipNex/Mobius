@@ -4,10 +4,10 @@
       "taxi": 0,
       "lasttaxi": 0,
       "saldo": 0,
-      "level": 0,
+      "level": 1,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 0,
+      "exp": 60,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -47,22 +47,22 @@
       "coin": 0,
       "bank": 0
     },
-    "6285591068997@s.whatsapp.net": {
-      "taxi": 0,
-      "lasttaxi": 0,
+    "6282215415550@s.whatsapp.net": {
+      "taxi": 1,
+      "lasttaxi": 1777991778839,
       "saldo": 0,
-      "level": 0,
+      "level": 9,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 54,
+      "exp": 13120,
       "limit": 100,
       "token": 10,
       "skata": 0,
-      "lastkerja": 0,
-      "money": 0,
+      "lastkerja": 1777995217065,
+      "money": 2874,
       "poin": 0,
       "balance": 0,
-      "ojek": 0,
+      "ojek": 2,
       "pedagang": 0,
       "dokter": 0,
       "petani": 0,
@@ -74,20 +74,20 @@
       "afk": -1,
       "afkReason": "",
       "antispam": 0,
-      "lastngojek": 0,
+      "lastngojek": 1777992932093,
       "lastseen": 0,
-      "registered": false,
-      "name": {},
-      "age": -1,
-      "regTime": -1,
+      "registered": true,
+      "name": "Mitraaa",
+      "age": 17,
+      "regTime": 1777991637797,
       "premium": false,
       "premiumTime": 0,
       "job": "Pengangguran",
-      "role": "Newbie ㋡",
+      "role": "Beginner Grade 3 ⚊³",
       "autolevelup": true,
-      "command": null,
-      "commandTotal": null,
-      "lastCmd": 1777922643825,
+      "command": 75,
+      "commandTotal": 75,
+      "lastCmd": 1778004357019,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -95,16 +95,90 @@
       "follow": 0,
       "followers": 0,
       "coin": 0,
-      "bank": 0
+      "bank": 0,
+      "rumah": "Tidak Ada",
+      "ivylink": 3,
+      "staking": {
+        "IVL": {
+          "amount": 21,
+          "lastHarvest": 1777992660221
+        }
+      },
+      "profilebg": "https://o.uguu.se/mTyHTPuV.jpg",
+      "bankLoan": null,
+      "archbot_on": false,
+      "archbot_history": [],
+      "vebriy": true,
+      "vebriy_history": [
+        {
+          "role": "user",
+          "text": "halo"
+        },
+        {
+          "role": "bot",
+          "text": "Halo juga! Kenalin, aku Vebriy. Senang bisa ngobrol sama kamu.\n\nAda yang lagi pengen kamu bahas atau perlu bantuan apa hari ini? Aku siap nemenin, mulai dari diskusi serius sampai sekadar ngobrol santai aja. Gimana kabar kamu?"
+        }
+      ]
     },
     "6285324023198@s.whatsapp.net": {
       "taxi": 0,
       "lasttaxi": 0,
       "saldo": 0,
-      "level": 0,
+      "level": 4,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 26,
+      "exp": 1714,
+      "limit": 100,
+      "token": 10,
+      "skata": 0,
+      "lastkerja": 1777991705304,
+      "money": 27475,
+      "poin": 0,
+      "balance": 0,
+      "ojek": 1,
+      "pedagang": 0,
+      "dokter": 0,
+      "petani": 0,
+      "montir": 0,
+      "kuli": 0,
+      "banned": false,
+      "bannedTime": 0,
+      "warn": 0,
+      "afk": -1,
+      "afkReason": "",
+      "antispam": 0,
+      "lastngojek": 1777991732791,
+      "lastseen": 0,
+      "registered": true,
+      "name": "wann",
+      "age": 23,
+      "regTime": 1777991679072,
+      "premium": false,
+      "premiumTime": 0,
+      "job": "kuli",
+      "role": "Newbie ㋡",
+      "autolevelup": true,
+      "command": 1,
+      "commandTotal": 1,
+      "lastCmd": 1778002825057,
+      "pengeluaran": 0,
+      "energi": 100,
+      "title": 0,
+      "pasangan": "",
+      "follow": 0,
+      "followers": 0,
+      "coin": 0,
+      "bank": 0,
+      "rumah": "Tidak Ada"
+    },
+    "6285591068997@s.whatsapp.net": {
+      "taxi": 0,
+      "lasttaxi": 0,
+      "saldo": 0,
+      "level": 2,
+      "location": "Gubuk",
+      "pc": 0,
+      "exp": 329,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -135,13 +209,386 @@
       "job": "Pengangguran",
       "role": "Newbie ㋡",
       "autolevelup": true,
-      "command": null,
-      "commandTotal": null,
-      "lastCmd": 1777922661709
+      "command": 10,
+      "commandTotal": 10,
+      "lastCmd": 1778002806949,
+      "pengeluaran": 0,
+      "energi": 100,
+      "title": 0,
+      "pasangan": "",
+      "follow": 0,
+      "followers": 0,
+      "coin": 0,
+      "bank": 0
+    },
+    "249348621369556@lid": {
+      "taxi": 0,
+      "lasttaxi": 0,
+      "saldo": 0,
+      "level": 0,
+      "location": "Gubuk",
+      "pc": 0,
+      "exp": 10,
+      "limit": 100,
+      "token": 10,
+      "skata": 0,
+      "lastkerja": 0,
+      "money": 0,
+      "poin": 0,
+      "balance": 0,
+      "ojek": 0,
+      "pedagang": 0,
+      "dokter": 0,
+      "petani": 0,
+      "montir": 0,
+      "kuli": 0,
+      "banned": false,
+      "bannedTime": 0,
+      "warn": 0,
+      "afk": -1,
+      "afkReason": "",
+      "antispam": 0,
+      "lastngojek": 0,
+      "lastseen": 0,
+      "registered": false,
+      "name": {},
+      "age": -1,
+      "regTime": -1,
+      "premium": false,
+      "premiumTime": 0,
+      "job": "Pengangguran",
+      "role": "Newbie ㋡",
+      "autolevelup": true,
+      "pengeluaran": 0,
+      "energi": 100,
+      "title": 0,
+      "coin": 0,
+      "bank": 0
     }
   },
   "chats": {
     "120363406727405732@g.us": {
+      "isBanned": false,
+      "welcome": true,
+      "detect": false,
+      "mute": false,
+      "listStr": {},
+      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
+      "sBye": "Selamat tinggal @user!",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": false,
+      "antiLink": false,
+      "antiSticker": false,
+      "viewonce": false,
+      "antiToxic": false,
+      "antibot": false,
+      "rpg": true,
+      "memgc": {
+        "628989240628@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        },
+        "6285591068997@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 35,
+          "commandTotal": 35,
+          "lastseen": 0,
+          "lastCmd": 1778001969665
+        },
+        "6282215415550@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 48,
+          "commandTotal": 48,
+          "lastseen": 0,
+          "lastCmd": 1777997528716
+        },
+        "6285324023198@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 8,
+          "commandTotal": 8,
+          "lastseen": 0,
+          "lastCmd": 1777991759303
+        }
+      },
+      "expired": 0,
+      "nsfw": false,
+      "memberStats": {
+        "6285591068997@s.whatsapp.net": {
+          "chatCount": 36,
+          "lastSeen": 1778001969664
+        },
+        "6282215415550@s.whatsapp.net": {
+          "chatCount": 53,
+          "lastSeen": 1777997528715
+        },
+        "6285324023198@s.whatsapp.net": {
+          "chatCount": 14,
+          "lastSeen": 1777991759301
+        }
+      }
+    },
+    "120363284305573016@g.us": {
+      "isBanned": false,
+      "welcome": true,
+      "detect": false,
+      "mute": false,
+      "listStr": {},
+      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
+      "sBye": "Selamat tinggal @user!",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": false,
+      "antiLink": false,
+      "antiSticker": false,
+      "viewonce": false,
+      "antiToxic": false,
+      "antibot": false,
+      "rpg": true,
+      "memgc": {
+        "6282215415550@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 16,
+          "commandTotal": 16,
+          "lastseen": 0,
+          "lastCmd": 1778004357019
+        },
+        "628989240628@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        },
+        "6285591068997@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 24,
+          "commandTotal": 24,
+          "lastseen": 0,
+          "lastCmd": 1778002806949
+        },
+        "6285324023198@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 4,
+          "commandTotal": 4,
+          "lastseen": 0,
+          "lastCmd": 1778002825057
+        },
+        "249348621369556@lid": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        }
+      },
+      "memberStats": {
+        "6282215415550@s.whatsapp.net": {
+          "chatCount": 17,
+          "lastSeen": 1778004357015
+        },
+        "6285591068997@s.whatsapp.net": {
+          "chatCount": 17,
+          "lastSeen": 1778002806948
+        },
+        "6285324023198@s.whatsapp.net": {
+          "chatCount": 4,
+          "lastSeen": 1778002825057
+        }
+      },
+      "expired": 0,
+      "nsfw": false
+    },
+    "6282215415550@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": true,
+      "detect": false,
+      "mute": false,
+      "listStr": {},
+      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
+      "sBye": "Selamat tinggal @user!",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": false,
+      "antiLink": false,
+      "antiSticker": false,
+      "viewonce": false,
+      "antiToxic": false,
+      "antibot": false,
+      "rpg": false,
+      "memgc": {
+        "6282215415550@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        },
+        "628989240628@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        }
+      },
+      "expired": 0,
+      "nsfw": false
+    },
+    "120363208757055493@g.us": {
+      "isBanned": false,
+      "welcome": true,
+      "detect": false,
+      "mute": false,
+      "listStr": {},
+      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
+      "sBye": "Selamat tinggal @user!",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": false,
+      "antiLink": false,
+      "antiSticker": false,
+      "viewonce": false,
+      "antiToxic": false,
+      "antibot": false,
+      "rpg": false,
+      "memgc": {
+        "6282215415550@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 1,
+          "commandTotal": 1,
+          "lastseen": 0,
+          "lastCmd": 1777994838366
+        },
+        "628989240628@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        }
+      },
+      "expired": 0,
+      "nsfw": false,
+      "memberStats": {
+        "6282215415550@s.whatsapp.net": {
+          "chatCount": 4,
+          "lastSeen": 1778003720820
+        }
+      }
+    },
+    "628989240628@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": true,
+      "detect": false,
+      "mute": false,
+      "listStr": {},
+      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
+      "sBye": "Selamat tinggal @user!",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": false,
+      "antiLink": false,
+      "antiSticker": false,
+      "viewonce": false,
+      "antiToxic": false,
+      "antibot": false,
+      "rpg": false,
+      "memgc": {
+        "628989240628@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        }
+      },
+      "expired": 0,
+      "nsfw": false
+    },
+    "258149730799767@lid": {
+      "isBanned": false,
+      "welcome": true,
+      "detect": false,
+      "mute": false,
+      "listStr": {},
+      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
+      "sBye": "Selamat tinggal @user!",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": false,
+      "antiLink": false,
+      "antiSticker": false,
+      "viewonce": false,
+      "antiToxic": false,
+      "antibot": false,
+      "rpg": false,
+      "memgc": {
+        "6285591068997@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        }
+      }
+    },
+    "6285591068997@s.whatsapp.net": {
       "isBanned": false,
       "welcome": true,
       "detect": false,
@@ -175,40 +622,145 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 3,
-          "commandTotal": 3,
-          "lastseen": 0,
-          "lastCmd": 1777922643825
-        },
-        "6285324023198@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 1,
-          "commandTotal": 1,
-          "lastseen": 0,
-          "lastCmd": 1777922661709
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
         }
       },
       "expired": 0,
-      "nsfw": false,
-      "memberStats": {
-        "6285591068997@s.whatsapp.net": {
-          "chatCount": 3,
-          "lastSeen": 1777922643821
-        },
-        "6285324023198@s.whatsapp.net": {
-          "chatCount": 1,
-          "lastSeen": 1777922661705
-        }
-      }
+      "nsfw": false
     }
   },
   "stats": {},
   "msgs": {},
   "sticker": {},
-  "settings": {},
+  "settings": {
+    "trading": {
+      "prices": {
+        "IVL": 3664,
+        "LBT": 53697,
+        "IRC": 1436724,
+        "LTN": 15589760,
+        "RSX": 128304049,
+        "TNX": 520870515
+      },
+      "history": {
+        "IVL": [
+          3737,
+          3726,
+          3653,
+          3603,
+          3647,
+          3704,
+          3679,
+          3695,
+          3767,
+          3664
+        ],
+        "LBT": [
+          54097,
+          52062,
+          51452,
+          50397,
+          48649,
+          50994,
+          52433,
+          52776,
+          53719,
+          53697
+        ],
+        "IRC": [
+          1453654,
+          1382801,
+          1433333,
+          1441361,
+          1479204,
+          1444707,
+          1429362,
+          1365913,
+          1409329,
+          1436724
+        ],
+        "LTN": [
+          16648697,
+          15753303,
+          15823804,
+          15746080,
+          16221611,
+          16507167,
+          16906065,
+          16173213,
+          15801057,
+          15589760
+        ],
+        "RSX": [
+          143273934,
+          149634654,
+          151841290,
+          148262406,
+          150052561,
+          139969279,
+          143809304,
+          138928440,
+          137663738,
+          128304049
+        ],
+        "TNX": [
+          495279246,
+          508573758,
+          522031076,
+          502706455,
+          463703200,
+          479039699,
+          502780880,
+          476713241,
+          512570325,
+          520870515
+        ]
+      },
+      "ath": {
+        "IVL": 5775,
+        "LBT": 109609,
+        "IRC": 1546603,
+        "LTN": 16979668,
+        "RSX": 173409955,
+        "TNX": 1171618158
+      },
+      "eventHistory": [
+        {
+          "title": "ALIEN TECH REVEAL",
+          "time": 1778000820013
+        }
+      ],
+      "eventCooldown": 76,
+      "activeEvent": {
+        "title": "STABLE",
+        "msg": "Normal",
+        "ticker": null,
+        "mult": 1,
+        "dur": 0
+      },
+      "prevPrices": {
+        "IVL": 3767,
+        "LBT": 53719,
+        "IRC": 1409329,
+        "LTN": 15801057,
+        "RSX": 137663738,
+        "TNX": 512570325
+      },
+      "lastMinuteMarker": "2026-05-06 02:06",
+      "lastUpdate": 1778004360010,
+      "taxRates": {
+        "IVL": 1.5,
+        "LBT": 1.5,
+        "IRC": 1.5,
+        "LTN": 1.5,
+        "RSX": 1.5,
+        "TNX": 2.5
+      },
+      "vault": 0,
+      "lastCanceledEvent": null
+    }
+  },
   "sendlater": []
 }

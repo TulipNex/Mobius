@@ -5,20 +5,13 @@
  */
 
 let handler = async (m, { conn, usedPrefix, command }) => {
-    const marketConfig = {
-        IVL: { name: 'IvyLink', min: 3000, max: 99999, vol: 0.03 },
-        LBT: { name: 'LilyBit', min: 100000, max: 999999, vol: 0.05 },
-        IRC: { name: 'IrisCode', min: 1000000, max: 9999999, vol: 0.05 },
-        LTN: { name: 'LotusNet', min: 10000000, max: 99999999, vol: 0.05 },
-        RSX: { name: 'RoseX', min: 100000000, max: 999999999, vol: 0.05 },
-        TNX: { name: 'TulipNex', min: 1000000000, max: 10000000000, vol: 0.05 }
-    }
+    if (!global.marketConfig) return m.reply('[!] Sistem TulipNex sedang dimuat, harap coba lagi.');
 
     global.db.data.settings = global.db.data.settings || {};
     if (!global.db.data.settings.trading) global.db.data.settings.trading = {};
     
     let market = global.db.data.settings.trading;
-    market.prices = market.prices || Object.fromEntries(Object.entries(marketConfig).map(([k, v]) => [k, v.min]));
+    market.prices = market.prices || {};
 
     let user = global.db.data.users[m.sender];
     if (!user) return m.reply('[!] Data pengguna tidak ditemukan di database.');
@@ -29,10 +22,10 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     caption += `──────────────────\n`;
     
     let hasAsset = false;
-    for (let ticker in marketConfig) {
-        let itemName = marketConfig[ticker].name.toLowerCase();
+    for (let ticker in global.marketConfig) {
+        let itemName = global.marketConfig[ticker].db; // Mengambil dari Engine
         let count = user[itemName] || 0;
-        let currentPrice = market.prices[ticker] || 0;
+        let currentPrice = market.prices[ticker] || global.marketConfig[ticker].initialPrice;
         
         if (count > 0) {
             hasAsset = true;

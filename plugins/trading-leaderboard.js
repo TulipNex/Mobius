@@ -4,38 +4,28 @@
  * Feature: Kalkulasi Total Net Worth (Uang Tunai + Nilai Portofolio Aset)
  */
 
-let handler = async (m, { conn, participants }) => {
-    // 1. Cek apakah sistem trading aktif
+let handler = async (m, { conn }) => {
+    if (!global.marketConfig) return m.reply('[!] Sistem TulipNex sedang dimuat, harap coba lagi.');
+
     global.db.data.settings = global.db.data.settings || {};
     if (!global.db.data.settings.trading) return m.reply('[!] Sistem TulipNex belum aktif.');
     
     let market = global.db.data.settings.trading;
     let prices = market.prices || {};
 
-    // 2. Konfigurasi Item Pasar
-    const marketConfig = {
-        IVL: { name: 'IvyLink' },
-        LBT: { name: 'LilyBit' },
-        IRC: { name: 'IrisCode' },
-        LTN: { name: 'LotusNet' },
-        RSX: { name: 'RoseX' },
-        TNX: { name: 'TulipNex' }
-    };
-
-    // 3. Ambil data semua user
     let users = Object.entries(global.db.data.users);
     let traderStats = [];
 
-    // 4. Kalkulasi Kekayaan Bersih (Net Worth) setiap pemain
+    // Kalkulasi Kekayaan Bersih (Net Worth) setiap pemain
     for (let [jid, data] of users) {
         let money = data.money || 0;
         let portfolioValue = 0;
 
         // Hitung nilai setiap aset berdasarkan harga pasar saat ini
-        for (let ticker in marketConfig) {
-            let itemName = marketConfig[ticker].name.toLowerCase();
+        for (let ticker in global.marketConfig) {
+            let itemName = global.marketConfig[ticker].db;
             let count = data[itemName] || 0;
-            let currentPrice = prices[ticker] || 0;
+            let currentPrice = prices[ticker] || global.marketConfig[ticker].initialPrice;
             portfolioValue += (count * currentPrice);
         }
 
@@ -53,18 +43,16 @@ let handler = async (m, { conn, participants }) => {
         }
     }
 
-    // Jika belum ada yang main
     if (traderStats.length === 0) {
         return m.reply('📉 Belum ada investor di pasar TulipNex.');
     }
 
-    // 5. Urutkan dari yang paling kaya (Descending)
+    // Urutkan dari yang paling kaya (Descending)
     traderStats.sort((a, b) => b.netWorth - a.netWorth);
 
-    // Ambil Top 10 saja
+    // Ambil Top 10
     let topTraders = traderStats.slice(0, 10);
 
-    // 6. Susun Teks Papan Peringkat
     let text = `🏆 *TULIPNEX FORBES TOP 10*\n`;
     text += `_Peringkat Investor Terkaya_\n`;
     text += `──────────────────\n`;
@@ -78,7 +66,6 @@ let handler = async (m, { conn, participants }) => {
         text += `💵 Cash: \n> Rp ${trader.money.toLocaleString()}\n`;
         text += `📦 Asset: \n> Rp ${trader.portfolio.toLocaleString()}\n`;
         
-        // Kasih tanda jika ini adalah user yang mengetik perintah
         if (trader.jid === m.sender) {
             text += `   *(📍 Anda di sini)*\n`;
         }
@@ -88,10 +75,9 @@ let handler = async (m, { conn, participants }) => {
     text += `──────────────────\n`;
     text += `💡 _Net Worth dihitung dari uang tunai + nilai jual seluruh aset di pasar saat ini._`;
 
-    // 7. Kirim Papan Peringkat
     await conn.reply(m.chat, text.trim(), m, {
         contextInfo: {
-            mentionedJid: topTraders.map(t => t.jid) // Agar nama kontaknya tertag jika pakai @
+            mentionedJid: topTraders.map(t => t.jid) 
         }
     });
 }

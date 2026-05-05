@@ -31,17 +31,10 @@ module.exports = {
                     if (!isNumber(user.energi)) user.energi = 100
                     if (!isNumber(user.title)) user.title = 0
                     if (!isNumber(user.level)) user.level = 0
-                    if (!('pasangan' in user)) user.pasangan = ''
                     if (!('location' in user)) user.location = 'Gubuk'
-                    if (!isNumber(user.follow)) user.follow = 0
-                    if (!isNumber(user.followers)) user.followers = 0
                     if (!isNumber(user.exp)) user.exp = 0
                     if (!isNumber(user.pc)) user.pc = 0
                     if (!isNumber(user.ojek)) user.ojek = 0
-                    if (!isNumber(user.pedagang)) user.pedagang = 0
-                    if (!isNumber(user.dokter)) user.dokter = 0
-                    if (!isNumber(user.montir)) user.montir = 0
-                    if (!isNumber(user.kuli)) user.kuli = 0
                     if (!isNumber(user.coin)) user.coin = 0
                     if (!isNumber(user.limit)) user.limit = 100
                     if (!isNumber(user.token)) user.token = 10 
@@ -49,7 +42,6 @@ module.exports = {
                     if (!isNumber(user.money)) user.money = 0
                     if (!isNumber(user.poin)) user.poin = 0
                     if (!isNumber (user.bank)) user.bank = 0
-                    if (!isNumber (user.balance)) user.balance = 0
                     if (!isNumber(user.warn)) user.warn = 0
                     if (!('banned' in user)) user.banned = false
                     if (!isNumber(user.bannedTime)) user.bannedTime = 0
@@ -76,7 +68,7 @@ module.exports = {
                     } 
                 } else {
                     global.db.data.users[m.sender] = {
-                        taxi: 0, lasttaxi: 0, saldo: 0, level: 0, location: 'Gubuk', pc : 0, exp: 0, limit: 100, token: 10, skata: 0, lastkerja: 0, money: 0, poin: 0, balance: 0, ojek: 0, pedagang: 0, dokter: 0, petani: 0, montir: 0, kuli: 0, banned: false, bannedTime: 0, warn: 0, afk: -1, afkReason: '', antispam: 0, lastngojek: 0, lastseen: 0, registered: false, name: this.getName(m.sender), age: -1, regTime: -1, premium: false, premiumTime: 0, job: 'Pengangguran', role: 'Newbie ㋡', autolevelup: true,
+                        taxi: 0, lasttaxi: 0, saldo: 0, level: 0, location: 'Gubuk', pc : 0, exp: 0, limit: 100, token: 10, skata: 0, lastkerja: 0, money: 0, poin: 0, balance: 0, ojek: 0, banned: false, bannedTime: 0, warn: 0, afk: -1, afkReason: '', antispam: 0, lastngojek: 0, lastseen: 0, registered: false, name: this.getName(m.sender), age: -1, regTime: -1, premium: false, premiumTime: 0, job: 'Pengangguran', role: 'Newbie ㋡', autolevelup: true,
                     }
                 }
 

@@ -5,20 +5,13 @@
  */
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
+    if (!global.marketConfig) return m.reply('[!] Sistem TulipNex belum siap.');
+
     global.db.data.settings = global.db.data.settings || {};
     if (!global.db.data.settings.trading) return m.reply('[!] Sistem TulipNex belum aktif.');
     
     global.db.data.tradingOffers = global.db.data.tradingOffers || {};
     let offers = global.db.data.tradingOffers;
-
-    const marketConfig = {
-        IVL: { name: 'IvyLink', db: 'ivylink' },
-        LBT: { name: 'LilyBit', db: 'lilybit' },
-        IRC: { name: 'IrisCode', db: 'iriscode' },
-        LTN: { name: 'LotusNet', db: 'lotusnet' },
-        RSX: { name: 'RoseX', db: 'rosex' },
-        TNX: { name: 'TulipNex', db: 'tulipnex' }
-    };
 
     let action = command.toLowerCase();
     let target = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : (m.quoted ? m.quoted.sender : null);
@@ -42,12 +35,12 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         }
 
         if (target === m.sender) return m.reply('[!] Anda tidak bisa berdagang dengan diri sendiri.');
-        if (!marketConfig[ticker]) return m.reply(`[!] Ticker *${ticker}* tidak dikenali.`);
+        if (!global.marketConfig[ticker]) return m.reply(`[!] Ticker *${ticker}* tidak dikenali di pasar.`);
         if (isNaN(qty) || qty <= 0) return m.reply('[!] Jumlah aset tidak valid.');
         if (isNaN(price) || price <= 0) return m.reply('[!] Total harga tidak valid.');
 
         let senderData = global.db.data.users[m.sender];
-        let itemDb = marketConfig[ticker].db;
+        let itemDb = global.marketConfig[ticker].db; // Mengambil DB dari config global
 
         if ((senderData[itemDb] || 0) < qty) {
             return m.reply(`[!] Anda tidak memiliki cukup aset. Saldo Anda: *${(senderData[itemDb] || 0).toLocaleString()} ${ticker}*`);
@@ -55,12 +48,11 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
         let offerId = target + '_' + m.sender;
         
-        // Cek apakah sudah ada penawaran gantung ke orang yang sama
         if (offers[offerId]) {
              return m.reply(`[!] Anda masih memiliki penawaran yang menggantung ke pemain ini. Tunggu hingga ditolak atau kedaluwarsa.`);
         }
 
-        // 🔥 ESCROW EXECUTION: Kunci aset penjual (Potong dari dompet)
+        // 🔥 ESCROW EXECUTION
         senderData[itemDb] -= qty;
 
         offers[offerId] = {
@@ -84,7 +76,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         msg += `Hai ${tagTarget}, Anda mendapat tawaran aset!\n`;
         msg += `Ketik *${usedPrefix}terimaaset* ${tagSender} untuk membeli, atau\n`;
         msg += `Ketik *${usedPrefix}tolakaset* ${tagSender} untuk menolak.\n\n`;
-        msg += `⏳ _Kontrak hangus dalam 5 menit. Jika hangus/ditolak, aset kembali ke penjual._`;
+        msg += `⏳ _Kontrak hangus dalam 5 menit._`;
 
         return conn.reply(m.chat, msg, m, { contextInfo: { mentionedJid: [m.sender, target] } });
     }
@@ -101,18 +93,16 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         if (!offer) return m.reply('[!] Tidak ada penawaran aktif dari pemain tersebut untuk Anda.');
         
         if (Date.now() > offer.expired) {
-            // Biarkan Garbage Collector yang mengurus refund-nya
             return m.reply('[!] Waktu penawaran sudah habis (kedaluwarsa). Sistem sedang mengembalikan aset ke penjual.');
         }
 
         let tagTarget = `@${target.replace(/@.+/, '')}`;
         let tagSender = `@${m.sender.replace(/@.+/, '')}`;
         let sellerData = global.db.data.users[offer.seller];
-        let itemDb = marketConfig[offer.ticker].db;
+        let itemDb = global.marketConfig[offer.ticker].db;
 
         // JIKA DITOLAK
         if (action === 'tolakaset') {
-            // 🔥 ESCROW REFUND: Kembalikan aset ke penjual
             sellerData[itemDb] = (sellerData[itemDb] || 0) + offer.qty;
             delete offers[offerId];
             
@@ -127,7 +117,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
             return m.reply(`[!] Uang Anda tidak cukup! Anda butuh *Rp ${offer.price.toLocaleString()}*.`);
         }
 
-        // 🔥 EKSEKUSI TRANSAKSI: Aset sudah di tangan bot, tinggal diserahkan ke pembeli
+        // 🔥 EKSEKUSI TRANSAKSI
         buyerData.money -= offer.price;
         sellerData.money += offer.price;
         buyerData[itemDb] = (buyerData[itemDb] || 0) + offer.qty;

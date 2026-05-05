@@ -1,24 +1,19 @@
 /**
  * TULIPNEX TRADING ENGINE (BUY & SELL)
  * Location: ./plugins/trading-trade.js
- * Feature: Execute Orders & Calculate Tax Privileges
+ * Feature: Execute Orders, Calculate Tax Privileges, & Trigger AMM Impact
  */
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-    const marketConfig = {
-        IVL: { name: 'IvyLink', min: 3000, max: 99999, vol: 0.03 },
-        LBT: { name: 'LilyBit', min: 100000, max: 999999, vol: 0.05 },
-        IRC: { name: 'IrisCode', min: 1000000, max: 9999999, vol: 0.05 },
-        LTN: { name: 'LotusNet', min: 10000000, max: 99999999, vol: 0.05 },
-        RSX: { name: 'RoseX', min: 100000000, max: 999999999, vol: 0.05 },
-        TNX: { name: 'TulipNex', min: 1000000000, max: 10000000000, vol: 0.05 }
+    // Pastikan Engine Pusat sudah siap
+    if (!global.marketConfig || !global.tradeEngine) {
+        return m.reply('[!] Mesin TulipNex belum siap atau sedang dimuat ulang. Harap tunggu.');
     }
 
     global.db.data.settings = global.db.data.settings || {};
     if (!global.db.data.settings.trading) global.db.data.settings.trading = {};
     
     let market = global.db.data.settings.trading;
-    market.prices = market.prices || Object.fromEntries(Object.entries(marketConfig).map(([k, v]) => [k, v.min]));
     market.vault = market.vault || 0; 
     market.taxRates = market.taxRates || { IVL: 1.5, LBT: 1.5, IRC: 1.5, LTN: 1.5, RSX: 1.5, TNX: 2.5 };
 
@@ -28,13 +23,15 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let action = command.toLowerCase();
     let ticker = (args[0] || '').toUpperCase();
     let inputQty = args[1]?.toLowerCase();
-    let item = marketConfig[ticker];
+    
+    // Gunakan konfigurasi global dari Engine
+    let item = global.marketConfig[ticker];
 
     if (!item) return m.reply(`*[!] Ticker tidak valid.* \n\n Gunakan format \n> ${usedPrefix}${action} <ticker> <jumlah/all> \n Untuk melihat daftar koin \n> ${usedPrefix}ind `);
     if (!inputQty) return m.reply(`[!] Format salah.\n*Cara pakai:* ${usedPrefix}${action} <ticker> <jumlah/all>\n*Contoh:* ${usedPrefix}${action} IVL 10`);
 
     let currentPrice = market.prices[ticker];
-    let varName = item.name.toLowerCase();
+    let varName = item.db; // Mengambil nama property database dari config (misal: 'ivylink')
     let qty = 0;
 
     // --- TRANSAKSI BELI (IN) ---
@@ -46,16 +43,20 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         let totalPrice = currentPrice * qty;
         if (user.money < totalPrice) return m.reply(`[!] Dana kurang. Anda butuh Rp ${totalPrice.toLocaleString('id-ID')} untuk membeli ${qty} unit ${ticker}.`);
         
+        // Eksekusi Pindah Tangan
         user.money -= totalPrice;
         user[varName] = (user[varName] || 0) + qty;
         
+        // 🔥 INJEKSI AMM: Mempengaruhi harga naik karena demand
+        let impact = global.tradeEngine.executeTransaction(ticker, qty, 'buy');
+        
         let msg = `✅ *BUY ORDER EXECUTED*\n──────────────────\n`;
-        msg += `📦 Item: ${item.name} (${ticker})\n`;
+        msg += `📦 Item: ${ticker}\n`;
         msg += `🔢 Total Beli: ${qty.toLocaleString('id-ID')} unit\n`;
         msg += `💰 Harga Satuan: Rp ${currentPrice.toLocaleString('id-ID')}\n`;
-        msg += `💵 Total Harga: Rp ${totalPrice.toLocaleString('id-ID')}\n`;
+        msg += `💵 Total Biaya: Rp ${totalPrice.toLocaleString('id-ID')}\n`;
         msg += `──────────────────\n`;
-        msg += `💶 Saldo Saat Ini : Rp ${user.money.toLocaleString('id-ID')}`;
+        msg += `💶 Saldo Saat Ini: Rp ${user.money.toLocaleString('id-ID')}`;
         return m.reply(msg);
     } 
     
@@ -67,7 +68,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         if (isNaN(qty) || qty <= 0) return m.reply(`[!] Jumlah tidak valid. Masukkan angka positif atau 'all'.`);
         if (qty > userOwned) return m.reply(`[!] Aset tidak cukup. Anda hanya memiliki ${userOwned.toLocaleString('id-ID')} unit ${ticker}.`);
         
-        // Kalkulasi Top 3 TNX Holders (Hanya dicari saat transaksi JUAL untuk keperluan Diskon Pajak)
+        // Kalkulasi Top 3 TNX Holders
         let tnxHolders = [];
         for (let jid in global.db.data.users) {
             if (global.db.data.users[jid].tulipnex > 0) {
@@ -86,7 +87,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         let tax = Math.floor(grossPrice * taxRate);
         let taxMsg = `🧾 Pajak Bursa (${currentTaxPercent}%): - Rp ${tax.toLocaleString('id-ID')}`;
 
-        // Sistem Hak Istimewa Dewan Direksi (Tax Privilege)
+        // Sistem Hak Istimewa
         if (m.sender === ceoJid) {
             tax = 0; 
             taxMsg = `👑 Privilege CEO: *Bebas Pajak 100%*`;
@@ -99,17 +100,22 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         }
 
         let netGain = grossPrice - tax;
-        market.vault = (market.vault || 0) + tax; // Masukkan uang pajak ke brankas perusahaan
+        market.vault = (market.vault || 0) + tax; 
 
+        // Eksekusi Pindah Tangan
         user.money += netGain;
         user[varName] -= qty;
         
+        // 🔥 INJEKSI AMM: Mempengaruhi harga turun karena oversupply
+        let impact = global.tradeEngine.executeTransaction(ticker, qty, 'sell');
+        
         let msg = `💹 *SELL ORDER EXECUTED*\n──────────────────\n`;
-        msg += `📦 Item: ${item.name} (${ticker})\n`;
+        msg += `📦 Item: ${ticker}\n`;
         msg += `🔢 Total Jual: ${qty.toLocaleString('id-ID')} unit\n`;
         msg += `💰 Bruto: Rp ${grossPrice.toLocaleString('id-ID')}\n`;
         msg += `${taxMsg}\n`;
         msg += `──────────────────\n`;
+        msg += `📉 *Dampak Pasar:* Harga turun menjadi *Rp ${impact.newPrice.toLocaleString('id-ID')}* (Rp ${impact.diff.toLocaleString('id-ID')})\n`;
         msg += `💵 Dana Masuk: Rp ${netGain.toLocaleString('id-ID')}\n`;
         msg += `💶 Saldo Saat Ini: Rp ${user.money.toLocaleString('id-ID')}`;
         
