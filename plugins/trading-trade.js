@@ -1,11 +1,10 @@
 /**
  * TULIPNEX TRADING ENGINE (BUY & SELL)
  * Location: ./plugins/trading-trade.js
- * Feature: Execute Orders, Calculate Tax Privileges, & Trigger AMM Impact
+ * Update: Removed O(N) Loop, Implemented Event-Driven BOD Trigger
  */
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-    // Pastikan Engine Pusat sudah siap
     if (!global.marketConfig || !global.tradeEngine) {
         return m.reply('[!] Mesin TulipNex belum siap atau sedang dimuat ulang. Harap tunggu.');
     }
@@ -24,14 +23,13 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let ticker = (args[0] || '').toUpperCase();
     let inputQty = args[1]?.toLowerCase();
     
-    // Gunakan konfigurasi global dari Engine
     let item = global.marketConfig[ticker];
 
     if (!item) return m.reply(`*[!] Ticker tidak valid.* \n\n Gunakan format \n> ${usedPrefix}${action} <ticker> <jumlah/all> \n Untuk melihat daftar koin \n> ${usedPrefix}ind `);
     if (!inputQty) return m.reply(`[!] Format salah.\n*Cara pakai:* ${usedPrefix}${action} <ticker> <jumlah/all>\n*Contoh:* ${usedPrefix}${action} IVL 10`);
 
     let currentPrice = market.prices[ticker];
-    let varName = item.db; // Mengambil nama property database dari config (misal: 'ivylink')
+    let varName = item.db; 
     let qty = 0;
 
     // --- TRANSAKSI BELI (IN) ---
@@ -43,12 +41,16 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         let totalPrice = currentPrice * qty;
         if (user.money < totalPrice) return m.reply(`[!] Dana kurang. Anda butuh Rp ${totalPrice.toLocaleString('id-ID')} untuk membeli ${qty} unit ${ticker}.`);
         
-        // Eksekusi Pindah Tangan
         user.money -= totalPrice;
         user[varName] = (user[varName] || 0) + qty;
         
-        // 🔥 INJEKSI AMM: Mempengaruhi harga naik karena demand
         let impact = global.tradeEngine.executeTransaction(ticker, qty, 'buy');
+        
+        // 🔥 PELATUK (TRIGGER) EVENT-DRIVEN CACHING
+        // Hanya hitung ulang Top 3 CEO jika yang dibeli adalah TNX
+        if (ticker === 'TNX') {
+            global.tradeEngine.updateBoardOfDirectors();
+        }
         
         let msg = `✅ *BUY ORDER EXECUTED*\n──────────────────\n`;
         msg += `📦 Item: ${ticker}\n`;
@@ -68,26 +70,18 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         if (isNaN(qty) || qty <= 0) return m.reply(`[!] Jumlah tidak valid. Masukkan angka positif atau 'all'.`);
         if (qty > userOwned) return m.reply(`[!] Aset tidak cukup. Anda hanya memiliki ${userOwned.toLocaleString('id-ID')} unit ${ticker}.`);
         
-        // Kalkulasi Top 3 TNX Holders
-        let tnxHolders = [];
-        for (let jid in global.db.data.users) {
-            if (global.db.data.users[jid].tulipnex > 0) {
-                tnxHolders.push([jid, global.db.data.users[jid]]);
-            }
-        }
-        tnxHolders.sort((a, b) => b[1].tulipnex - a[1].tulipnex);
-        let ceoJid = tnxHolders[0] ? tnxHolders[0][0] : null;
-        let komJid = tnxHolders[1] ? tnxHolders[1][0] : null;
-        let dirJid = tnxHolders[2] ? tnxHolders[2][0] : null;
+        // 🚀 O(1) PERFORMANCE: Mengambil data CEO dari Cache tanpa me-looping database
+        let bod = market.bod || global.tradeEngine.updateBoardOfDirectors();
+        let ceoJid = bod.ceo[0];
+        let komJid = bod.kom[0];
+        let dirJid = bod.dir[0];
 
-        // Kalkulasi Pajak Jual
         let currentTaxPercent = market.taxRates[ticker] || 1.5; 
         let taxRate = currentTaxPercent / 100;
         let grossPrice = currentPrice * qty;
         let tax = Math.floor(grossPrice * taxRate);
         let taxMsg = `🧾 Pajak Bursa (${currentTaxPercent}%): - Rp ${tax.toLocaleString('id-ID')}`;
 
-        // Sistem Hak Istimewa
         if (m.sender === ceoJid) {
             tax = 0; 
             taxMsg = `👑 Privilege CEO: *Bebas Pajak 100%*`;
@@ -102,12 +96,16 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         let netGain = grossPrice - tax;
         market.vault = (market.vault || 0) + tax; 
 
-        // Eksekusi Pindah Tangan
         user.money += netGain;
         user[varName] -= qty;
         
-        // 🔥 INJEKSI AMM: Mempengaruhi harga turun karena oversupply
         let impact = global.tradeEngine.executeTransaction(ticker, qty, 'sell');
+        
+        // 🔥 PELATUK (TRIGGER) EVENT-DRIVEN CACHING
+        // Hanya hitung ulang Top 3 CEO jika yang dijual adalah TNX
+        if (ticker === 'TNX') {
+            global.tradeEngine.updateBoardOfDirectors();
+        }
         
         let msg = `💹 *SELL ORDER EXECUTED*\n──────────────────\n`;
         msg += `📦 Item: ${ticker}\n`;

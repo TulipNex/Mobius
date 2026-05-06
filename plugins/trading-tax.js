@@ -1,7 +1,7 @@
 /**
  * TULIPNEX TAX CONTROL SYSTEM
  * Location: ./plugins/trading-tax.js
- * Feature: Tax Veto System (Ajukan, Setuju, Tolak Pajak)
+ * Update: Replaced O(N) sorting with Cached Data (O(1)) & Added Pending Proposal Validation
  */
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
@@ -14,15 +14,11 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
     const validTickers = ['IVL', 'LBT', 'IRC', 'LTN', 'RSX', 'TNX'];
 
-    // Mesin Pencari Top 3 TNX (Dewan Direksi)
-    let users = global.db.data.users;
-    let tnxHolders = Object.entries(users)
-        .filter(u => (u[1].tulipnex || 0) > 0)
-        .sort((a, b) => (b[1].tulipnex || 0) - (a[1].tulipnex || 0));
-
-    let ceo = tnxHolders[0] || [null, {}];
-    let kom = tnxHolders[1] || [null, {}];
-    let dir = tnxHolders[2] || [null, {}];
+    // 🚀 Ambil data dari Cache (Instan)
+    let bod = market.bod || global.tradeEngine.updateBoardOfDirectors();
+    let ceo = bod.ceo;
+    let kom = bod.kom;
+    let dir = bod.dir;
 
     let isCEO = m.sender === ceo[0];
     let isKomisaris = m.sender === kom[0];
@@ -35,6 +31,11 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     // ==========================================
     if (action === 'ajukanpajak') {
         if (!isCEO) return m.reply(`[!] Akses Ditolak! Hanya CEO (Rank 1 TNX) yang bisa mengusulkan undang-undang pajak.`);
+        
+        // 🔥 VALIDASI ANTI-SPAM PROPOSAL
+        if (market.taxProposal) {
+            return m.reply(`[!] Ditolak Sistem: Saat ini masih ada proposal pajak untuk *${market.taxProposal.ticker}* menjadi *${market.taxProposal.newTax}%* yang berstatus PENDING.\n\nHarap tunggu Komisaris atau Direktur melakukan *${usedPrefix}setujupajak* atau *${usedPrefix}tolakpajak* terlebih dahulu sebelum mengajukan proposal baru.`);
+        }
         
         if (args.length < 2) return m.reply(`*Format:* ${usedPrefix}ajukanpajak <Ticker/ALL> <Persen>\n*Contoh:* ${usedPrefix}ajukanpajak ALL 5`);
 
@@ -62,7 +63,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
             return m.reply(msg);
         }
 
-        // Simpan usulan di sistem (Jika sistem Oligarki aktif)
+        // Simpan usulan di sistem
         market.taxProposal = { ticker: targetTicker, newTax: newTax, approvals: [] };
 
         let msg = `📜 *DRAFT PAJAK BARU DIAJUKAN (PENDING)*\n──────────────────\n`;
@@ -96,13 +97,9 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                 return m.reply(`[!] Anda sudah menyetujui draft pajak ini. Menunggu persetujuan direksi lainnya.`);
             }
             
-            // Tambahkan persetujuan orang tersebut
             proposal.approvals.push(m.sender);
 
-            // Filter orang yang dibutuhkan untuk ACC (hanya posisi yang terisi)
             let requiredApprovers = [kom[0], dir[0]].filter(v => v !== null);
-            
-            // Cek apakah semua orang yang dibutuhkan sudah menyetujui
             let isFullyApproved = requiredApprovers.every(approver => proposal.approvals.includes(approver));
 
             if (isFullyApproved) {
@@ -110,7 +107,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                 for (let t of tickersToUpdate) {
                     market.taxRates[t] = proposal.newTax;
                 }
-                market.taxProposal = null; // Clear proposal
+                market.taxProposal = null; 
 
                 let msg = `⚖️ *REGULASI PAJAK DISAHKAN (APPROVED)*\n──────────────────\n`;
                 if (requiredApprovers.length > 1) {
@@ -137,8 +134,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
             }
             
         } else {
-            // Tolak Pajak (Veto)
-            market.taxProposal = null; // Clear proposal
+            market.taxProposal = null;
             
             let msg = `❌ *REGULASI PAJAK DITOLAK (VETO)*\n──────────────────\n`;
             msg += `${roleName} menggunakan hak vetonya untuk *menolak* draft pajak dari CEO!\n\n`;

@@ -41,7 +41,7 @@ Gunakan *.profile* untuk mengecek status barumu.
   }
 }
 
-handler.help = ['levelup']
+handler.help = ['level']
 handler.tags = ['xp']
 handler.command = /^(level|levelup)$/i
 

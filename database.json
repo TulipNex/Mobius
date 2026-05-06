@@ -7,12 +7,12 @@
       "level": 1,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 60,
+      "exp": 212,
       "limit": 100,
       "token": 10,
       "skata": 0,
       "lastkerja": 0,
-      "money": 0,
+      "money": 1149568730,
       "poin": 0,
       "balance": 0,
       "ojek": 0,
@@ -45,21 +45,102 @@
       "follow": 0,
       "followers": 0,
       "coin": 0,
-      "bank": 0
+      "bank": 0,
+      "command": null,
+      "commandTotal": null,
+      "lastCmd": 1778058146315,
+      "tulipnex": 0
     },
     "6282215415550@s.whatsapp.net": {
-      "taxi": 1,
-      "lasttaxi": 1777991778839,
+      "taxi": 3,
+      "lasttaxi": 1778085437874,
       "saldo": 0,
-      "level": 9,
+      "level": 13,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 13120,
-      "limit": 100,
+      "exp": 27646,
+      "limit": 99,
       "token": 10,
       "skata": 0,
-      "lastkerja": 1777995217065,
-      "money": 2874,
+      "lastkerja": 1778086111500,
+      "money": 1825,
+      "poin": 0,
+      "balance": 0,
+      "ojek": 4,
+      "pedagang": 0,
+      "dokter": 0,
+      "petani": 0,
+      "montir": 0,
+      "kuli": 0,
+      "banned": false,
+      "bannedTime": 0,
+      "warn": 0,
+      "afk": -1,
+      "afkReason": "",
+      "antispam": 0,
+      "lastngojek": 1778085432061,
+      "lastseen": 0,
+      "registered": true,
+      "name": "Mitraaa",
+      "age": 17,
+      "regTime": 1777991637797,
+      "premium": false,
+      "premiumTime": 0,
+      "job": "petani",
+      "role": "Beginner Grade 3 ⚊³",
+      "autolevelup": true,
+      "command": 162,
+      "commandTotal": 162,
+      "lastCmd": 1778087636092,
+      "pengeluaran": 0,
+      "energi": 100,
+      "title": 0,
+      "pasangan": "",
+      "follow": 0,
+      "followers": 0,
+      "coin": 0,
+      "bank": 0,
+      "rumah": "Tidak Ada",
+      "ivylink": 145,
+      "staking": {},
+      "profilebg": "https://o.uguu.se/mTyHTPuV.jpg",
+      "bankLoan": null,
+      "archbot_on": false,
+      "archbot_history": [],
+      "vebriy": false,
+      "vebriy_history": [
+        {
+          "role": "user",
+          "text": "halo"
+        },
+        {
+          "role": "bot",
+          "text": "Halo juga! Kenalin, aku Vebriy. Senang bisa ngobrol sama kamu.\n\nAda yang lagi pengen kamu bahas atau perlu bantuan apa hari ini? Aku siap nemenin, mulai dari diskusi serius sampai sekadar ngobrol santai aja. Gimana kabar kamu?"
+        },
+        {
+          "role": "user",
+          "text": "nama kamu siapa"
+        },
+        {
+          "role": "bot",
+          "text": "Tadi aku sudah sempat bisikin, tapi mungkin kelewat ya? Kenalin lagi, nama aku *Vebriy*. \n\nAku di sini buat jadi teman ngobrol kamu yang asyik, informatif, dan pastinya siap bantu apa pun yang kamu butuhin. Karena kita sudah kenalan dua kali, sekarang giliran kamu nih—ada yang lagi dipikirin atau mau dibahas bareng aku?"
+        }
+      ],
+      "pengingat": []
+    },
+    "6285324023198@s.whatsapp.net": {
+      "taxi": 0,
+      "lasttaxi": 0,
+      "saldo": 0,
+      "level": 6,
+      "location": "Gubuk",
+      "pc": 0,
+      "exp": 4079,
+      "limit": 91,
+      "token": 10,
+      "skata": 0,
+      "lastkerja": 1778005285039,
+      "money": 135560660,
       "poin": 0,
       "balance": 0,
       "ojek": 2,
@@ -74,80 +155,7 @@
       "afk": -1,
       "afkReason": "",
       "antispam": 0,
-      "lastngojek": 1777992932093,
-      "lastseen": 0,
-      "registered": true,
-      "name": "Mitraaa",
-      "age": 17,
-      "regTime": 1777991637797,
-      "premium": false,
-      "premiumTime": 0,
-      "job": "Pengangguran",
-      "role": "Beginner Grade 3 ⚊³",
-      "autolevelup": true,
-      "command": 75,
-      "commandTotal": 75,
-      "lastCmd": 1778004357019,
-      "pengeluaran": 0,
-      "energi": 100,
-      "title": 0,
-      "pasangan": "",
-      "follow": 0,
-      "followers": 0,
-      "coin": 0,
-      "bank": 0,
-      "rumah": "Tidak Ada",
-      "ivylink": 3,
-      "staking": {
-        "IVL": {
-          "amount": 21,
-          "lastHarvest": 1777992660221
-        }
-      },
-      "profilebg": "https://o.uguu.se/mTyHTPuV.jpg",
-      "bankLoan": null,
-      "archbot_on": false,
-      "archbot_history": [],
-      "vebriy": true,
-      "vebriy_history": [
-        {
-          "role": "user",
-          "text": "halo"
-        },
-        {
-          "role": "bot",
-          "text": "Halo juga! Kenalin, aku Vebriy. Senang bisa ngobrol sama kamu.\n\nAda yang lagi pengen kamu bahas atau perlu bantuan apa hari ini? Aku siap nemenin, mulai dari diskusi serius sampai sekadar ngobrol santai aja. Gimana kabar kamu?"
-        }
-      ]
-    },
-    "6285324023198@s.whatsapp.net": {
-      "taxi": 0,
-      "lasttaxi": 0,
-      "saldo": 0,
-      "level": 4,
-      "location": "Gubuk",
-      "pc": 0,
-      "exp": 1714,
-      "limit": 100,
-      "token": 10,
-      "skata": 0,
-      "lastkerja": 1777991705304,
-      "money": 27475,
-      "poin": 0,
-      "balance": 0,
-      "ojek": 1,
-      "pedagang": 0,
-      "dokter": 0,
-      "petani": 0,
-      "montir": 0,
-      "kuli": 0,
-      "banned": false,
-      "bannedTime": 0,
-      "warn": 0,
-      "afk": -1,
-      "afkReason": "",
-      "antispam": 0,
-      "lastngojek": 1777991732791,
+      "lastngojek": 1778005255482,
       "lastseen": 0,
       "registered": true,
       "name": "wann",
@@ -158,9 +166,9 @@
       "job": "kuli",
       "role": "Newbie ㋡",
       "autolevelup": true,
-      "command": 1,
-      "commandTotal": 1,
-      "lastCmd": 1778002825057,
+      "command": 59,
+      "commandTotal": 59,
+      "lastCmd": 1778081229758,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -169,24 +177,26 @@
       "followers": 0,
       "coin": 0,
       "bank": 0,
-      "rumah": "Tidak Ada"
+      "rumah": "Tidak Ada",
+      "ivylink": 14,
+      "tulipnex": 46
     },
     "6285591068997@s.whatsapp.net": {
-      "taxi": 0,
-      "lasttaxi": 0,
+      "taxi": 1,
+      "lasttaxi": 1778023193404,
       "saldo": 0,
-      "level": 2,
+      "level": 10,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 329,
-      "limit": 100,
+      "exp": 14562,
+      "limit": 93,
       "token": 10,
       "skata": 0,
       "lastkerja": 0,
-      "money": 0,
+      "money": 65,
       "poin": 0,
       "balance": 0,
-      "ojek": 0,
+      "ojek": 2,
       "pedagang": 0,
       "dokter": 0,
       "petani": 0,
@@ -198,20 +208,20 @@
       "afk": -1,
       "afkReason": "",
       "antispam": 0,
-      "lastngojek": 0,
+      "lastngojek": 1778023188070,
       "lastseen": 0,
-      "registered": false,
-      "name": {},
-      "age": -1,
-      "regTime": -1,
+      "registered": true,
+      "name": "yuuki",
+      "age": 16,
+      "regTime": 1778005208342,
       "premium": false,
       "premiumTime": 0,
       "job": "Pengangguran",
-      "role": "Newbie ㋡",
+      "role": "Beginner Grade 4 ⚊⁴",
       "autolevelup": true,
-      "command": 10,
-      "commandTotal": 10,
-      "lastCmd": 1778002806949,
+      "command": 143,
+      "commandTotal": 143,
+      "lastCmd": 1778089851878,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -219,7 +229,21 @@
       "follow": 0,
       "followers": 0,
       "coin": 0,
-      "bank": 0
+      "bank": 0,
+      "ivylink": 51333,
+      "vebriy": false,
+      "vebriy_history": [
+        {
+          "role": "user",
+          "text": "siapa itu loki"
+        },
+        {
+          "role": "bot",
+          "text": "Halo! Kenalin, gue Vebriy. Kalau ngomongin soal *Loki*, ini salah satu karakter paling \"abu-abu\" dan menarik buat dibahas, baik dari sisi mitologi maupun pop culture.\n\nSingkatnya, Loki itu dikenal sebagai *Dewa Tipu Muslihat* (*God of Mischief*). Ini rinciannya biar makin jelas:\n\n### 1. Dalam Mitologi Nordik (Aslinya)\nDi cerita rakyat Skandinavia kuno, Loki itu sosok yang ribet. Dia bukan cuma sekadar \"jahat\", tapi lebih ke pengacau.\n*   *Asal-usul:* Dia anak dari raksasa (Jötunn) bernama Farbauti dan Laufey. Meskipun sering main bareng Odin dan Thor, dia itu sebenarnya bukan saudara kandung Thor (beda sama versi film).\n*   *Sifat:* Dia cerdas, licik, dan suka berubah wujud (bisa jadi hewan atau orang lain).\n*   *Peran:* Dia sering bikin masalah buat para dewa di Asgard, tapi uniknya, dia juga yang sering nyelesain masalah itu pake kecerdikannya. Tapi di akhir cerita (Ragnarok), dia memimpin pasukan buat ngelawan para dewa.\n\n### 2. Dalam Marvel Cinematic Universe (MCU)\nIni versi yang bikin nama Loki makin populer secara global, diperanin sama *Tom Hiddleston*.\n*   *Hubungan:* Di sini dia digambarkan sebagai adik angkat Thor. Dia merasa selalu di bawah bayang-bayang Thor, makanya dia punya isu *daddy issues* sama Odin.\n*   *Transformasi:* Dari seorang *villain* (penjahat) di film *The Avengers*, pelan-pelan dia berubah jadi *anti-hero*, sampai akhirnya di serial solonya (*Loki*), dia jadi sosok yang sangat penting buat menjaga kestabilan *multiverse*.\n\n### 3. Ciri Khas Loki\nAda beberapa hal yang identik banget sama dia:\n*   *Warna Hijau & Emas:* Selalu jadi skema warna pakaiannya.\n*   *Helm Tanduk:* Simbol ikonik yang melambangkan kelicikan dan statusnya.\n*   *Belati:* Senjata favoritnya, karena dia lebih suka menyerang secara diam-diam daripada pakai palu gede kayak Thor.\n\nJadi, Loki itu ibarat bumbu dalam cerita; tanpa dia, semuanya bakal datar-datar aja karena nggak ada yang bikin gara-gara. Kamu nanya ini karena habis nonton filmnya atau emang lagi riset soal mitologi, nih?"
+        }
+      ],
+      "tulipnex": 1,
+      "profilebg": "https://o.uguu.se/hxUFpncD.jpg"
     },
     "249348621369556@lid": {
       "taxi": 0,
@@ -264,6 +288,82 @@
       "title": 0,
       "coin": 0,
       "bank": 0
+    },
+    "258149730799767@lid": {
+      "taxi": 0,
+      "lasttaxi": 0,
+      "saldo": 0,
+      "level": 0,
+      "location": "Gubuk",
+      "pc": 0,
+      "exp": 24,
+      "limit": 100,
+      "token": 10,
+      "skata": 0,
+      "lastkerja": 0,
+      "money": 0,
+      "poin": 0,
+      "balance": 0,
+      "ojek": 0,
+      "banned": false,
+      "bannedTime": 0,
+      "warn": 0,
+      "afk": -1,
+      "afkReason": "",
+      "antispam": 0,
+      "lastngojek": 0,
+      "lastseen": 0,
+      "registered": false,
+      "name": {},
+      "age": -1,
+      "regTime": -1,
+      "premium": false,
+      "premiumTime": 0,
+      "job": "Pengangguran",
+      "role": "Newbie ㋡",
+      "autolevelup": true,
+      "pengeluaran": 0,
+      "energi": 100,
+      "title": 0,
+      "coin": 0,
+      "bank": 0
+    },
+    "120363406727405732@g.us": {
+      "taxi": 0,
+      "lasttaxi": 0,
+      "saldo": 0,
+      "level": 0,
+      "location": "Gubuk",
+      "pc": 0,
+      "exp": 23,
+      "limit": 100,
+      "token": 10,
+      "skata": 0,
+      "lastkerja": 0,
+      "money": 0,
+      "poin": 0,
+      "balance": 0,
+      "ojek": 0,
+      "banned": false,
+      "bannedTime": 0,
+      "warn": 0,
+      "afk": -1,
+      "afkReason": "",
+      "antispam": 0,
+      "lastngojek": 0,
+      "lastseen": 0,
+      "registered": false,
+      "name": {},
+      "age": -1,
+      "regTime": -1,
+      "premium": false,
+      "premiumTime": 0,
+      "job": "Pengangguran",
+      "role": "Newbie ㋡",
+      "autolevelup": true,
+      "command": null,
+      "commandTotal": null,
+      "lastCmd": 1778070878965
     }
   },
   "chats": {
@@ -291,9 +391,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 0,
-          "commandTotal": 0,
-          "lastseen": 0
+          "command": 5,
+          "commandTotal": 5,
+          "lastseen": 0,
+          "lastCmd": 1778058146315
         },
         "6285591068997@s.whatsapp.net": {
           "blacklist": false,
@@ -301,10 +402,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 35,
-          "commandTotal": 35,
+          "command": 106,
+          "commandTotal": 106,
           "lastseen": 0,
-          "lastCmd": 1778001969665
+          "lastCmd": 1778086732104
         },
         "6282215415550@s.whatsapp.net": {
           "blacklist": false,
@@ -312,10 +413,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 48,
-          "commandTotal": 48,
+          "command": 107,
+          "commandTotal": 107,
           "lastseen": 0,
-          "lastCmd": 1777997528716
+          "lastCmd": 1778087428311
         },
         "6285324023198@s.whatsapp.net": {
           "blacklist": false,
@@ -323,28 +424,54 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 8,
-          "commandTotal": 8,
+          "command": 30,
+          "commandTotal": 30,
           "lastseen": 0,
-          "lastCmd": 1777991759303
+          "lastCmd": 1778066834661
+        },
+        "258149730799767@lid": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        },
+        "120363406727405732@g.us": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 1,
+          "commandTotal": 1,
+          "lastseen": 0,
+          "lastCmd": 1778070878965
         }
       },
       "expired": 0,
       "nsfw": false,
       "memberStats": {
         "6285591068997@s.whatsapp.net": {
-          "chatCount": 36,
-          "lastSeen": 1778001969664
+          "chatCount": 108,
+          "lastSeen": 1778086732101
         },
         "6282215415550@s.whatsapp.net": {
-          "chatCount": 53,
-          "lastSeen": 1777997528715
+          "chatCount": 122,
+          "lastSeen": 1778087428309
         },
         "6285324023198@s.whatsapp.net": {
-          "chatCount": 14,
-          "lastSeen": 1777991759301
+          "chatCount": 39,
+          "lastSeen": 1778066834657
+        },
+        "120363406727405732@g.us": {
+          "chatCount": 1,
+          "lastSeen": 1778070878965
         }
-      }
+      },
+      "tradingNews": true
     },
     "120363284305573016@g.us": {
       "isBanned": false,
@@ -370,12 +497,45 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 16,
-          "commandTotal": 16,
+          "command": 22,
+          "commandTotal": 22,
           "lastseen": 0,
-          "lastCmd": 1778004357019
+          "lastCmd": 1778087636092
         },
         "628989240628@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 3,
+          "commandTotal": 3,
+          "lastseen": 0,
+          "lastCmd": 1778056978089
+        },
+        "6285591068997@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 58,
+          "commandTotal": 58,
+          "lastseen": 0,
+          "lastCmd": 1778056970704
+        },
+        "6285324023198@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 31,
+          "commandTotal": 31,
+          "lastseen": 0,
+          "lastCmd": 1778056650660
+        },
+        "249348621369556@lid": {
           "blacklist": false,
           "banned": false,
           "bannedTime": 0,
@@ -385,29 +545,7 @@
           "commandTotal": 0,
           "lastseen": 0
         },
-        "6285591068997@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 24,
-          "commandTotal": 24,
-          "lastseen": 0,
-          "lastCmd": 1778002806949
-        },
-        "6285324023198@s.whatsapp.net": {
-          "blacklist": false,
-          "banned": false,
-          "bannedTime": 0,
-          "chat": 0,
-          "chatTotal": 0,
-          "command": 4,
-          "commandTotal": 4,
-          "lastseen": 0,
-          "lastCmd": 1778002825057
-        },
-        "249348621369556@lid": {
+        "258149730799767@lid": {
           "blacklist": false,
           "banned": false,
           "bannedTime": 0,
@@ -420,16 +558,16 @@
       },
       "memberStats": {
         "6282215415550@s.whatsapp.net": {
-          "chatCount": 17,
-          "lastSeen": 1778004357015
+          "chatCount": 23,
+          "lastSeen": 1778087636090
         },
         "6285591068997@s.whatsapp.net": {
-          "chatCount": 17,
-          "lastSeen": 1778002806948
+          "chatCount": 57,
+          "lastSeen": 1778056970704
         },
         "6285324023198@s.whatsapp.net": {
-          "chatCount": 4,
-          "lastSeen": 1778002825057
+          "chatCount": 22,
+          "lastSeen": 1778056650657
         }
       },
       "expired": 0,
@@ -586,7 +724,9 @@
           "commandTotal": 0,
           "lastseen": 0
         }
-      }
+      },
+      "expired": 0,
+      "nsfw": false
     },
     "6285591068997@s.whatsapp.net": {
       "isBanned": false,
@@ -629,6 +769,112 @@
       },
       "expired": 0,
       "nsfw": false
+    },
+    "249348621369556@lid": {
+      "isBanned": false,
+      "welcome": true,
+      "detect": false,
+      "mute": false,
+      "listStr": {},
+      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
+      "sBye": "Selamat tinggal @user!",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": false,
+      "antiLink": false,
+      "antiSticker": false,
+      "viewonce": false,
+      "antiToxic": false,
+      "antibot": false,
+      "rpg": false,
+      "memgc": {
+        "6282215415550@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        }
+      },
+      "expired": 0,
+      "nsfw": false
+    },
+    "221203734204662@lid": {
+      "isBanned": false,
+      "welcome": true,
+      "detect": false,
+      "mute": false,
+      "listStr": {},
+      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
+      "sBye": "Selamat tinggal @user!",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": false,
+      "antiLink": false,
+      "antiSticker": false,
+      "viewonce": false,
+      "antiToxic": false,
+      "antibot": false,
+      "rpg": false,
+      "memgc": {
+        "6285324023198@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        }
+      },
+      "expired": 0,
+      "nsfw": false
+    },
+    "6285324023198@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": true,
+      "detect": false,
+      "mute": false,
+      "listStr": {},
+      "sWelcome": "Hai, @user!\nSelamat datang di grup @subject\n\n@desc",
+      "sBye": "Selamat tinggal @user!",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": false,
+      "antiLink": false,
+      "antiSticker": false,
+      "viewonce": false,
+      "antiToxic": false,
+      "antibot": false,
+      "rpg": false,
+      "memgc": {
+        "6285324023198@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        },
+        "628989240628@s.whatsapp.net": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 0,
+          "commandTotal": 0,
+          "lastseen": 0
+        }
+      },
+      "expired": 0,
+      "nsfw": false
     }
   },
   "stats": {},
@@ -637,102 +883,118 @@
   "settings": {
     "trading": {
       "prices": {
-        "IVL": 3664,
-        "LBT": 53697,
-        "IRC": 1436724,
-        "LTN": 15589760,
-        "RSX": 128304049,
-        "TNX": 520870515
+        "IVL": 3010,
+        "LBT": 21988,
+        "IRC": 839190,
+        "LTN": 3056182,
+        "RSX": 60631343,
+        "TNX": 111081403
       },
       "history": {
         "IVL": [
-          3737,
-          3726,
-          3653,
-          3603,
-          3647,
-          3704,
-          3679,
-          3695,
-          3767,
-          3664
+          2850,
+          2854,
+          2786,
+          2810,
+          2834,
+          2896,
+          2915,
+          2891,
+          2930,
+          3010
         ],
         "LBT": [
-          54097,
-          52062,
-          51452,
-          50397,
-          48649,
-          50994,
-          52433,
-          52776,
-          53719,
-          53697
+          22219,
+          22798,
+          22507,
+          22333,
+          22442,
+          21416,
+          21346,
+          22023,
+          21697,
+          21988
         ],
         "IRC": [
-          1453654,
-          1382801,
-          1433333,
-          1441361,
-          1479204,
-          1444707,
-          1429362,
-          1365913,
-          1409329,
-          1436724
+          827888,
+          848403,
+          811392,
+          830353,
+          818415,
+          829634,
+          836235,
+          851046,
+          813502,
+          839190
         ],
         "LTN": [
-          16648697,
-          15753303,
-          15823804,
-          15746080,
-          16221611,
-          16507167,
-          16906065,
-          16173213,
-          15801057,
-          15589760
+          3157985,
+          3004282,
+          3143526,
+          3137979,
+          3094160,
+          3114257,
+          3156859,
+          3215694,
+          3113476,
+          3056182
         ],
         "RSX": [
-          143273934,
-          149634654,
-          151841290,
-          148262406,
-          150052561,
-          139969279,
-          143809304,
-          138928440,
-          137663738,
-          128304049
+          56873118,
+          59538408,
+          63456083,
+          65387563,
+          68154353,
+          64745886,
+          63591917,
+          64943180,
+          61501215,
+          60631343
         ],
         "TNX": [
-          495279246,
-          508573758,
-          522031076,
-          502706455,
-          463703200,
-          479039699,
-          502780880,
-          476713241,
-          512570325,
-          520870515
+          105770670,
+          109886460,
+          117519328,
+          112574553,
+          108298961,
+          108033135,
+          112689794,
+          107788975,
+          115290879,
+          111081403
         ]
       },
       "ath": {
-        "IVL": 5775,
+        "IVL": 7673,
         "LBT": 109609,
-        "IRC": 1546603,
-        "LTN": 16979668,
-        "RSX": 173409955,
+        "IRC": 2120932,
+        "LTN": 18316745,
+        "RSX": 213979386,
         "TNX": 1171618158
       },
       "eventHistory": [
         {
           "title": "ALIEN TECH REVEAL",
           "time": 1778000820013
+        },
+        {
+          "title": "Q3 EARNINGS MISS",
+          "time": 1778015040012
+        },
+        {
+          "title": "HACKATHON WINNER",
+          "time": 1778029620010
+        },
+        {
+          "title": "SOLAR FLARE",
+          "time": 1778043900014
+        },
+        {
+          "title": "TIME TRAVELER TWEET",
+          "time": 1778086396804
         }
       ],
-      "eventCooldown": 76,
+      "eventCooldown": 36,
       "activeEvent": {
         "title": "STABLE",
         "msg": "Normal",
@@ -741,25 +1003,156 @@
         "dur": 0
       },
       "prevPrices": {
-        "IVL": 3767,
-        "LBT": 53719,
-        "IRC": 1409329,
-        "LTN": 15801057,
-        "RSX": 137663738,
-        "TNX": 512570325
+        "IVL": 2930,
+        "LBT": 21697,
+        "IRC": 813502,
+        "LTN": 3113476,
+        "RSX": 61501215,
+        "TNX": 115290879
       },
-      "lastMinuteMarker": "2026-05-06 02:06",
-      "lastUpdate": 1778004360010,
+      "lastMinuteMarker": "2026-05-07 02:21",
+      "lastUpdate": 1778091660012,
       "taxRates": {
         "IVL": 1.5,
         "LBT": 1.5,
         "IRC": 1.5,
         "LTN": 1.5,
         "RSX": 1.5,
-        "TNX": 2.5
+        "TNX": 2
       },
-      "vault": 0,
-      "lastCanceledEvent": null
+      "vault": 4608990,
+      "lastCanceledEvent": null,
+      "taxProposal": null,
+      "bod": {
+        "ceo": [
+          "6285324023198@s.whatsapp.net",
+          {
+            "taxi": 0,
+            "lasttaxi": 0,
+            "saldo": 0,
+            "level": 6,
+            "location": "Gubuk",
+            "pc": 0,
+            "exp": 4079,
+            "limit": 91,
+            "token": 10,
+            "skata": 0,
+            "lastkerja": 1778005285039,
+            "money": 135560660,
+            "poin": 0,
+            "balance": 0,
+            "ojek": 2,
+            "pedagang": 0,
+            "dokter": 0,
+            "petani": 0,
+            "montir": 0,
+            "kuli": 0,
+            "banned": false,
+            "bannedTime": 0,
+            "warn": 0,
+            "afk": -1,
+            "afkReason": "",
+            "antispam": 0,
+            "lastngojek": 1778005255482,
+            "lastseen": 0,
+            "registered": true,
+            "name": "wann",
+            "age": 23,
+            "regTime": 1777991679072,
+            "premium": false,
+            "premiumTime": 0,
+            "job": "kuli",
+            "role": "Newbie ㋡",
+            "autolevelup": true,
+            "command": 59,
+            "commandTotal": 59,
+            "lastCmd": 1778081229758,
+            "pengeluaran": 0,
+            "energi": 100,
+            "title": 0,
+            "pasangan": "",
+            "follow": 0,
+            "followers": 0,
+            "coin": 0,
+            "bank": 0,
+            "rumah": "Tidak Ada",
+            "ivylink": 14,
+            "tulipnex": 46
+          }
+        ],
+        "kom": [
+          "6285591068997@s.whatsapp.net",
+          {
+            "taxi": 1,
+            "lasttaxi": 1778023193404,
+            "saldo": 0,
+            "level": 10,
+            "location": "Gubuk",
+            "pc": 0,
+            "exp": 14562,
+            "limit": 93,
+            "token": 10,
+            "skata": 0,
+            "lastkerja": 0,
+            "money": 65,
+            "poin": 0,
+            "balance": 0,
+            "ojek": 2,
+            "pedagang": 0,
+            "dokter": 0,
+            "petani": 0,
+            "montir": 0,
+            "kuli": 0,
+            "banned": false,
+            "bannedTime": 0,
+            "warn": 0,
+            "afk": -1,
+            "afkReason": "",
+            "antispam": 0,
+            "lastngojek": 1778023188070,
+            "lastseen": 0,
+            "registered": true,
+            "name": "yuuki",
+            "age": 16,
+            "regTime": 1778005208342,
+            "premium": false,
+            "premiumTime": 0,
+            "job": "Pengangguran",
+            "role": "Beginner Grade 4 ⚊⁴",
+            "autolevelup": true,
+            "command": 143,
+            "commandTotal": 143,
+            "lastCmd": 1778089851878,
+            "pengeluaran": 0,
+            "energi": 100,
+            "title": 0,
+            "pasangan": "",
+            "follow": 0,
+            "followers": 0,
+            "coin": 0,
+            "bank": 0,
+            "ivylink": 51333,
+            "vebriy": false,
+            "vebriy_history": [
+              {
+                "role": "user",
+                "text": "siapa itu loki"
+              },
+              {
+                "role": "bot",
+                "text": "Halo! Kenalin, gue Vebriy. Kalau ngomongin soal *Loki*, ini salah satu karakter paling \"abu-abu\" dan menarik buat dibahas, baik dari sisi mitologi maupun pop culture.\n\nSingkatnya, Loki itu dikenal sebagai *Dewa Tipu Muslihat* (*God of Mischief*). Ini rinciannya biar makin jelas:\n\n### 1. Dalam Mitologi Nordik (Aslinya)\nDi cerita rakyat Skandinavia kuno, Loki itu sosok yang ribet. Dia bukan cuma sekadar \"jahat\", tapi lebih ke pengacau.\n*   *Asal-usul:* Dia anak dari raksasa (Jötunn) bernama Farbauti dan Laufey. Meskipun sering main bareng Odin dan Thor, dia itu sebenarnya bukan saudara kandung Thor (beda sama versi film).\n*   *Sifat:* Dia cerdas, licik, dan suka berubah wujud (bisa jadi hewan atau orang lain).\n*   *Peran:* Dia sering bikin masalah buat para dewa di Asgard, tapi uniknya, dia juga yang sering nyelesain masalah itu pake kecerdikannya. Tapi di akhir cerita (Ragnarok), dia memimpin pasukan buat ngelawan para dewa.\n\n### 2. Dalam Marvel Cinematic Universe (MCU)\nIni versi yang bikin nama Loki makin populer secara global, diperanin sama *Tom Hiddleston*.\n*   *Hubungan:* Di sini dia digambarkan sebagai adik angkat Thor. Dia merasa selalu di bawah bayang-bayang Thor, makanya dia punya isu *daddy issues* sama Odin.\n*   *Transformasi:* Dari seorang *villain* (penjahat) di film *The Avengers*, pelan-pelan dia berubah jadi *anti-hero*, sampai akhirnya di serial solonya (*Loki*), dia jadi sosok yang sangat penting buat menjaga kestabilan *multiverse*.\n\n### 3. Ciri Khas Loki\nAda beberapa hal yang identik banget sama dia:\n*   *Warna Hijau & Emas:* Selalu jadi skema warna pakaiannya.\n*   *Helm Tanduk:* Simbol ikonik yang melambangkan kelicikan dan statusnya.\n*   *Belati:* Senjata favoritnya, karena dia lebih suka menyerang secara diam-diam daripada pakai palu gede kayak Thor.\n\nJadi, Loki itu ibarat bumbu dalam cerita; tanpa dia, semuanya bakal datar-datar aja karena nggak ada yang bikin gara-gara. Kamu nanya ini karena habis nonton filmnya atau emang lagi riset soal mitologi, nih?"
+              }
+            ],
+            "tulipnex": 1,
+            "profilebg": "https://o.uguu.se/hxUFpncD.jpg"
+          }
+        ],
+        "dir": [
+          null,
+          {}
+        ]
+      },
+      "lastDividendClaim": 1778062817445
     }
   },
   "sendlater": []

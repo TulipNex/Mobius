@@ -1,6 +1,7 @@
-const ChatGpt = require('../lib/chatgpt.js')
+const novaAi = require('../lib/novaAi.js')
 const fs = require('fs')
 const path = require('path')
+const util = require('util')
 
 // Objek untuk menyimpan memori percakapan & status Auto AI
 global.mitra_session = global.mitra_session || {}
@@ -43,7 +44,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     await conn.sendMessage(m.chat, { react: { text: '🤔', key: m.key } })
 
     try {
-        // ==========================================
+        //        // ==========================================
         // 1. MENGAMBIL DATABASE USER (Jadwal & Profil)
         // ==========================================
         let userDb = global.db.data.users[m.sender] || {};
@@ -74,7 +75,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
             infoProfil = `User ini belum mendaftar di database bot. Kamu belum mengetahui nama dan umurnya. Arahkan user untuk daftar menggunakan perintah .daftar nama.umur atau .reg nama.umur`;
         }
 
-        // ==========================================
+        //        // ==========================================
         // 2. MEMBACA FILE PERSONA.TXT
         // ==========================================
         let filePersona = path.join(__dirname, '../persona.txt');
@@ -106,40 +107,136 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         let riwayatTeks = sejarah.map(chat => `${chat.role}: ${chat.content}`).join('\n')
         let promptFinal = `${fullPrompt}${riwayatTeks}\nUser: ${input}\nAssistant:`
 
+        //        // ==========================================
+        // 4. MENGIRIM KE API (Nova AI)
         // ==========================================
-        // 4. MENGIRIM KE API (ChatGpt Class)
-        // ==========================================
-        const ai = new ChatGpt({
-            user_agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            lang: 'id-ID'
-        })
+        const res = await novaAi(promptFinal)
+        
+        // Ekstraksi jawaban cerdas Nova AI
+        let answer = res.response_text || res.answer || res.text || res.reply || res.message || res.response;
+        if (!answer) {
+            answer = typeof res === 'string' ? res : util.format(res);
+        }
 
-        const response = await ai.startConversation(promptFinal, false, false)
+        if (answer) {
+            let rawAnswer = answer.trim();
 
-        if (response && response.msg) {
-            let cleanText = response.msg.trim()
-                .replace(/\*/g, '') 
-                .replace(/#/g, '')
-                .trim()
-
-            await m.reply(cleanText)
-
-            // Simpan ke Memori Sesi
+            // Simpan ke Memori Sesi (Menggunakan teks asli agar AI tidak lupa struktur kode/markdown)
             sejarah.push({ role: 'User', content: input })
-            sejarah.push({ role: 'Assistant', content: cleanText })
-
+            sejarah.push({ role: 'Assistant', content: rawAnswer })
+            
             // Batasi ingatan 10 riwayat terakhir
             if (sejarah.length > 10) sejarah.shift() 
 
+            // Cek apakah balasan AI mengandung blok kode (```) atau tabel markdown (|---|)
+            let isCode = rawAnswer.includes('```');
+            let isTable = rawAnswer.includes('|') && rawAnswer.includes('---');
+
+            if (isCode || isTable) {
+                try {
+                    // IMPOR LIBRARY DARI FOLDER LIB
+                    // Sesuaikan 'AIRich.js' dengan nama file kamu jika berbeda!
+                    const { AIRich } = require('../lib/MessageBuilder.js'); 
+                    let aiMsg = new AIRich();
+
+                    // --- MARKDOWN PARSER (State Machine) ---
+                    let state = 'TEXT';
+                    let currentText = '';
+                    let currentCode = '';
+                    let currentLang = '';
+                    let currentTable = [];
+                    let blocks = [];
+
+                    const flushText = () => { 
+                        if (currentText.trim()) { 
+                            let clean = currentText.trim().replace(/\*/g, '').replace(/#/g, '');
+                            blocks.push({ type: 'TEXT', content: clean }); 
+                            currentText = ''; 
+                        } 
+                    };
+
+                    const lines = rawAnswer.split('\n');
+                    for (let i = 0; i < lines.length; i++) {
+                        let line = lines[i];
+
+                        if (state === 'TEXT') {
+                            if (line.trim().startsWith('```')) {
+                                flushText();
+                                state = 'CODE';
+                                currentLang = line.trim().substring(3).trim();
+                            } else if (line.trim().startsWith('|') && line.trim().endsWith('|') && i + 1 < lines.length && lines[i+1].trim().startsWith('|') && /[-]{2,}/.test(lines[i+1])) {
+                                // Deteksi header tabel
+                                flushText();
+                                state = 'TABLE';
+                                currentTable.push(line);
+                            } else {
+                                currentText += line + '\n';
+                            }
+                        } else if (state === 'CODE') {
+                            if (line.trim().startsWith('```')) {
+                                blocks.push({ type: 'CODE', lang: currentLang || 'javascript', content: currentCode.replace(/\n$/, '') });
+                                currentCode = '';
+                                currentLang = '';
+                                state = 'TEXT';
+                            } else {
+                                currentCode += line + '\n';
+                            }
+                        } else if (state === 'TABLE') {
+                            if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
+                                // Abaikan baris pemisah markdown tabel (|---|:--:|)
+                                if (!/^\|[-:\| ]+\|$/.test(line.trim())) {
+                                    currentTable.push(line);
+                                }
+                            } else {
+                                // Akhir dari tabel, parse menjadi Matrix Array
+                                let parsedTable = currentTable.map(l => l.trim().replace(/^\||\|$/g, '').split('|').map(c => c.trim().replace(/\*/g, '').replace(/`/g, '')));
+                                blocks.push({ type: 'TABLE', content: parsedTable });
+                                currentTable = [];
+                                state = 'TEXT';
+                                currentText += line + '\n'; // Baris ini masuk kembali ke teks
+                            }
+                        }
+                    }
+
+                    // Flush sisa teks di memori
+                    if (state === 'TEXT') flushText();
+                    else if (state === 'CODE') blocks.push({ type: 'CODE', lang: currentLang || 'javascript', content: currentCode.replace(/\n$/, '') });
+                    else if (state === 'TABLE') {
+                        let parsedTable = currentTable.map(l => l.trim().replace(/^\||\|$/g, '').split('|').map(c => c.trim().replace(/\*/g, '').replace(/`/g, '')));
+                        blocks.push({ type: 'TABLE', content: parsedTable });
+                    }
+
+                    // --- RAKIT RICH RESPONSE ---
+                    for (let block of blocks) {
+                        if (block.type === 'TEXT') aiMsg.addText(block.content);
+                        else if (block.type === 'CODE') aiMsg.addCode(block.lang, block.content);
+                        else if (block.type === 'TABLE') aiMsg.addTable(block.content);
+                    }
+
+                    // Eksekusi pengiriman menggunakan antarmuka UI Rich Response
+                    await aiMsg.run(m.chat, conn, m);
+
+                } catch (err) {
+                    console.error('Error saat membangun Rich Response:', err);
+                    // Fallback: Jika ada error saat rendering UI, kirim sebagai teks normal
+                    let cleanText = rawAnswer.replace(/\*/g, '').replace(/#/g, '');
+                    await m.reply(cleanText);
+                }
+            } else {
+                // Eksekusi fallback: Jika tidak ada kode dan tabel sama sekali, kirim sebagai teks normal
+                let cleanText = rawAnswer.replace(/\*/g, '').replace(/#/g, '');
+                await m.reply(cleanText);
+            }
+
             await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key } })
         } else {
-            throw new Error('ChatGPT memberikan respon kosong.')
+            throw new Error('Nova AI memberikan respon kosong.')
         }
 
     } catch (e) {
-        console.error('Error ChatGPT:', e)
+        console.error('Error Nova AI:', e)
         await conn.sendMessage(m.chat, { react: { text: '❌', key: m.key } })
-        m.reply(`⚠️ Maaf Boss, AI sedang gangguan.`)
+        m.reply(`⚠️ Maaf Boss, AI sedang gangguan.\n\nDetail: ${e.message || e}`)
     }
 }
 
@@ -148,7 +245,7 @@ handler.tags = ['ai']
 handler.command = /^(mitra|wann)$/i
 handler.owner = true
 
-// ==========================================
+//// ==========================================
 // PENDETEKSI OTOMATIS (HANYA MERESPON REPLY)
 // ==========================================
 handler.before = async (m, { conn }) => {

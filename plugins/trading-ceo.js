@@ -1,7 +1,7 @@
 /**
  * TULIPNEX BOARD OF DIRECTORS DASHBOARD
  * Location: ./plugins/trading-ceo.js
- * Feature: Corporate Dashboard for Top 3 TNX Holders
+ * Update: Replaced O(N) sorting with Cached Data (O(1))
  */
 
 let handler = async (m, { conn, usedPrefix, command }) => {
@@ -15,15 +15,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
     const validTickers = ['IVL', 'LBT', 'IRC', 'LTN', 'RSX', 'TNX'];
 
-    // Mesin Pencari Top 3 TNX (Dewan Direksi)
-    let users = global.db.data.users;
-    let tnxHolders = Object.entries(users)
-        .filter(u => (u[1].tulipnex || 0) > 0)
-        .sort((a, b) => (b[1].tulipnex || 0) - (a[1].tulipnex || 0));
-
-    let ceo = tnxHolders[0] || [null, {}];
-    let kom = tnxHolders[1] || [null, {}];
-    let dir = tnxHolders[2] || [null, {}];
+    // 🚀 Ambil data dari Cache (Instan)
+    let bod = market.bod || global.tradeEngine.updateBoardOfDirectors();
+    let ceo = bod.ceo;
+    let kom = bod.kom;
+    let dir = bod.dir;
 
     let isCEO = m.sender === ceo[0];
     let isKomisaris = m.sender === kom[0];
@@ -33,23 +29,17 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     caption += `──────────────────\n`;
     caption += `Dewan Direksi (Top 3 TNX Holders) memiliki wewenang mengontrol pajak dan menikmati dividen bursa!\n\n`;
     
-    caption += `👑 *CEO (Direktur Utama)*\n`;
-    caption += `👤 ${ceo[0] ? (ceo[1].name || `@${ceo[0].split('@')[0]}`) : 'Kosong'}\n`;
-    caption += `🪙 TNX: ${ceo[0] ? ceo[1].tulipnex.toLocaleString('id-ID') : 0}\n`;
-    caption += `💼 *Wewenang:* \n> Mengusulkan tarif pajak bursa.\n`;
-    caption += `💎 *Privilege:* \n> Bebas Pajak Jual (100%) & 50% Dividen Vault.\n\n`;
+    caption += `*Direktur Utama (CEO):* ${ceo[0] ? (ceo[1].name || `@${ceo[0].split('@')[0]}`) : 'Kosong'} \n${ceo[0] ? ceo[1].tulipnex.toLocaleString('id-ID') : 0} TNX\n`;
+    caption += `\n> *Wewenang:* Mengusulkan tarif pajak bursa.\n`;
+    caption += `\n> *Privilege:* Bebas Pajak Jual (100%) & 50% Dividen Vault.\n\n`;
 
-    caption += `👔 *Komisaris Utama*\n`;
-    caption += `👤 ${kom[0] ? (kom[1].name || `@${kom[0].split('@')[0]}`) : 'Kosong'}\n`;
-    caption += `🪙 TNX: ${kom[0] ? kom[1].tulipnex.toLocaleString('id-ID') : 0}\n`;
-    caption += `💼 *Wewenang:* \n> Hak Veto (ACC/Tolak) usulan pajak CEO.\n`;
-    caption += `💎 *Privilege:* \n> Diskon Pajak Jual 50% & 30% Dividen Vault.\n\n`;
+    caption += `*Komisaris Utama:* ${kom[0] ? (kom[1].name || `@${kom[0].split('@')[0]}`) : 'Kosong'} \n${kom[0] ? kom[1].tulipnex.toLocaleString('id-ID') : 0} TNX\n`;
+    caption += `\n> *Wewenang:* Hak Veto (ACC/Tolak) usulan pajak CEO.\n`;
+    caption += `\n> *Privilege:* Diskon Pajak Jual 50% & 30% Dividen Vault.\n\n`;
 
-    caption += `💼 *Direktur Eksekutif*\n`;
-    caption += `👤 ${dir[0] ? (dir[1].name || `@${dir[0].split('@')[0]}`) : 'Kosong'}\n`;
-    caption += `🪙 TNX: ${dir[0] ? dir[1].tulipnex.toLocaleString('id-ID') : 0}\n`;
-    caption += `💼 *Wewenang:* \n> Hak Veto (ACC/Tolak) usulan pajak CEO.\n`;
-    caption += `💎 *Privilege:* \n> Diskon Pajak Jual 25% & 20% Dividen Vault.\n`;
+    caption += `*Direktur Eksekutif:* ${dir[0] ? (dir[1].name || `@${dir[0].split('@')[0]}`) : 'Kosong'} \n${dir[0] ? dir[1].tulipnex.toLocaleString('id-ID') : 0} TNX\n`;
+    caption += `\n> *Wewenang:* Hak Veto (ACC/Tolak) usulan pajak CEO.\n`;
+    caption += `\n> *Privilege:* Diskon Pajak Jual 25% & 20% Dividen Vault.\n`;
 
     caption += `──────────────────\n`;
     caption += `⚖️ *REGULASI PAJAK BURSA SAAT INI*\n`;
@@ -65,7 +55,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     }
     caption += `──────────────────\n`;
     
-    let userTNX = users[m.sender]?.tulipnex || 0;
+    let userTNX = global.db.data.users[m.sender]?.tulipnex || 0;
     
     if (isCEO) {
         caption += `*Anda adalah CEO TulipNex Inc.* \n- Ajukan besaran pajak \n> ${usedPrefix}ajukanpajak <ticker/ALL> <persen> \n- Tarik uang dari brankas \n> ${usedPrefix}claimdividen`;

@@ -24,7 +24,7 @@ let handler = async (m, { conn, isOwner }) => {
 }
 
 handler.help = ['cektoken', 'token']
-handler.tags = ['info']
+handler.tags = ['xp']
 handler.command = /^(cektoken|token)$/i
 
 module.exports = handler
