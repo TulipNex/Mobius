@@ -25,7 +25,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
        proto,
        prepareWAMessageMedia,
        generateWAMessageFromContent
-    } = await import('@adiwajshing/baileys');
+    } = await import('@whiskeysockets/baileys');
 
     const sendButton = async (jid, buttons = [], quoted = null, opts = {}) => {
         if (!conn.user?.id) throw new Error("User not authenticated");

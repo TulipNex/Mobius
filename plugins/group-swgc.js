@@ -1,4 +1,4 @@
-const { getContentType } = require('@adiwajshing/baileys')
+const { getContentType } = require('@whiskeysockets/baileys')
 
 let handler = async (m, { conn }) => {
     // Validasi input: pastikan user me-reply sebuah pesan

@@ -4,10 +4,10 @@
       "taxi": 0,
       "lasttaxi": 0,
       "saldo": 0,
-      "level": 1,
+      "level": 2,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 212,
+      "exp": 325,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -58,7 +58,7 @@
       "level": 13,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 27646,
+      "exp": 27952,
       "limit": 99,
       "token": 10,
       "skata": 0,
@@ -89,9 +89,9 @@
       "job": "petani",
       "role": "Beginner Grade 3 ⚊³",
       "autolevelup": true,
-      "command": 162,
-      "commandTotal": 162,
-      "lastCmd": 1778087636092,
+      "command": 178,
+      "commandTotal": 178,
+      "lastCmd": 1778157063555,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -126,7 +126,8 @@
           "text": "Tadi aku sudah sempat bisikin, tapi mungkin kelewat ya? Kenalin lagi, nama aku *Vebriy*. \n\nAku di sini buat jadi teman ngobrol kamu yang asyik, informatif, dan pastinya siap bantu apa pun yang kamu butuhin. Karena kita sudah kenalan dua kali, sekarang giliran kamu nih—ada yang lagi dipikirin atau mau dibahas bareng aku?"
         }
       ],
-      "pengingat": []
+      "pengingat": [],
+      "tempmail_recipient": "kontol"
     },
     "6285324023198@s.whatsapp.net": {
       "taxi": 0,
@@ -135,8 +136,8 @@
       "level": 6,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 4079,
-      "limit": 91,
+      "exp": 4166,
+      "limit": 90,
       "token": 10,
       "skata": 0,
       "lastkerja": 1778005285039,
@@ -166,9 +167,9 @@
       "job": "kuli",
       "role": "Newbie ㋡",
       "autolevelup": true,
-      "command": 59,
-      "commandTotal": 59,
-      "lastCmd": 1778081229758,
+      "command": 64,
+      "commandTotal": 64,
+      "lastCmd": 1778153831784,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -188,12 +189,12 @@
       "level": 10,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 14562,
+      "exp": 17291,
       "limit": 93,
       "token": 10,
       "skata": 0,
       "lastkerja": 0,
-      "money": 65,
+      "money": 1888,
       "poin": 0,
       "balance": 0,
       "ojek": 2,
@@ -219,9 +220,9 @@
       "job": "Pengangguran",
       "role": "Beginner Grade 4 ⚊⁴",
       "autolevelup": true,
-      "command": 143,
-      "commandTotal": 143,
-      "lastCmd": 1778089851878,
+      "command": 267,
+      "commandTotal": 267,
+      "lastCmd": 1778157818892,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -230,7 +231,7 @@
       "followers": 0,
       "coin": 0,
       "bank": 0,
-      "ivylink": 51333,
+      "ivylink": 308122805,
       "vebriy": false,
       "vebriy_history": [
         {
@@ -364,6 +365,43 @@
       "command": null,
       "commandTotal": null,
       "lastCmd": 1778070878965
+    },
+    "120363284305573016@g.us": {
+      "taxi": 0,
+      "lasttaxi": 0,
+      "saldo": 0,
+      "level": 0,
+      "location": "Gubuk",
+      "pc": 0,
+      "exp": 26,
+      "limit": 100,
+      "token": 10,
+      "skata": 0,
+      "lastkerja": 0,
+      "money": 0,
+      "poin": 0,
+      "balance": 0,
+      "ojek": 0,
+      "banned": false,
+      "bannedTime": 0,
+      "warn": 0,
+      "afk": -1,
+      "afkReason": "",
+      "antispam": 0,
+      "lastngojek": 0,
+      "lastseen": 0,
+      "registered": false,
+      "name": {},
+      "age": -1,
+      "regTime": -1,
+      "premium": false,
+      "premiumTime": 0,
+      "job": "Pengangguran",
+      "role": "Newbie ㋡",
+      "autolevelup": true,
+      "command": null,
+      "commandTotal": null,
+      "lastCmd": 1778157067372
     }
   },
   "chats": {
@@ -402,10 +440,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 106,
-          "commandTotal": 106,
+          "command": 168,
+          "commandTotal": 168,
           "lastseen": 0,
-          "lastCmd": 1778086732104
+          "lastCmd": 1778155899518
         },
         "6282215415550@s.whatsapp.net": {
           "blacklist": false,
@@ -413,10 +451,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 107,
-          "commandTotal": 107,
+          "command": 111,
+          "commandTotal": 111,
           "lastseen": 0,
-          "lastCmd": 1778087428311
+          "lastCmd": 1778155547363
         },
         "6285324023198@s.whatsapp.net": {
           "blacklist": false,
@@ -424,10 +462,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 30,
-          "commandTotal": 30,
+          "command": 34,
+          "commandTotal": 34,
           "lastseen": 0,
-          "lastCmd": 1778066834661
+          "lastCmd": 1778136997696
         },
         "258149730799767@lid": {
           "blacklist": false,
@@ -455,16 +493,16 @@
       "nsfw": false,
       "memberStats": {
         "6285591068997@s.whatsapp.net": {
-          "chatCount": 108,
-          "lastSeen": 1778086732101
+          "chatCount": 182,
+          "lastSeen": 1778155899517
         },
         "6282215415550@s.whatsapp.net": {
-          "chatCount": 122,
-          "lastSeen": 1778087428309
+          "chatCount": 125,
+          "lastSeen": 1778155547362
         },
         "6285324023198@s.whatsapp.net": {
-          "chatCount": 39,
-          "lastSeen": 1778066834657
+          "chatCount": 46,
+          "lastSeen": 1778142892816
         },
         "120363406727405732@g.us": {
           "chatCount": 1,
@@ -497,10 +535,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 22,
-          "commandTotal": 22,
+          "command": 27,
+          "commandTotal": 27,
           "lastseen": 0,
-          "lastCmd": 1778087636092
+          "lastCmd": 1778157063555
         },
         "628989240628@s.whatsapp.net": {
           "blacklist": false,
@@ -519,10 +557,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 58,
-          "commandTotal": 58,
+          "command": 60,
+          "commandTotal": 60,
           "lastseen": 0,
-          "lastCmd": 1778056970704
+          "lastCmd": 1778157228997
         },
         "6285324023198@s.whatsapp.net": {
           "blacklist": false,
@@ -530,10 +568,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 31,
-          "commandTotal": 31,
+          "command": 32,
+          "commandTotal": 32,
           "lastseen": 0,
-          "lastCmd": 1778056650660
+          "lastCmd": 1778153831784
         },
         "249348621369556@lid": {
           "blacklist": false,
@@ -554,20 +592,35 @@
           "command": 0,
           "commandTotal": 0,
           "lastseen": 0
+        },
+        "120363284305573016@g.us": {
+          "blacklist": false,
+          "banned": false,
+          "bannedTime": 0,
+          "chat": 0,
+          "chatTotal": 0,
+          "command": 1,
+          "commandTotal": 1,
+          "lastseen": 0,
+          "lastCmd": 1778157067372
         }
       },
       "memberStats": {
         "6282215415550@s.whatsapp.net": {
-          "chatCount": 23,
-          "lastSeen": 1778087636090
+          "chatCount": 28,
+          "lastSeen": 1778157063555
         },
         "6285591068997@s.whatsapp.net": {
-          "chatCount": 57,
-          "lastSeen": 1778056970704
+          "chatCount": 59,
+          "lastSeen": 1778157228997
         },
         "6285324023198@s.whatsapp.net": {
-          "chatCount": 22,
-          "lastSeen": 1778056650657
+          "chatCount": 25,
+          "lastSeen": 1778153831784
+        },
+        "120363284305573016@g.us": {
+          "chatCount": 1,
+          "lastSeen": 1778157067372
         }
       },
       "expired": 0,
@@ -613,7 +666,8 @@
         }
       },
       "expired": 0,
-      "nsfw": false
+      "nsfw": false,
+      "autobackup": true
     },
     "120363208757055493@g.us": {
       "isBanned": false,
@@ -883,85 +937,85 @@
   "settings": {
     "trading": {
       "prices": {
-        "IVL": 3010,
-        "LBT": 21988,
-        "IRC": 839190,
-        "LTN": 3056182,
-        "RSX": 60631343,
-        "TNX": 111081403
+        "IVL": 3287,
+        "LBT": 18324,
+        "IRC": 451506,
+        "LTN": 3429130,
+        "RSX": 50256592,
+        "TNX": 1581228732
       },
       "history": {
         "IVL": [
-          2850,
-          2854,
-          2786,
-          2810,
-          2834,
-          2896,
-          2915,
-          2891,
-          2930,
-          3010
+          3171,
+          3228,
+          3191,
+          3244,
+          3208,
+          3210,
+          3135,
+          3182,
+          3261,
+          3287
         ],
         "LBT": [
-          22219,
-          22798,
-          22507,
-          22333,
-          22442,
-          21416,
-          21346,
-          22023,
-          21697,
-          21988
+          18546,
+          18016,
+          17808,
+          18183,
+          18192,
+          18625,
+          18922,
+          18286,
+          18428,
+          18324
         ],
         "IRC": [
-          827888,
-          848403,
-          811392,
-          830353,
-          818415,
-          829634,
-          836235,
-          851046,
-          813502,
-          839190
+          446852,
+          447945,
+          465605,
+          482326,
+          465170,
+          454438,
+          453131,
+          442283,
+          434462,
+          451506
         ],
         "LTN": [
-          3157985,
-          3004282,
-          3143526,
-          3137979,
-          3094160,
-          3114257,
-          3156859,
-          3215694,
-          3113476,
-          3056182
+          3384630,
+          3580012,
+          3446157,
+          3510188,
+          3469507,
+          3673248,
+          3693018,
+          3477030,
+          3369641,
+          3429130
         ],
         "RSX": [
-          56873118,
-          59538408,
-          63456083,
-          65387563,
-          68154353,
-          64745886,
-          63591917,
-          64943180,
-          61501215,
-          60631343
+          54185786,
+          51321378,
+          49382791,
+          51991006,
+          50900482,
+          51402822,
+          48758688,
+          52082617,
+          48795686,
+          50256592
         ],
         "TNX": [
-          105770670,
-          109886460,
-          117519328,
-          112574553,
-          108298961,
-          108033135,
-          112689794,
-          107788975,
-          115290879,
-          111081403
+          2020973496,
+          1928941588,
+          1775797877,
+          1692367474,
+          1657170752,
+          1630502542,
+          1635517750,
+          1650326605,
+          1569942503,
+          1581228732
         ]
       },
       "ath": {
@@ -970,7 +1024,7 @@
         "IRC": 2120932,
         "LTN": 18316745,
         "RSX": 213979386,
-        "TNX": 1171618158
+        "TNX": 2741697998
       },
       "eventHistory": [
         {
@@ -992,9 +1046,29 @@
         {
           "title": "TIME TRAVELER TWEET",
           "time": 1778086396804
+        },
+        {
+          "title": "ETF APPROVAL",
+          "time": 1778097420014
+        },
+        {
+          "title": "ETF APPROVAL",
+          "time": 1778111880009
+        },
+        {
+          "title": "LEAD DEV LEFT",
+          "time": 1778120940009
+        },
+        {
+          "title": "FIAT PAIRING",
+          "time": 1778129820011
+        },
+        {
+          "title": "HARDWARE SHORTAGE",
+          "time": 1778140800018
         }
       ],
-      "eventCooldown": 36,
+      "eventCooldown": 0,
       "activeEvent": {
         "title": "STABLE",
         "msg": "Normal",
@@ -1003,15 +1077,15 @@
         "dur": 0
       },
       "prevPrices": {
-        "IVL": 2930,
-        "LBT": 21697,
-        "IRC": 813502,
-        "LTN": 3113476,
-        "RSX": 61501215,
-        "TNX": 115290879
+        "IVL": 3261,
+        "LBT": 18428,
+        "IRC": 434462,
+        "LTN": 3369641,
+        "RSX": 48795686,
+        "TNX": 1569942503
       },
-      "lastMinuteMarker": "2026-05-07 02:21",
-      "lastUpdate": 1778091660012,
+      "lastMinuteMarker": "2026-05-07 20:46",
+      "lastUpdate": 1778157960014,
       "taxRates": {
         "IVL": 1.5,
         "LBT": 1.5,
@@ -1089,7 +1163,7 @@
             "level": 10,
             "location": "Gubuk",
             "pc": 0,
-            "exp": 14562,
+            "exp": 15194,
             "limit": 93,
             "token": 10,
             "skata": 0,
@@ -1120,9 +1194,9 @@
             "job": "Pengangguran",
             "role": "Beginner Grade 4 ⚊⁴",
             "autolevelup": true,
-            "command": 143,
-            "commandTotal": 143,
-            "lastCmd": 1778089851878,
+            "command": 169,
+            "commandTotal": 169,
+            "lastCmd": 1778096697774,
             "pengeluaran": 0,
             "energi": 100,
             "title": 0,

@@ -8,7 +8,7 @@ try {
     // Memuat font dari folder src/font (berdasarkan root direktori bot)
     registerFont(path.join(process.cwd(), 'src/font/Montserrat-Black.ttf'), { family: 'Montserrat-Black' });
 } catch (e) {
-    console.error('⚠️ Font Montserrat tidak ditemukan di src/font/Montserrat-Black.ttf. Menggunakan font default.');
+    console.error('');
 }
 
 try {
@@ -19,7 +19,7 @@ try {
         registerFont(fontPath, { family: 'Montserrat', weight: 'normal' });
         registerFont(fontPath, { family: 'Montserrat', weight: 'bold' });
         
-        console.log('✅ [Papan Pemuka] Font Montserrat berhasil dimuat!');
+        console.log('');
     } else {
         console.log(`⚠️ [Papan Pemuka] File font tidak ditemukan di: ${fontPath}`);
     }
