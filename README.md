@@ -1,74 +1,24 @@
-# Hi there! 👋 I'm TulipNex
-
-Welcome to my GitHub profile! I'm a passionate developer committed to building innovative solutions and contributing to open-source projects.
-
----
-
-## 🚀 About Me
-
-I'm a software developer with a passion for clean code, problem-solving, and continuous learning. I enjoy collaborating with others and creating projects that make a real impact.
-
-- 🔭 Currently exploring new technologies and best practices
-- 🌱 Always learning and improving my skillset
-- 💡 Interested in [Your interests here]
-- 🎯 Open to collaborations and exciting opportunities
-
----
-
-## 💼 Skills & Expertise
-
-### Languages
-- JavaScript / TypeScript
-- Python
-- [Add your languages]
-
-### Technologies & Tools
-- React / Vue / [Your frameworks]
-- Node.js
-- Git & GitHub
-- [Add more technologies]
-
-### Other Skills
-- Full-Stack Development
-- Problem Solving
-- [Your other skills]
-
----
-
-## 📚 Featured Projects
-
-### [Project Name](https://github.com/TulipNex/project-repo)
-Brief description of what this project does and its key features.
-- **Tech Stack:** JavaScript, React, Node.js
-- **Highlights:** Key accomplishment or feature
-
-### [Project Name](https://github.com/TulipNex/project-repo)
-Brief description of what this project does and its key features.
-- **Tech Stack:** Python, Django
-- **Highlights:** Key accomplishment or feature
-
----
-
-
-## 🤝 Connect With Me
-
-- 🐦 [Twitter](https://twitter.com/your-handle)
-- 📧 Email: your.email@example.com
-
----
-
-## 💬 Fun Facts
-
-- ⚡ Fun fact about yourself
-- 🎮 Hobby or interest
-- 🌍 Something interesting about you
-
----
-
-## 📈 Contributions & Activity
-
-I'm actively contributing to open-source projects and building new things. Feel free to check out my repositories and don't hesitate to reach out!
-
----
-
-**Thanks for visiting! Happy coding! 🚀**
+🌌 Mobius WhatsApp BotMobius adalah asisten cerdas WhatsApp multifungsi yang dibangun menggunakan Node.js. Dilengkapi dengan arsitektur berbasis plugin yang modular, Mobius menawarkan ratusan fitur mulai dari integrasi AI tingkat lanjut, sistem RPG & ekonomi, modul trading yang kompleks, hingga alat manajemen grup yang tangguh.Fitur Utama •Persyaratan •Instalasi •Konfigurasi •Struktur Direktori✨ Fitur UtamaMobius memiliki ratusan plugin yang siap digunakan. Berikut adalah kategori fitur unggulannya:🤖 Integrasi AI (Artificial Intelligence)Chatbot Beragam Model: Claude, ChatGPT, Perplexity, Kimi, Lumo, Zai.Image Generation: NanoBanana (Teks ke Gambar), FaceSwap, Hapus Background (NoBG).Audio AI: SunoAI (Pembuat Musik).📈 Sistem Trading & Ekonomi (Lanjutan)Modul Trading Engine mandiri (trading-engine.js).Portofolio, Saham, Crypto, Staking, Pajak (Tax), dan Dividen.Bank, Sistem CEO, Simulasi Event, dan Leaderboard Ekonomi.📥 Media DownloaderUnduh media dari berbagai platform: TikTok, Instagram, Facebook, YouTube (Audio/Video), Spotify, Threads, Pinterest, GitClone, dan Scribd.🎮 RPG & Mini GamesRoleplay: Bekerja, Ngojek, Beli Rumah, Taksi, Leveling & XP.Games: Werewolf, Ular Tangga, TicTacToe, Tebak Kata (Sambung Kata), Bomb, Suit.Fun: Menfess (Pesan Rahasia), Cek Khodam, Anonymous Chat.🛠️ Tools & UtilityKonversi Media (WebP ke MP4, Audio Changer).Maker: Pembuat Stiker (WM, Exif, Smeme), Brat Canvas, Quotes, Teks (Nulis).Alat pencarian Internet: Jadwal Bola, Klasemen, Info Gempa, Cuaca, GitHub Search, Terjemahan, OCR, TTS.Pencari Artikel Khusus: Integrasi Arsip & Berita New York Times (NYT).Info eFootball: Statistik, Booster, Skill Pemain.🛡️ Manajemen GrupAnti-Link, Anti-Spam, Anti-Call, Anti-Tag.Sistem Absensi, Voting (Poll), Welcome/Leave otomatis, Kick, Promote, Demote.Sistem Giveaway (Roll, Start, Ikut).💻 PersyaratanSebelum menginstal Mobius, pastikan sistem Anda telah menginstal perangkat lunak berikut:Node.js (Versi 18 atau terbaru)GitFFmpeg (Diperlukan untuk manipulasi Audio/Video & Stiker animasi)ImageMagick (Diperlukan untuk manipulasi Gambar/Teks/Canvas)🚀 InstalasiIkuti langkah-langkah di bawah ini untuk menjalankan Mobius di mesin lokal atau server (VPS) Anda:Kloning Repositorigit clone [https://github.com/tulipnex/mobius.git](https://github.com/tulipnex/mobius.git)
+cd mobius
+Instal DependensiPastikan Anda berada di dalam folder repositori, lalu jalankan:npm install
+Jalankan BotAnda bisa menjalankan bot dengan salah satu perintah berikut:npm start
+# atau
+node index.js
+# atau menggunakan PM2 (untuk server 24/7)
+pm2 start index.js --name "mobius"
+Tautkan ke WhatsAppSaat pertama kali dijalankan, bot akan menampilkan QR Code atau Pairing Code di terminal. Pindai kode tersebut menggunakan perangkat WhatsApp utama Anda (Perangkat Tautkan / Linked Devices).⚙️ KonfigurasiAnda dapat mengatur profil pemilik (owner), API Keys, dan pengaturan global bot melalui file config.js.Buka config.js menggunakan text editor favorit Anda dan sesuaikan bagian berikut:// Contoh isi config.js (Sesuaikan dengan data Anda)
+global.owner = ['628xxxxxxxxxx'] // Ganti dengan nomor WhatsApp Anda
+global.packname = 'Sticker by'
+global.author = 'Mobius Bot'
+global.prefix = ['.', '/', '!'] // Prefix perintah bot
+Catatan: Beberapa fitur API mungkin memerlukan API Key khusus (seperti fitur AI atau Scraper tertentu). Anda perlu memasukkannya di file konfigurasi atau pada masing-masing plugin jika diminta.📁 Struktur DirektoriBerikut adalah gambaran umum struktur kode pada Mobius:mobius/
+├── index.js             # Titik masuk utama aplikasi (Entry Point)
+├── main.js              # Inisialisasi koneksi Baileys & Handler
+├── handler.js           # Penanganan pesan masuk & eksekusi plugin
+├── config.js            # File konfigurasi utama bot (Owner, Nama, dll)
+├── database.json        # Database lokal (LowDB)
+├── lib/                 # Modul inti, fungsi pembantu (Scraper, Downloader, Game Engine)
+├── plugins/             # Folder berisi semua perintah/fitur bot (Ratusan File)
+├── media/               # Penyimpanan sementara untuk aset media (Stiker, Welcome)
+└── src/                 # Aset statis seperti Font kustom & gambar Estetik
+🤝 BerkontribusiKami sangat menyambut kontribusi dari pengembang lain! Jika Anda ingin menambahkan plugin baru, memperbaiki bug, atau meningkatkan kinerja bot:Lakukan Fork pada repositori ini.Buat branch fitur Anda (git checkout -b fitur/NamaFitur).Lakukan Commit perubahan Anda (git commit -m 'Menambahkan fitur XYZ').Push ke branch Anda (git push origin fitur/NamaFitur).Buat Pull Request baru.Pastikan kode yang Anda buat (terutama di dalam folder /plugins) mengikuti struktur kode standar yang ada di repositori ini.📜 LisensiProyek ini menggunakan Lisensi yang tertera pada file LICENSE. Dengan menggunakan, menyalin, atau memodifikasi kode ini, Anda tunduk pada syarat dan ketentuan dari lisensi tersebut.
