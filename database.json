@@ -7,7 +7,7 @@
       "level": 2,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 325,
+      "exp": 333,
       "limit": 100,
       "token": 10,
       "skata": 0,
@@ -58,7 +58,7 @@
       "level": 13,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 27952,
+      "exp": 28253,
       "limit": 99,
       "token": 10,
       "skata": 0,
@@ -89,9 +89,9 @@
       "job": "petani",
       "role": "Beginner Grade 3 ⚊³",
       "autolevelup": true,
-      "command": 178,
-      "commandTotal": 178,
-      "lastCmd": 1778157063555,
+      "command": 192,
+      "commandTotal": 192,
+      "lastCmd": 1778168669669,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -136,8 +136,8 @@
       "level": 6,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 4166,
-      "limit": 90,
+      "exp": 4219,
+      "limit": 89,
       "token": 10,
       "skata": 0,
       "lastkerja": 1778005285039,
@@ -167,9 +167,9 @@
       "job": "kuli",
       "role": "Newbie ㋡",
       "autolevelup": true,
-      "command": 64,
-      "commandTotal": 64,
-      "lastCmd": 1778153831784,
+      "command": 66,
+      "commandTotal": 66,
+      "lastCmd": 1778192237175,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -186,10 +186,10 @@
       "taxi": 1,
       "lasttaxi": 1778023193404,
       "saldo": 0,
-      "level": 10,
+      "level": 11,
       "location": "Gubuk",
       "pc": 0,
-      "exp": 17291,
+      "exp": 17986,
       "limit": 93,
       "token": 10,
       "skata": 0,
@@ -220,9 +220,9 @@
       "job": "Pengangguran",
       "role": "Beginner Grade 4 ⚊⁴",
       "autolevelup": true,
-      "command": 267,
-      "commandTotal": 267,
-      "lastCmd": 1778157818892,
+      "command": 299,
+      "commandTotal": 299,
+      "lastCmd": 1778202265195,
       "pengeluaran": 0,
       "energi": 100,
       "title": 0,
@@ -440,10 +440,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 168,
-          "commandTotal": 168,
+          "command": 174,
+          "commandTotal": 174,
           "lastseen": 0,
-          "lastCmd": 1778155899518
+          "lastCmd": 1778202265195
         },
         "6282215415550@s.whatsapp.net": {
           "blacklist": false,
@@ -451,10 +451,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 111,
-          "commandTotal": 111,
+          "command": 115,
+          "commandTotal": 115,
           "lastseen": 0,
-          "lastCmd": 1778155547363
+          "lastCmd": 1778168669669
         },
         "6285324023198@s.whatsapp.net": {
           "blacklist": false,
@@ -493,12 +493,12 @@
       "nsfw": false,
       "memberStats": {
         "6285591068997@s.whatsapp.net": {
-          "chatCount": 182,
-          "lastSeen": 1778155899517
+          "chatCount": 185,
+          "lastSeen": 1778202265190
         },
         "6282215415550@s.whatsapp.net": {
-          "chatCount": 125,
-          "lastSeen": 1778155547362
+          "chatCount": 129,
+          "lastSeen": 1778168669664
         },
         "6285324023198@s.whatsapp.net": {
           "chatCount": 46,
@@ -535,10 +535,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 27,
-          "commandTotal": 27,
+          "command": 34,
+          "commandTotal": 34,
           "lastseen": 0,
-          "lastCmd": 1778157063555
+          "lastCmd": 1778158231035
         },
         "628989240628@s.whatsapp.net": {
           "blacklist": false,
@@ -557,10 +557,10 @@
           "bannedTime": 0,
           "chat": 0,
           "chatTotal": 0,
-          "command": 60,
-          "commandTotal": 60,
+          "command": 86,
+          "commandTotal": 86,
           "lastseen": 0,
-          "lastCmd": 1778157228997
+          "lastCmd": 1778161676650
         },
         "6285324023198@s.whatsapp.net": {
           "blacklist": false,
@@ -607,12 +607,12 @@
       },
       "memberStats": {
         "6282215415550@s.whatsapp.net": {
-          "chatCount": 28,
-          "lastSeen": 1778157063555
+          "chatCount": 35,
+          "lastSeen": 1778158231033
         },
         "6285591068997@s.whatsapp.net": {
-          "chatCount": 59,
-          "lastSeen": 1778157228997
+          "chatCount": 75,
+          "lastSeen": 1778161379659
         },
         "6285324023198@s.whatsapp.net": {
           "chatCount": 25,
@@ -937,85 +937,85 @@
   "settings": {
     "trading": {
       "prices": {
-        "IVL": 3287,
-        "LBT": 18324,
-        "IRC": 451506,
-        "LTN": 3429130,
-        "RSX": 50256592,
-        "TNX": 1581228732
+        "IVL": 3101,
+        "LBT": 17734,
+        "IRC": 895057,
+        "LTN": 11780598,
+        "RSX": 12050574,
+        "TNX": 1949722013
       },
       "history": {
         "IVL": [
-          3171,
-          3228,
-          3191,
-          3244,
-          3208,
-          3210,
-          3135,
-          3182,
-          3261,
-          3287
+          2827,
+          2880,
+          2964,
+          2961,
+          2918,
+          2955,
+          2961,
+          3027,
+          3098,
+          3101
         ],
         "LBT": [
-          18546,
-          18016,
-          17808,
-          18183,
-          18192,
-          18625,
-          18922,
-          18286,
-          18428,
-          18324
+          17752,
+          18497,
+          19264,
+          18532,
+          19286,
+          19154,
+          18362,
+          17863,
+          17961,
+          17734
         ],
         "IRC": [
-          446852,
-          447945,
-          465605,
-          482326,
-          465170,
-          454438,
-          453131,
-          442283,
-          434462,
-          451506
+          1039398,
+          1040715,
+          1035163,
+          1009451,
+          961084,
+          931464,
+          914134,
+          910703,
+          918460,
+          895057
         ],
         "LTN": [
-          3384630,
-          3580012,
-          3446157,
-          3510188,
-          3469507,
-          3673248,
-          3693018,
-          3477030,
-          3369641,
-          3429130
+          9753753,
+          9768439,
+          9863892,
+          10357979,
+          10159287,
+          10486693,
+          10570821,
+          11180551,
+          11385810,
+          11780598
         ],
         "RSX": [
-          54185786,
-          51321378,
-          49382791,
-          51991006,
-          50900482,
-          51402822,
-          48758688,
-          52082617,
-          48795686,
-          50256592
+          12363073,
+          12508141,
+          12482799,
+          13331053,
+          13915093,
+          13058616,
+          12173057,
+          12818101,
+          12350072,
+          12050574
         ],
         "TNX": [
-          2020973496,
-          1928941588,
-          1775797877,
-          1692367474,
-          1657170752,
-          1630502542,
-          1635517750,
-          1650326605,
-          1569942503,
-          1581228732
+          1882180314,
+          1954698678,
+          1963731965,
+          1835271824,
+          1882197801,
+          1878641767,
+          1943128845,
+          1940849720,
+          2091511794,
+          1949722013
         ]
       },
       "ath": {
@@ -1024,7 +1024,7 @@
         "IRC": 2120932,
         "LTN": 18316745,
         "RSX": 213979386,
-        "TNX": 2741697998
+        "TNX": 3239216372
       },
       "eventHistory": [
         {
@@ -1066,9 +1066,21 @@
         {
           "title": "HARDWARE SHORTAGE",
           "time": 1778140800018
+        },
+        {
+          "title": "PRIVACY LAWSUIT",
+          "time": 1778158200015
+        },
+        {
+          "title": "FACTORY PROTEST",
+          "time": 1778166840010
+        },
+        {
+          "title": "GANGGUAN NODES",
+          "time": 1778198220010
         }
       ],
-      "eventCooldown": 0,
+      "eventCooldown": 56,
       "activeEvent": {
         "title": "STABLE",
         "msg": "Normal",
@@ -1077,15 +1089,15 @@
         "dur": 0
       },
       "prevPrices": {
-        "IVL": 3261,
-        "LBT": 18428,
-        "IRC": 434462,
-        "LTN": 3369641,
-        "RSX": 48795686,
-        "TNX": 1569942503
+        "IVL": 3098,
+        "LBT": 17961,
+        "IRC": 918460,
+        "LTN": 11385810,
+        "RSX": 12350072,
+        "TNX": 2091511794
       },
-      "lastMinuteMarker": "2026-05-07 20:46",
-      "lastUpdate": 1778157960014,
+      "lastMinuteMarker": "2026-05-08 09:04",
+      "lastUpdate": 1778202240015,
       "taxRates": {
         "IVL": 1.5,
         "LBT": 1.5,
